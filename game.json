@@ -3,7 +3,7 @@
     "gameId": "laura_panda_klic_compact_dag_v1",
     "title": "Panda na škole v přírodě: Ztracený knihovní klíč",
     "language": "cs",
-    "createdAt": "2025-12-18",
+    "createdAt": "2025-12-20",
     "structure": {
       "startId": "scene_1_start",
       "intermediateLevels": {
@@ -21,7 +21,7 @@
       "levelStep": 1,
       "endGroupId": "scene_24_end"
     },
-    "note": "Pozn.: Úrovně 2–23 tvoří 22 meziscén na cestě (1→24). Pokud engine vyžaduje doslova 23 meziscén, posuň end na úroveň 25."
+    "note": "Kompaktní DAG: úrovně 2–23 jsou meziscény, finále je na úrovni 24. Každá scéna má 3 volby bez smyček."
   },
   "startId": "scene_1_start",
   "endGroupId": "scene_24_end",
@@ -30,11 +30,11 @@
       "id": "scene_1_start",
       "level": 1,
       "type": "start",
-      "title": "Příjezd a detektivní panda",
-      "text": "Škola v přírodě začíná. U brány visí cedule o knihovně. Panda velká si nasadí neviditelné detektivní brýle: „Laura, případ století. A žádné strašení, jen fakta a bambus.“",
+      "title": "Laura & Panda velká: Případ ztraceného knihovního klíče",
+      "text": "Laura přijíždí na školu v přírodě a hned se seznamuje se svou parťačkou: pandou velkou, která se prohlašuje za detektivku. Úkol je jasný: najít ztracený klíč od knihovny, aby se otevřela tajná polička s komiksy a pokladem. Panda špitne: „Bez strašení, jen chytré hlavy a bambusová odvaha.“",
       "task": {
         "type": "fun",
-        "prompt": "Vymysli detektivní přezdívku (např. Agentka Bambus)."
+        "prompt": "Vymysli si detektivní přezdívku (např. Agentka Bambus)."
       },
       "choices": [
         {
@@ -58,11 +58,11 @@
       "id": "scene_02_cedule",
       "level": 2,
       "type": "scene",
-      "title": "Rozjezd případu",
-      "text": "Stopa vede přes slova a cedule. Na bráně je cedule s podezřelými chybami a panda ji bere osobně. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Rozjezd případu — slova",
+      "text": "Na bráně visí cedule „Knihovna“ a někdo v ní přehodil písmenka. Panda velká zavrčí: „Kdo plete písmena, ten plete i klíče.“",
       "task": {
         "type": "fun",
-        "prompt": "Řekni 1 vymyšlený „panda zvuk“."
+        "prompt": "Udělěj „panda zvuk“ potichu i nahlas (a vyber lepší verzi)."
       },
       "choices": [
         {
@@ -86,11 +86,11 @@
       "id": "scene_02_drby",
       "level": 2,
       "type": "scene",
-      "title": "Rozjezd případu",
-      "text": "Stopa vede přes svědky, drby a papouška. Na bráně je cedule s podezřelými chybami a panda ji bere osobně. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Rozjezd případu — svědci",
+      "text": "Na hřišti papoušek huláká „Klíííč!“ a děti se smějí, jako by to byl vtip dne. Laura si zapisuje první drb: klíč prý někdo viděl u jídelny.",
       "task": {
         "type": "fun",
-        "prompt": "Řekni 1 vymyšlený „panda zvuk“."
+        "prompt": "Vymysli krátký vtip o papouškovi (1 věta)."
       },
       "choices": [
         {
@@ -114,11 +114,11 @@
       "id": "scene_02_bambus",
       "level": 2,
       "type": "scene",
-      "title": "Rozjezd případu",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na bráně je cedule s podezřelými chybami a panda ji bere osobně. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Rozjezd případu — bambus",
+      "text": "Panda kontroluje batoh a mezi sušenkami najde zelený bambusový drobek. „Drobky nelžou,“ rozhodne panda a ukáže tlapou směrem do budovy.",
       "task": {
         "type": "fun",
-        "prompt": "Řekni 1 vymyšlený „panda zvuk“."
+        "prompt": "Vymysli název pro pandí detektivní tým (2–3 slova)."
       },
       "choices": [
         {
@@ -142,8 +142,8 @@
       "id": "scene_03_cedule",
       "level": 3,
       "type": "scene",
-      "title": "Stopy ve vzduchu",
-      "text": "Stopa vede přes slova a cedule. Ve školní chodbičce někdo šeptá, že klíč viděl „někdo, kdo se tvářil jako zvíře“. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Stopy ve vzduchu — slova",
+      "text": "V chodbě někdo tužkou dopsal k ceduli malý háček navíc — schválně. Laura si všimne, že stejná tužka leží u nástěnky.",
       "task": {
         "type": "czech",
         "prompt": "Řekni 3 vyjmenovaná slova po B."
@@ -170,8 +170,8 @@
       "id": "scene_03_drby",
       "level": 3,
       "type": "scene",
-      "title": "Stopy ve vzduchu",
-      "text": "Stopa vede přes svědky, drby a papouška. Ve školní chodbičce někdo šeptá, že klíč viděl „někdo, kdo se tvářil jako zvíře“. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Stopy ve vzduchu — svědci",
+      "text": "U šaten se šušká, že „někdo v masce zvířete“ procházel kolem knihovny. Papoušek to zopakuje „zvíře, zvíře“ a tím je o zmatek postaráno.",
       "task": {
         "type": "czech",
         "prompt": "Řekni 3 vyjmenovaná slova po B."
@@ -198,8 +198,8 @@
       "id": "scene_03_bambus",
       "level": 3,
       "type": "scene",
-      "title": "Stopy ve vzduchu",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Ve školní chodbičce někdo šeptá, že klíč viděl „někdo, kdo se tvářil jako zvíře“. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Stopy ve vzduchu — bambus",
+      "text": "Panda tvrdí, že ucítila „pach záložek“ a dramaticky se rozhlíží. Laura si všimne chloupku z plyšáka na klice — někdo tu byl nedávno.",
       "task": {
         "type": "czech",
         "prompt": "Řekni 3 vyjmenovaná slova po B."
@@ -226,8 +226,8 @@
       "id": "scene_04_cedule",
       "level": 4,
       "type": "scene",
-      "title": "Jídelna a motiv",
-      "text": "Stopa vede přes slova a cedule. V jídelně se řeší, kdo měl důvod otevřít tajnou poličku (komiksy!). Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Jídelna a motiv — slova",
+      "text": "V jídelně je na nástěnce jídelníček a u slova „komiks“ někdo udělal tajný kroužek. Panda šeptá: „Motiv je jasný — komiksy!“",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 24 − 9 = ?"
@@ -254,8 +254,8 @@
       "id": "scene_04_drby",
       "level": 4,
       "type": "scene",
-      "title": "Jídelna a motiv",
-      "text": "Stopa vede přes svědky, drby a papouška. V jídelně se řeší, kdo měl důvod otevřít tajnou poličku (komiksy!). Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Jídelna a motiv — svědci",
+      "text": "U stolů se řeší záhada: kdo se ptal na tajnou poličku s komiksy? Jeden kluk prý řekl: „Já jenom… hledal vidličku.“",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 24 − 9 = ?"
@@ -282,8 +282,8 @@
       "id": "scene_04_bambus",
       "level": 4,
       "type": "scene",
-      "title": "Jídelna a motiv",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. V jídelně se řeší, kdo měl důvod otevřít tajnou poličku (komiksy!). Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Jídelna a motiv — bambus",
+      "text": "Panda pozoruje tácy a všimne si, že jedna lžička zmizela stejně jako klíč. „Zloděj miluje lesklé věci,“ prohlásí panda a vypadá důležitě.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 24 − 9 = ?"
@@ -310,8 +310,8 @@
       "id": "scene_05_cedule",
       "level": 5,
       "type": "scene",
-      "title": "Králíkův slovníček",
-      "text": "Stopa vede přes slova a cedule. Učebna angličtiny má kartičky se slovy, které se můžou hodit jako šifra. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Králíkův slovníček — slova",
+      "text": "V učebně angličtiny visí kartičky „library“ a „key“ a jedna je otočená vzhůru nohama. Laura otočí kartičku a na zadní straně je drobný obrázek klíče.",
       "task": {
         "type": "english",
         "prompt": "Přelož: library, key, clue."
@@ -338,8 +338,8 @@
       "id": "scene_05_drby",
       "level": 5,
       "type": "scene",
-      "title": "Králíkův slovníček",
-      "text": "Stopa vede přes svědky, drby a papouška. Učebna angličtiny má kartičky se slovy, které se můžou hodit jako šifra. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Králíkův slovníček — svědci",
+      "text": "Králík učitel slyšel, že někdo včera šeptal anglicky „my key…“ a pak se rozesmál. Papoušek to zopakuje tak špatně, až je to podezřele roztomilé.",
       "task": {
         "type": "english",
         "prompt": "Přelož: library, key, clue."
@@ -366,8 +366,8 @@
       "id": "scene_05_bambus",
       "level": 5,
       "type": "scene",
-      "title": "Králíkův slovníček",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Učebna angličtiny má kartičky se slovy, které se můžou hodit jako šifra. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Králíkův slovníček — bambus",
+      "text": "Panda si plete „key“ a „kiwi“ a chce hledat ovoce. Laura ji rychle vrátí k případu: dnes se loví klíč, ne svačina.",
       "task": {
         "type": "english",
         "prompt": "Přelož: library, key, clue."
@@ -394,8 +394,8 @@
       "id": "scene_06_cedule",
       "level": 6,
       "type": "scene",
-      "title": "Knihovní hlášení",
-      "text": "Stopa vede přes slova a cedule. V knihovně veverka chce slyšet krátké detektivní hlášení, než vás pustí dál. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Knihovní hlášení — slova",
+      "text": "V knihovně veverka zvedne obočí a chce krátké detektivní hlášení. Laura mluví vážně a panda přikyvuje tak, až jí poskakuje bříško.",
       "task": {
         "type": "reading",
         "prompt": "Přečti nahlas 2–3 věty jako detektivní hlášení."
@@ -422,8 +422,8 @@
       "id": "scene_06_drby",
       "level": 6,
       "type": "scene",
-      "title": "Knihovní hlášení",
-      "text": "Stopa vede přes svědky, drby a papouška. V knihovně veverka chce slyšet krátké detektivní hlášení, než vás pustí dál. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Knihovní hlášení — svědci",
+      "text": "Veverka tvrdí, že slyšela o klíči tři různé verze — a všechny znějí jako drby. Laura si vybere tu nejlogičtější a panda si vybere tu nejvtipnější.",
       "task": {
         "type": "reading",
         "prompt": "Přečti nahlas 2–3 věty jako detektivní hlášení."
@@ -450,8 +450,8 @@
       "id": "scene_06_bambus",
       "level": 6,
       "type": "scene",
-      "title": "Knihovní hlášení",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. V knihovně veverka chce slyšet krátké detektivní hlášení, než vás pustí dál. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Knihovní hlášení — bambus",
+      "text": "Panda se tváří, že knihovna je „chrám ticha“, ale potichu jí kručí v břiše. Veverka ukáže na stopu prachu u tajné poličky.",
       "task": {
         "type": "reading",
         "prompt": "Přečti nahlas 2–3 věty jako detektivní hlášení."
@@ -478,8 +478,8 @@
       "id": "scene_07_cedule",
       "level": 7,
       "type": "scene",
-      "title": "Rýmová laboratoř",
-      "text": "Stopa vede přes slova a cedule. Na stole je sešit „Rýmy pro krizové situace“. Panda tvrdí, že je to důkaz. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Rýmová laboratoř — slova",
+      "text": "Na stole leží sešit „Rýmy pro detektivy“ a jeden rým je podtržený. Laura čte: „Klíč je pryč — to je kříž,“ a panda se směje.",
       "task": {
         "type": "wordplay",
         "prompt": "Vymysli 3 slova, která se rýmují s „panda“ (klidně blbiny)."
@@ -506,8 +506,8 @@
       "id": "scene_07_drby",
       "level": 7,
       "type": "scene",
-      "title": "Rýmová laboratoř",
-      "text": "Stopa vede přes svědky, drby a papouška. Na stole je sešit „Rýmy pro krizové situace“. Panda tvrdí, že je to důkaz. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Rýmová laboratoř — svědci",
+      "text": "Papoušek našel sešit s rýmy a každému do ucha rapuje „panda–sranda“. Mezitím někdo nenápadně prchá směrem k chatičkám.",
       "task": {
         "type": "wordplay",
         "prompt": "Vymysli 3 slova, která se rýmují s „panda“ (klidně blbiny)."
@@ -534,8 +534,8 @@
       "id": "scene_07_bambus",
       "level": 7,
       "type": "scene",
-      "title": "Rýmová laboratoř",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na stole je sešit „Rýmy pro krizové situace“. Panda tvrdí, že je to důkaz. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Rýmová laboratoř — bambus",
+      "text": "Panda trvá na tom, že rýmy jsou šifry, a začne rýmovat i názvy jídel. Laura si všimne, že v sešitě chybí stránka — někdo ji vytrhl.",
       "task": {
         "type": "wordplay",
         "prompt": "Vymysli 3 slova, která se rýmují s „panda“ (klidně blbiny)."
@@ -562,8 +562,8 @@
       "id": "scene_08_cedule",
       "level": 8,
       "type": "scene",
-      "title": "Co je stopa?",
-      "text": "Stopa vede přes slova a cedule. Před vámi jsou tři typy stop: slovo, číslo, svědek. Musíte vybrat, čemu věřit. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Co je stopa? — slova",
+      "text": "Na tabuli jsou tři stopy: slovo, číslo a šipka, a jen jedna je správně napsaná. Laura vybere tu čistou a panda uznale zamručí.",
       "task": {
         "type": "logic",
         "prompt": "Řekni, co je lepší stopa: slovo, číslo, nebo svědek – a proč (1 věta)."
@@ -590,8 +590,8 @@
       "id": "scene_08_drby",
       "level": 8,
       "type": "scene",
-      "title": "Co je stopa?",
-      "text": "Stopa vede přes svědky, drby a papouška. Před vámi jsou tři typy stop: slovo, číslo, svědek. Musíte vybrat, čemu věřit. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Co je stopa? — svědci",
+      "text": "Tři děti ukazují třemi směry a každé tvrdí něco jiného. Laura zvolí svědka, který se nejmíň vytahuje — a papoušek protestuje.",
       "task": {
         "type": "logic",
         "prompt": "Řekni, co je lepší stopa: slovo, číslo, nebo svědek – a proč (1 věta)."
@@ -618,8 +618,8 @@
       "id": "scene_08_bambus",
       "level": 8,
       "type": "scene",
-      "title": "Co je stopa?",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Před vámi jsou tři typy stop: slovo, číslo, svědek. Musíte vybrat, čemu věřit. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Co je stopa? — bambus",
+      "text": "Panda hodí mincí „pro štěstí“, ale Laura řekne: „Detektivky mincí neřeší.“ Panda tedy aspoň ukáže na drobný otisk tlapky v prachu.",
       "task": {
         "type": "logic",
         "prompt": "Řekni, co je lepší stopa: slovo, číslo, nebo svědek – a proč (1 věta)."
@@ -646,8 +646,8 @@
       "id": "scene_09_cedule",
       "level": 9,
       "type": "scene",
-      "title": "Kódovací vydra",
-      "text": "Stopa vede přes slova a cedule. Vydra matematik vytáhne krabičku se zámkem a tváří se důležitě. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Kódovací vydra — slova",
+      "text": "Vydra matematik přinese krabičku se zámkem a řekne: „Bez výpočtu dál nejdete.“ Panda si nasadí „neviditelné brýle“ a čeká na výsledek.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 50 − 17 = ?"
@@ -674,8 +674,8 @@
       "id": "scene_09_drby",
       "level": 9,
       "type": "scene",
-      "title": "Kódovací vydra",
-      "text": "Stopa vede přes svědky, drby a papouška. Vydra matematik vytáhne krabičku se zámkem a tváří se důležitě. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Kódovací vydra — svědci",
+      "text": "Vydra slyšela, že klíč cinkal jako mince, a proto podezírá každého, kdo nosí kapsy. Laura si všimne, že to cinkání šlo od krabičky se zámkem.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 50 − 17 = ?"
@@ -702,8 +702,8 @@
       "id": "scene_09_bambus",
       "level": 9,
       "type": "scene",
-      "title": "Kódovací vydra",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Vydra matematik vytáhne krabičku se zámkem a tváří se důležitě. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Kódovací vydra — bambus",
+      "text": "Panda chce krabičku otevřít tlapou, ale vydra ji zastaví: „Nejdřív počty!“ Panda se urazí a začne počítat nahlas jako robot.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 50 − 17 = ?"
@@ -730,8 +730,8 @@
       "id": "scene_10_cedule",
       "level": 10,
       "type": "scene",
-      "title": "Pravopisná past",
-      "text": "Stopa vede přes slova a cedule. Sova učitelka ukáže větu, která může být klíčem k pravdě (a k i/y). Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Pravopisná past — slova",
+      "text": "Sova učitelka ukáže větu s i/y a tváří se, že je to největší záhada světa. Laura doplní správně a sova kývne: „Tohle už je stopa.“",
       "task": {
         "type": "czech",
         "prompt": "Doplň: Panda __la v knihovně. (byla/bílá) a proč."
@@ -758,8 +758,8 @@
       "id": "scene_10_drby",
       "level": 10,
       "type": "scene",
-      "title": "Pravopisná past",
-      "text": "Stopa vede přes svědky, drby a papouška. Sova učitelka ukáže větu, která může být klíčem k pravdě (a k i/y). Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Pravopisná past — svědci",
+      "text": "Sova zaslechla, že někdo v knihovně řekl „bílá panda“ — ale to může být past na pravopis. Papoušek to zopakuje třikrát a pokaždé jinak.",
       "task": {
         "type": "czech",
         "prompt": "Doplň: Panda __la v knihovně. (byla/bílá) a proč."
@@ -786,8 +786,8 @@
       "id": "scene_10_bambus",
       "level": 10,
       "type": "scene",
-      "title": "Pravopisná past",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Sova učitelka ukáže větu, která může být klíčem k pravdě (a k i/y). Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Pravopisná past — bambus",
+      "text": "Panda trvá na tom, že je „bílá i byla“ současně, protože je panda. Laura vybere správné slovo a panda to bere jako své vítězství.",
       "task": {
         "type": "czech",
         "prompt": "Doplň: Panda __la v knihovně. (byla/bílá) a proč."
@@ -814,8 +814,8 @@
       "id": "scene_11_cedule",
       "level": 11,
       "type": "scene",
-      "title": "Hledání slov",
-      "text": "Stopa vede přes slova a cedule. Na nástěnce je seznam věcí, které se v knihovně ztratily dřív (včetně ponožky). Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Hledání slov — slova",
+      "text": "Na nástěnce visí seznam ztrát: ponožka, tužka, a kdysi dokonce LEGO kostička. Laura si všimne, že u „klíč“ je nejčerstvější otisk prstu.",
       "task": {
         "type": "english",
         "prompt": "Řekni anglicky 5 věcí, které vidíš (např. book, pen…)."
@@ -842,8 +842,8 @@
       "id": "scene_11_drby",
       "level": 11,
       "type": "scene",
-      "title": "Hledání slov",
-      "text": "Stopa vede přes svědky, drby a papouška. Na nástěnce je seznam věcí, které se v knihovně ztratily dřív (včetně ponožky). Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Hledání slov — svědci",
+      "text": "U nástěnky se každý přiznává k něčemu ztracenému, a to je podezřelé samo o sobě. Papoušek přidá „já nic, já nic“ a tím se prozradí, že poslouchal.",
       "task": {
         "type": "english",
         "prompt": "Řekni anglicky 5 věcí, které vidíš (např. book, pen…)."
@@ -870,8 +870,8 @@
       "id": "scene_11_bambus",
       "level": 11,
       "type": "scene",
-      "title": "Hledání slov",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na nástěnce je seznam věcí, které se v knihovně ztratily dřív (včetně ponožky). Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Hledání slov — bambus",
+      "text": "Panda vidí slovo „LEGO“ a okamžitě chce stavět past. Laura ji uklidní: nejdřív klíč, pak stavba bambusové věže.",
       "task": {
         "type": "english",
         "prompt": "Řekni anglicky 5 věcí, které vidíš (např. book, pen…)."
@@ -898,8 +898,8 @@
       "id": "scene_12_cedule",
       "level": 12,
       "type": "scene",
-      "title": "Malé souhlásky",
-      "text": "Stopa vede přes slova a cedule. Na mapě areálu jsou čísla u chatiček a někdo je přepsal tužkou. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Malé souhlásky — slova",
+      "text": "Na mapě areálu jsou čísla u chatiček a jedno číslo je přepsané na jiné. Laura pochopí: někdo chtěl, aby šlaš špatným směrem.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: (9 + 8) = ?"
@@ -926,8 +926,8 @@
       "id": "scene_12_drby",
       "level": 12,
       "type": "scene",
-      "title": "Malé souhlásky",
-      "text": "Stopa vede přes svědky, drby a papouška. Na mapě areálu jsou čísla u chatiček a někdo je přepsal tužkou. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Malé souhlásky — svědci",
+      "text": "Děti tvrdí, že „klíč putoval“ od chatičky k chatičce jako tajná zpráva. Laura si vybere verzi, kde se čísla nejméně rozcházejí.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: (9 + 8) = ?"
@@ -954,8 +954,8 @@
       "id": "scene_12_bambus",
       "level": 12,
       "type": "scene",
-      "title": "Malé souhlásky",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na mapě areálu jsou čísla u chatiček a někdo je přepsal tužkou. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Malé souhlásky — bambus",
+      "text": "Panda sleduje mapu a ukazuje na místo, kde je nakreslený bambusový list. Laura se směje: někdo si tu dělal srandu — ale možná nechal nápovědu.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: (9 + 8) = ?"
@@ -982,8 +982,8 @@
       "id": "scene_13_cedule",
       "level": 13,
       "type": "scene",
-      "title": "Detektivní slovní hříčky",
-      "text": "Stopa vede přes slova a cedule. Panda chce změnit slovo „panda“ na co nejvíc nesmyslů, prý to odhalí pachatele. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Detektivní slovní hříčky — slova",
+      "text": "Panda chce měnit písmenka ve slově PANDA a říká tomu „lingvistická past“. Laura si všimne, že někdo už to dělal v sešitě — stejným rukopisem jako na ceduli.",
       "task": {
         "type": "wordplay",
         "prompt": "Změň první písmeno ve slově PANDA (3×): panda→…"
@@ -1010,8 +1010,8 @@
       "id": "scene_13_drby",
       "level": 13,
       "type": "scene",
-      "title": "Detektivní slovní hříčky",
-      "text": "Stopa vede přes svědky, drby a papouška. Panda chce změnit slovo „panda“ na co nejvíc nesmyslů, prý to odhalí pachatele. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Detektivní slovní hříčky — svědci",
+      "text": "Papoušek zkouší nové slovo „pinda“ a všichni se smějí. Mezi smíchem Laura zaslechne: „Klíč je u zákoníku!“",
       "task": {
         "type": "wordplay",
         "prompt": "Změň první písmeno ve slově PANDA (3×): panda→…"
@@ -1038,8 +1038,8 @@
       "id": "scene_13_bambus",
       "level": 13,
       "type": "scene",
-      "title": "Detektivní slovní hříčky",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Panda chce změnit slovo „panda“ na co nejvíc nesmyslů, prý to odhalí pachatele. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Detektivní slovní hříčky — bambus",
+      "text": "Panda plete slova tak dlouho, až z toho vznikne úplný nesmysl — a to prý viníka zlomí. Laura radši sleduje rukopis na papíru: je to důležitější než panda rap.",
       "task": {
         "type": "wordplay",
         "prompt": "Změň první písmeno ve slově PANDA (3×): panda→…"
@@ -1066,8 +1066,8 @@
       "id": "scene_14_cedule",
       "level": 14,
       "type": "scene",
-      "title": "Detektivní zákoník",
-      "text": "Stopa vede přes slova a cedule. Veverka vytáhne knížku pravidel knihovny. Je to vážnější než matematika. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Detektivní zákoník — slova",
+      "text": "Veverka vytáhne „Zákoník knihovny“ a ukáže pravidlo o vracení klíčů. Laura si všimne čerstvé poznámky tužkou na okraji: „pol 3“.",
       "task": {
         "type": "reading",
         "prompt": "Přečti nahlas krátký „zákon detektivů“ (vymysli 2 věty)."
@@ -1094,8 +1094,8 @@
       "id": "scene_14_drby",
       "level": 14,
       "type": "scene",
-      "title": "Detektivní zákoník",
-      "text": "Stopa vede přes svědky, drby a papouška. Veverka vytáhne knížku pravidel knihovny. Je to vážnější než matematika. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Detektivní zákoník — svědci",
+      "text": "Pravidla v knihovně jsou prý nudná, a proto je někdo tajně komentuje do okraje. Papoušek čte nahlas jen ty nejvtipnější poznámky.",
       "task": {
         "type": "reading",
         "prompt": "Přečti nahlas krátký „zákon detektivů“ (vymysli 2 věty)."
@@ -1122,8 +1122,8 @@
       "id": "scene_14_bambus",
       "level": 14,
       "type": "scene",
-      "title": "Detektivní zákoník",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Veverka vytáhne knížku pravidel knihovny. Je to vážnější než matematika. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Detektivní zákoník — bambus",
+      "text": "Panda se tváří, že zákoník je „detektivní magie“, a dramaticky listuje. Z jedné stránky vypadne bambusová záložka — možná byla u klíče.",
       "task": {
         "type": "reading",
         "prompt": "Přečti nahlas krátký „zákon detektivů“ (vymysli 2 věty)."
@@ -1150,8 +1150,8 @@
       "id": "scene_15_cedule",
       "level": 15,
       "type": "scene",
-      "title": "Lyže a logika",
-      "text": "Stopa vede přes slova a cedule. Na lavičce leží lístek s vyjmenovanými slovy po L a někdo k němu přimaloval lyže. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Lyže a logika — slova",
+      "text": "Na lavičce je lístek s vyjmenovanými slovy a vedle něj nakreslené lyže jako šipka. Laura chápe: stopa vede k místu, kde je „lyžák“ na programu.",
       "task": {
         "type": "czech",
         "prompt": "Řekni 2 vyjmenovaná slova po L."
@@ -1178,8 +1178,8 @@
       "id": "scene_15_drby",
       "level": 15,
       "type": "scene",
-      "title": "Lyže a logika",
-      "text": "Stopa vede přes svědky, drby a papouška. Na lavičce leží lístek s vyjmenovanými slovy po L a někdo k němu přimaloval lyže. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Lyže a logika — svědci",
+      "text": "Někdo prý v noci hledal „lyže“ a přitom mumlal vyjmenovaná slova. Panda řekne: „To je buď génius… nebo někdo zlobí.“",
       "task": {
         "type": "czech",
         "prompt": "Řekni 2 vyjmenovaná slova po L."
@@ -1206,8 +1206,8 @@
       "id": "scene_15_bambus",
       "level": 15,
       "type": "scene",
-      "title": "Lyže a logika",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na lavičce leží lístek s vyjmenovanými slovy po L a někdo k němu přimaloval lyže. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Lyže a logika — bambus",
+      "text": "Panda se snaží vyslovit „lyže“ tak vážně, až to zní jako „lišky“. Laura se směje, ale lístek s L je jasná nápověda.",
       "task": {
         "type": "czech",
         "prompt": "Řekni 2 vyjmenovaná slova po L."
@@ -1234,8 +1234,8 @@
       "id": "scene_16_cedule",
       "level": 16,
       "type": "scene",
-      "title": "Bambusové počty",
-      "text": "Stopa vede přes slova a cedule. Před vámi je malý bambusový počítací přívěsek (ne, není to zbraň, jen počítadlo). Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Bambusové počty — slova",
+      "text": "Na stole je bambusové počítadlo, ale někdo na něj napsal písmenka místo čísel. Laura si řekne: „Tohle bude šifra,“ a panda to chce sníst.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 6 × 4 = ?"
@@ -1262,8 +1262,8 @@
       "id": "scene_16_drby",
       "level": 16,
       "type": "scene",
-      "title": "Bambusové počty",
-      "text": "Stopa vede přes svědky, drby a papouška. Před vámi je malý bambusový počítací přívěsek (ne, není to zbraň, jen počítadlo). Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Bambusové počty — svědci",
+      "text": "Vydra slyšela, že klíč někdo „počítal“ — prý měl tři zuby a jeden škrábanec. Laura si pomůže počty a drb převede na logiku.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 6 × 4 = ?"
@@ -1290,8 +1290,8 @@
       "id": "scene_16_bambus",
       "level": 16,
       "type": "scene",
-      "title": "Bambusové počty",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Před vámi je malý bambusový počítací přívěsek (ne, není to zbraň, jen počítadlo). Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Bambusové počty — bambus",
+      "text": "Panda drží bambusové počítadlo jako poklad a slíbí, že ho nesní (možná). Laura ho použije jako stopu k poslední nápovědě.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 6 × 4 = ?"
@@ -1318,8 +1318,8 @@
       "id": "scene_17_cedule",
       "level": 17,
       "type": "scene",
-      "title": "Pozdrav do světa",
-      "text": "Stopa vede přes slova a cedule. Králík angličtinář chce, abyste uměli říct, kdo jste a co máte rádi. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Pozdrav do světa — slova",
+      "text": "Králík angličtinář chce pozdrav a krátké představení, jako by to byla tajná kontrola. Panda dělá, že tlumočí, a vymýšlí si.",
       "task": {
         "type": "english",
         "prompt": "Řekni mini-dialog: “Hello, my name is …” + “I like …”."
@@ -1346,8 +1346,8 @@
       "id": "scene_17_drby",
       "level": 17,
       "type": "scene",
-      "title": "Pozdrav do světa",
-      "text": "Stopa vede přes svědky, drby a papouška. Králík angličtinář chce, abyste uměli říct, kdo jste a co máte rádi. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Pozdrav do světa — svědci",
+      "text": "Papoušek opakuje „Hello!“ na celý tábor, takže všichni vědí, že jste na stopě. Laura si všimne, že jeden svědek zrudne, když slyší slovo „key“.",
       "task": {
         "type": "english",
         "prompt": "Řekni mini-dialog: “Hello, my name is …” + “I like …”."
@@ -1374,8 +1374,8 @@
       "id": "scene_17_bambus",
       "level": 17,
       "type": "scene",
-      "title": "Pozdrav do světa",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Králík angličtinář chce, abyste uměli říct, kdo jste a co máte rádi. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Pozdrav do světa — bambus",
+      "text": "Panda zkusí anglicky říct, že miluje bambus, a je na sebe pyšná. Laura mezitím vyhlíží, kdo schovává něco v kapse.",
       "task": {
         "type": "english",
         "prompt": "Řekni mini-dialog: “Hello, my name is …” + “I like …”."
@@ -1402,8 +1402,8 @@
       "id": "scene_18_cedule",
       "level": 18,
       "type": "scene",
-      "title": "Hlavní podezřelý",
-      "text": "Stopa vede přes slova a cedule. Je čas určit hlavního podezřelého… aspoň na jednu scénu, než to zas bude jinak. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Hlavní podezřelý — slova",
+      "text": "Laura si sepíše tři podezřelé a u každého jednu stopu na papír. Panda dodá: „A teď vyberme toho, kdo se nejvíc tváří nevinně.“",
       "task": {
         "type": "logic",
         "prompt": "Vyber, kdo je nejpodezřelejší: veverka/papoušek/panda – a proč (1 věta)."
@@ -1430,8 +1430,8 @@
       "id": "scene_18_drby",
       "level": 18,
       "type": "scene",
-      "title": "Hlavní podezřelý",
-      "text": "Stopa vede přes svědky, drby a papouška. Je čas určit hlavního podezřelého… aspoň na jednu scénu, než to zas bude jinak. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Hlavní podezřelý — svědci",
+      "text": "Svědci si protiřečí a každý obviňuje někoho jiného, což je typické. Laura si vybere podezřelého podle toho, kdo změnil příběh uprostřed věty.",
       "task": {
         "type": "logic",
         "prompt": "Vyber, kdo je nejpodezřelejší: veverka/papoušek/panda – a proč (1 věta)."
@@ -1458,8 +1458,8 @@
       "id": "scene_18_bambus",
       "level": 18,
       "type": "scene",
-      "title": "Hlavní podezřelý",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Je čas určit hlavního podezřelého… aspoň na jednu scénu, než to zas bude jinak. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Hlavní podezřelý — bambus",
+      "text": "Panda navrhne, že hlavní podezřelý je… panda, protože je vždycky u všeho. Laura se směje a zvolí podezření podle skutečných stop, ne podle tlap.",
       "task": {
         "type": "logic",
         "prompt": "Vyber, kdo je nejpodezřelejší: veverka/papoušek/panda – a proč (1 věta)."
@@ -1486,8 +1486,8 @@
       "id": "scene_19_cedule",
       "level": 19,
       "type": "scene",
-      "title": "Krabička se zámečkem",
-      "text": "Stopa vede přes slova a cedule. Krabička cvakne a něco v ní chrastí. Panda šeptá: „To může být klíč… nebo bonbon.“ Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Krabička se zámečkem — slova",
+      "text": "Krabička cvakne a uvnitř chrastí něco kovového, ale ještě to není jistota. Panda šeptá: „Klíč nebo bonbon — obojí je důležité!“",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 30 + 12 = ?"
@@ -1514,8 +1514,8 @@
       "id": "scene_19_drby",
       "level": 19,
       "type": "scene",
-      "title": "Krabička se zámečkem",
-      "text": "Stopa vede přes svědky, drby a papouška. Krabička cvakne a něco v ní chrastí. Panda šeptá: „To může být klíč… nebo bonbon.“ Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Krabička se zámečkem — svědci",
+      "text": "Někdo prý slyšel „cink“ u knihovny a hned to rozhlásil jako drb. Laura zjistí, že ten zvuk šel z krabičky a byl to plánovaný trik.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 30 + 12 = ?"
@@ -1542,8 +1542,8 @@
       "id": "scene_19_bambus",
       "level": 19,
       "type": "scene",
-      "title": "Krabička se zámečkem",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Krabička cvakne a něco v ní chrastí. Panda šeptá: „To může být klíč… nebo bonbon.“ Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Krabička se zámečkem — bambus",
+      "text": "Panda chce krabičku zatřást jako maraku, aby „vyzpívala pravdu“. Laura radši pokračuje klidně: teď už jste blízko tajné poličky.",
       "task": {
         "type": "math",
         "prompt": "Spočítej: 30 + 12 = ?"
@@ -1570,8 +1570,8 @@
       "id": "scene_20_cedule",
       "level": 20,
       "type": "scene",
-      "title": "Oprava cedule",
-      "text": "Stopa vede přes slova a cedule. U brány někdo zkusil ceduli „opravit“ a teď je ještě horší. To už je umění. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Oprava cedule — slova",
+      "text": "Cedule u brány je „opravená“ tak, že teď obsahuje víc chyb než předtím. Laura si říká: viník si zřejmě rád hraje se slovy.",
       "task": {
         "type": "czech",
         "prompt": "Najdi a oprav 1 chybu ve větě: „Vítáme vas v knihovňe.“"
@@ -1598,8 +1598,8 @@
       "id": "scene_20_drby",
       "level": 20,
       "type": "scene",
-      "title": "Oprava cedule",
-      "text": "Stopa vede přes svědky, drby a papouška. U brány někdo zkusil ceduli „opravit“ a teď je ještě horší. To už je umění. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Oprava cedule — svědci",
+      "text": "Svědci tvrdí, že ceduli opravoval „někdo chytrý“, ale nikdo neví kdo. Papoušek prozradí: „Byl to ten s tužkou!“",
       "task": {
         "type": "czech",
         "prompt": "Najdi a oprav 1 chybu ve větě: „Vítáme vas v knihovňe.“"
@@ -1626,8 +1626,8 @@
       "id": "scene_20_bambus",
       "level": 20,
       "type": "scene",
-      "title": "Oprava cedule",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. U brány někdo zkusil ceduli „opravit“ a teď je ještě horší. To už je umění. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Oprava cedule — bambus",
+      "text": "Panda najde na zemi gumu a tužku — dokonalé vybavení pro zlobivého opraváře. Laura si je představí jako detektivní důkaz číslo jedna.",
       "task": {
         "type": "czech",
         "prompt": "Najdi a oprav 1 chybu ve větě: „Vítáme vas v knihovňe.“"
@@ -1654,8 +1654,8 @@
       "id": "scene_21_cedule",
       "level": 21,
       "type": "scene",
-      "title": "Poslední anglický klíč",
-      "text": "Stopa vede přes slova a cedule. Poslední karta je v angličtině. Pokud ji přečtete, otevře se poslední nápověda. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Poslední anglický klíč — slova",
+      "text": "Poslední kartička je anglicky a na okraji je malá šipka ke dveřím knihovny. Panda pronese: „Číst umíš, teď už jen… odemknout!“",
       "task": {
         "type": "english",
         "prompt": "Doplň: “I like ____.” (1 slovo)."
@@ -1682,8 +1682,8 @@
       "id": "scene_21_drby",
       "level": 21,
       "type": "scene",
-      "title": "Poslední anglický klíč",
-      "text": "Stopa vede přes svědky, drby a papouška. Poslední karta je v angličtině. Pokud ji přečtete, otevře se poslední nápověda. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Poslední anglický klíč — svědci",
+      "text": "Papoušek se naučil větu „I like…“ a vykřikuje ji pořád dokola. Laura si všimne, že při tom vždycky kouká stejným směrem — to je stopa.",
       "task": {
         "type": "english",
         "prompt": "Doplň: “I like ____.” (1 slovo)."
@@ -1710,8 +1710,8 @@
       "id": "scene_21_bambus",
       "level": 21,
       "type": "scene",
-      "title": "Poslední anglický klíč",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Poslední karta je v angličtině. Pokud ji přečtete, otevře se poslední nápověda. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Poslední anglický klíč — bambus",
+      "text": "Panda tvrdí, že angličtina je „tajný kód špionů“ a chce to přeložit po svém. Laura vezme kartu a najde na ní mini-nápovědu k zámku.",
       "task": {
         "type": "english",
         "prompt": "Doplň: “I like ____.” (1 slovo)."
@@ -1738,8 +1738,8 @@
       "id": "scene_22_cedule",
       "level": 22,
       "type": "scene",
-      "title": "Tiché čtení před finále",
-      "text": "Stopa vede přes slova a cedule. Před finále je tichá chvilka: čtení nahlas, ať se detektivní mozek srovná. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Tiché čtení před finále — slova",
+      "text": "Před finále si dáte tichou minutku a čtete, aby se hlava uklidnila. Panda překvapivě šeptá: „Ticho je někdy nejlepší stopa.“",
       "task": {
         "type": "reading",
         "prompt": "Přečti nahlas 1 odstavec z knížky (nebo vymysli)."
@@ -1766,8 +1766,8 @@
       "id": "scene_22_drby",
       "level": 22,
       "type": "scene",
-      "title": "Tiché čtení před finále",
-      "text": "Stopa vede přes svědky, drby a papouška. Před finále je tichá chvilka: čtení nahlas, ať se detektivní mozek srovná. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Tiché čtení před finále — svědci",
+      "text": "Svědci se konečně ztiší a papoušek je na chvíli bez drbů, což je rekord. Laura využije klidu a srovná si v hlavě všechny stopy.",
       "task": {
         "type": "reading",
         "prompt": "Přečti nahlas 1 odstavec z knížky (nebo vymysli)."
@@ -1794,8 +1794,8 @@
       "id": "scene_22_bambus",
       "level": 22,
       "type": "scene",
-      "title": "Tiché čtení před finále",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Před finále je tichá chvilka: čtení nahlas, ať se detektivní mozek srovná. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Tiché čtení před finále — bambus",
+      "text": "Panda se snaží být potichu, ale ticho jí vydrží jen dvě vteřiny. Laura ji poprosí o „panda-šepot“ a to funguje!",
       "task": {
         "type": "reading",
         "prompt": "Přečti nahlas 1 odstavec z knížky (nebo vymysli)."
@@ -1822,8 +1822,8 @@
       "id": "scene_23_cedule",
       "level": 23,
       "type": "scene",
-      "title": "Tři zámky a poslední otázka",
-      "text": "Stopa vede přes slova a cedule. Stojíte před tajnou poličkou se třemi zámky. Teď už se rozhoduje. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "title": "Tři zámky a poslední otázka — slova",
+      "text": "Před vámi je tajná polička se třemi zámky a na jednom je malý nápis tužkou. Laura se usměje: „Tak jo, klíči — teď tě najdeme.“",
       "task": {
         "type": "logic",
         "prompt": "Řekni 1 otázku, kterou by položila panda-detektivka."
@@ -1850,8 +1850,8 @@
       "id": "scene_23_drby",
       "level": 23,
       "type": "scene",
-      "title": "Tři zámky a poslední otázka",
-      "text": "Stopa vede přes svědky, drby a papouška. Stojíte před tajnou poličkou se třemi zámky. Teď už se rozhoduje. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "title": "Tři zámky a poslední otázka — svědci",
+      "text": "Tři zámky, tři svědci a tři příběhy — teď se ukáže, kdo lhal. Panda se tváří slavnostně: „Finále bez strašení, jen vítězství!“",
       "task": {
         "type": "logic",
         "prompt": "Řekni 1 otázku, kterou by položila panda-detektivka."
@@ -1878,8 +1878,8 @@
       "id": "scene_23_bambus",
       "level": 23,
       "type": "scene",
-      "title": "Tři zámky a poslední otázka",
-      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Stojíte před tajnou poličkou se třemi zámky. Teď už se rozhoduje. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "title": "Tři zámky a poslední otázka — bambus",
+      "text": "Panda ukáže na zámek s otiskem tlapky a dělá, že to určitě nebyla ona. Laura je o krok před ní: poslední stopa je na dosah.",
       "task": {
         "type": "logic",
         "prompt": "Řekni 1 otázku, kterou by položila panda-detektivka."
@@ -1906,8 +1906,8 @@
       "id": "scene_24_end_cedule",
       "level": 24,
       "type": "end",
-      "title": "scene_24_end",
-      "text": "Tajná polička cvakne. Klíč byl použit jako záložka v knížce „Jak psát cedule bez chyb“. Veverka ho „bezpečně“ založila. Uvnitř jsou komiksy, diplom a panda prohlásí: „Případ uzavřen. Bambus slaví.“",
+      "title": "Finále: Klíč nalezen!",
+      "text": "Polička cvakne: klíč byl schovaný jako záložka v knížce „Jak psát cedule bez chyb“. Panda slavnostně prohlásí: „Případ uzavřen — teď komiksy!“",
       "task": {
         "type": "celebration",
         "prompt": "Vyberte si jednu knížku/komiks a přečtěte 2 věty na oslavu."
@@ -1918,8 +1918,8 @@
       "id": "scene_24_end_drby",
       "level": 24,
       "type": "end",
-      "title": "scene_24_end",
-      "text": "Tajná polička cvakne. Klíč visel na šňůrce u dveří knihovny jako mikrofon. Papoušek ho pořád hlásil, protože si myslel, že je to „zpěvák“. Uvnitř jsou komiksy, diplom a panda prohlásí: „Případ uzavřen. Bambus slaví.“",
+      "title": "Finále: Klíč nalezen!",
+      "text": "Polička cvakne: klíč visel na šňůrce u dveří a papoušek ho bral jako mikrofon. Panda se zasměje: „Nejlepší drb je ten s happy endem!“",
       "task": {
         "type": "celebration",
         "prompt": "Vyberte si jednu knížku/komiks a přečtěte 2 věty na oslavu."
@@ -1930,8 +1930,8 @@
       "id": "scene_24_end_bambus",
       "level": 24,
       "type": "end",
-      "title": "scene_24_end",
-      "text": "Tajná polička cvakne. Klíč byl na pandě jako přívěsek celou dobu. Panda vážně: „To byla kontrola pozornosti. Prošla jsi.“ Uvnitř jsou komiksy, diplom a panda prohlásí: „Případ uzavřen. Bambus slaví.“",
+      "title": "Finále: Klíč nalezen!",
+      "text": "Polička cvakne: klíč byl celou dobu na pandě jako přívěsek — „test pozornosti“. Panda mrkne: „Prošla jsi, detektivko!“",
       "task": {
         "type": "celebration",
         "prompt": "Vyberte si jednu knížku/komiks a přečtěte 2 věty na oslavu."
