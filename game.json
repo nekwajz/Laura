@@ -39,17 +39,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Jít rovnou do knihovny (stopa slov).",
+          "text": "Vběhnout do knihovny a poprosit o případ",
           "nextId": "scene_02_cedule"
         },
         {
           "key": "B",
-          "text": "Na hřiště pro drby (stopa svědků).",
+          "text": "Vyrazit na hřiště a vytáhnout drby",
           "nextId": "scene_02_drby"
         },
         {
           "key": "C",
-          "text": "Zkontrolovat pandu a vybavení (stopa bambusu).",
+          "text": "Zkontrolovat pandu a batoh (bambusová stopa)",
           "nextId": "scene_02_bambus"
         }
       ]
@@ -67,17 +67,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Opravit podezřelé slovo přes slova — u brány • slova",
           "nextId": "scene_03_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky — u brány • slova",
           "nextId": "scene_03_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu — u brány • slova",
           "nextId": "scene_03_bambus"
         }
       ]
@@ -95,17 +95,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Získat drb nenápadnou otázkou přes svědky — u brány • svědci",
           "nextId": "scene_03_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Jít po stopě bambusu přes pandu — u brány • svědci",
           "nextId": "scene_03_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Přečíst si drobnou poznámku přes slova — u brány • svědci",
           "nextId": "scene_03_cedule"
         }
       ]
@@ -123,17 +123,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Jít po stopě bambusu přes pandu — u brány • panda",
           "nextId": "scene_03_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Hledat pravopisnou stopu přes slova — u brány • panda",
           "nextId": "scene_03_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyslechnout papouška přes svědky — u brány • panda",
           "nextId": "scene_03_drby"
         }
       ]
@@ -151,17 +151,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Porovnat, co je napsáno přes slova (čeština) — v chodbě • slova",
           "nextId": "scene_04_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (čeština) — v chodbě • slova",
           "nextId": "scene_04_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (čeština) — v chodbě • slova",
           "nextId": "scene_04_bambus"
         }
       ]
@@ -179,17 +179,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zeptat se svědků přes svědky (čeština) — v chodbě • svědci",
           "nextId": "scene_04_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Jít po stopě bambusu přes pandu (čeština) — v chodbě • svědci",
           "nextId": "scene_04_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Zkontrolovat nápis přes slova (čeština) — v chodbě • svědci",
           "nextId": "scene_04_cedule"
         }
       ]
@@ -207,17 +207,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Sledovat, kam míří panda přes pandu (čeština) — v chodbě • panda",
           "nextId": "scene_04_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (čeština) — v chodbě • panda",
           "nextId": "scene_04_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (čeština) — v chodbě • panda",
           "nextId": "scene_04_drby"
         }
       ]
@@ -235,17 +235,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Přečíst si drobnou poznámku přes slova (počty) — v jídelně • slova",
           "nextId": "scene_05_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (počty) — v jídelně • slova",
           "nextId": "scene_05_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (počty) — v jídelně • slova",
           "nextId": "scene_05_bambus"
         }
       ]
@@ -263,17 +263,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Vyslechnout papouška přes svědky (počty) — v jídelně • svědci",
           "nextId": "scene_05_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (počty) — v jídelně • svědci",
           "nextId": "scene_05_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Porovnat, co je napsáno přes slova (počty) — v jídelně • svědci",
           "nextId": "scene_05_cedule"
         }
       ]
@@ -291,17 +291,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Jít po stopě bambusu přes pandu (počty) — v jídelně • panda",
           "nextId": "scene_05_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Hledat pravopisnou stopu přes slova (počty) — v jídelně • panda",
           "nextId": "scene_05_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (počty) — v jídelně • panda",
           "nextId": "scene_05_drby"
         }
       ]
@@ -319,17 +319,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Hledat pravopisnou stopu přes slova (AJ) — u kartiček • slova",
           "nextId": "scene_06_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (AJ) — u kartiček • slova",
           "nextId": "scene_06_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (AJ) — u kartiček • slova",
           "nextId": "scene_06_bambus"
         }
       ]
@@ -347,17 +347,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zeptat se svědků přes svědky (AJ) — u kartiček • svědci",
           "nextId": "scene_06_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (AJ) — u kartiček • svědci",
           "nextId": "scene_06_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Zkontrolovat nápis přes slova (AJ) — u kartiček • svědci",
           "nextId": "scene_06_cedule"
         }
       ]
@@ -375,17 +375,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Udělat pandí kontrolu přes pandu (AJ) — u kartiček • panda",
           "nextId": "scene_06_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (AJ) — u kartiček • panda",
           "nextId": "scene_06_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (AJ) — u kartiček • panda",
           "nextId": "scene_06_drby"
         }
       ]
@@ -403,17 +403,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Porovnat, co je napsáno přes slova (čtení) — u regálu • slova",
           "nextId": "scene_07_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyslechnout papouška přes svědky (čtení) — u regálu • slova",
           "nextId": "scene_07_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Prověřit pandí kapsy přes pandu (čtení) — u regálu • slova",
           "nextId": "scene_07_bambus"
         }
       ]
@@ -431,17 +431,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zeptat se svědků přes svědky (čtení) — u regálu • svědci",
           "nextId": "scene_07_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Jít po stopě bambusu přes pandu (čtení) — u regálu • svědci",
           "nextId": "scene_07_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Hledat pravopisnou stopu přes slova (čtení) — u regálu • svědci",
           "nextId": "scene_07_cedule"
         }
       ]
@@ -459,17 +459,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Jít po stopě bambusu přes pandu (čtení) — u regálu • panda",
           "nextId": "scene_07_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Porovnat, co je napsáno přes slova (čtení) — u regálu • panda",
           "nextId": "scene_07_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (čtení) — u regálu • panda",
           "nextId": "scene_07_drby"
         }
       ]
@@ -487,17 +487,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Zkontrolovat nápis přes slova (slovní hra) — na lavičce • slova",
           "nextId": "scene_08_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyslechnout papouška přes svědky (slovní hra) — na lavičce • slova",
           "nextId": "scene_08_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (slovní hra) — na lavičce • slova",
           "nextId": "scene_08_bambus"
         }
       ]
@@ -515,17 +515,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Vyptat se dětí na hřišti přes svědky (slovní hra) — na lavičce • svědci",
           "nextId": "scene_08_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Prověřit pandí kapsy přes pandu (slovní hra) — na lavičce • svědci",
           "nextId": "scene_08_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Porovnat, co je napsáno přes slova (slovní hra) — na lavičce • svědci",
           "nextId": "scene_08_cedule"
         }
       ]
@@ -543,17 +543,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Sledovat, kam míří panda přes pandu (slovní hra) — na lavičce • panda",
           "nextId": "scene_08_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (slovní hra) — na lavičce • panda",
           "nextId": "scene_08_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (slovní hra) — na lavičce • panda",
           "nextId": "scene_08_drby"
         }
       ]
@@ -571,17 +571,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Zkontrolovat nápis přes slova (logika) — u nástěnky • slova",
           "nextId": "scene_09_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (logika) — u nástěnky • slova",
           "nextId": "scene_09_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (logika) — u nástěnky • slova",
           "nextId": "scene_09_bambus"
         }
       ]
@@ -599,17 +599,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zjistit, kdo co viděl přes svědky (logika) — u nástěnky • svědci",
           "nextId": "scene_09_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (logika) — u nástěnky • svědci",
           "nextId": "scene_09_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Zkontrolovat nápis přes slova (logika) — u nástěnky • svědci",
           "nextId": "scene_09_cedule"
         }
       ]
@@ -627,17 +627,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Udělat pandí kontrolu přes pandu (logika) — u nástěnky • panda",
           "nextId": "scene_09_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Porovnat, co je napsáno přes slova (logika) — u nástěnky • panda",
           "nextId": "scene_09_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (logika) — u nástěnky • panda",
           "nextId": "scene_09_drby"
         }
       ]
@@ -655,17 +655,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Přečíst si drobnou poznámku přes slova (počty) — u krabičky • slova",
           "nextId": "scene_10_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (počty) — u krabičky • slova",
           "nextId": "scene_10_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Prověřit pandí kapsy přes pandu (počty) — u krabičky • slova",
           "nextId": "scene_10_bambus"
         }
       ]
@@ -683,17 +683,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zjistit, kdo co viděl přes svědky (počty) — u krabičky • svědci",
           "nextId": "scene_10_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (počty) — u krabičky • svědci",
           "nextId": "scene_10_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (počty) — u krabičky • svědci",
           "nextId": "scene_10_cedule"
         }
       ]
@@ -711,17 +711,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (počty) — u krabičky • panda",
           "nextId": "scene_10_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (počty) — u krabičky • panda",
           "nextId": "scene_10_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (počty) — u krabičky • panda",
           "nextId": "scene_10_drby"
         }
       ]
@@ -739,17 +739,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Zkontrolovat nápis přes slova (čeština) — u sovy • slova",
           "nextId": "scene_11_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Získat drb nenápadnou otázkou přes svědky (čeština) — u sovy • slova",
           "nextId": "scene_11_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Prověřit pandí kapsy přes pandu (čeština) — u sovy • slova",
           "nextId": "scene_11_bambus"
         }
       ]
@@ -767,17 +767,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Vyslechnout papouška přes svědky (čeština) — u sovy • svědci",
           "nextId": "scene_11_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Prověřit pandí kapsy přes pandu (čeština) — u sovy • svědci",
           "nextId": "scene_11_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Přečíst si drobnou poznámku přes slova (čeština) — u sovy • svědci",
           "nextId": "scene_11_cedule"
         }
       ]
@@ -795,17 +795,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Jít po stopě bambusu přes pandu (čeština) — u sovy • panda",
           "nextId": "scene_11_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Přečíst si drobnou poznámku přes slova (čeština) — u sovy • panda",
           "nextId": "scene_11_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyslechnout papouška přes svědky (čeština) — u sovy • panda",
           "nextId": "scene_11_drby"
         }
       ]
@@ -823,17 +823,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Zkontrolovat nápis přes slova (AJ) — u seznamu ztrát • slova",
           "nextId": "scene_12_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (AJ) — u seznamu ztrát • slova",
           "nextId": "scene_12_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Udělat pandí kontrolu přes pandu (AJ) — u seznamu ztrát • slova",
           "nextId": "scene_12_bambus"
         }
       ]
@@ -851,17 +851,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Vyptat se dětí na hřišti přes svědky (AJ) — u seznamu ztrát • svědci",
           "nextId": "scene_12_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (AJ) — u seznamu ztrát • svědci",
           "nextId": "scene_12_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Zkontrolovat nápis přes slova (AJ) — u seznamu ztrát • svědci",
           "nextId": "scene_12_cedule"
         }
       ]
@@ -879,17 +879,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Sledovat, kam míří panda přes pandu (AJ) — u seznamu ztrát • panda",
           "nextId": "scene_12_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Zkontrolovat nápis přes slova (AJ) — u seznamu ztrát • panda",
           "nextId": "scene_12_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (AJ) — u seznamu ztrát • panda",
           "nextId": "scene_12_drby"
         }
       ]
@@ -907,17 +907,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Zkontrolovat nápis přes slova (počty) — u mapy • slova",
           "nextId": "scene_13_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (počty) — u mapy • slova",
           "nextId": "scene_13_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (počty) — u mapy • slova",
           "nextId": "scene_13_bambus"
         }
       ]
@@ -935,17 +935,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zjistit, kdo co viděl přes svědky (počty) — u mapy • svědci",
           "nextId": "scene_13_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (počty) — u mapy • svědci",
           "nextId": "scene_13_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Přečíst si drobnou poznámku přes slova (počty) — u mapy • svědci",
           "nextId": "scene_13_cedule"
         }
       ]
@@ -963,17 +963,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Prověřit pandí kapsy přes pandu (počty) — u mapy • panda",
           "nextId": "scene_13_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Zkontrolovat nápis přes slova (počty) — u mapy • panda",
           "nextId": "scene_13_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (počty) — u mapy • panda",
           "nextId": "scene_13_drby"
         }
       ]
@@ -991,17 +991,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Porovnat, co je napsáno přes slova (slovní hra) — u slovních hříček • slova",
           "nextId": "scene_14_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (slovní hra) — u slovních hříček • slova",
           "nextId": "scene_14_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Udělat pandí kontrolu přes pandu (slovní hra) — u slovních hříček • slova",
           "nextId": "scene_14_bambus"
         }
       ]
@@ -1019,17 +1019,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zeptat se svědků přes svědky (slovní hra) — u slovních hříček • svědci",
           "nextId": "scene_14_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (slovní hra) — u slovních hříček • svědci",
           "nextId": "scene_14_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Přečíst si drobnou poznámku přes slova (slovní hra) — u slovních hříček • svědci",
           "nextId": "scene_14_cedule"
         }
       ]
@@ -1047,17 +1047,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Prověřit pandí kapsy přes pandu (slovní hra) — u slovních hříček • panda",
           "nextId": "scene_14_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Zkontrolovat nápis přes slova (slovní hra) — u slovních hříček • panda",
           "nextId": "scene_14_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (slovní hra) — u slovních hříček • panda",
           "nextId": "scene_14_drby"
         }
       ]
@@ -1075,17 +1075,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Zkontrolovat nápis přes slova (čtení) — u knihovních pravidel • slova",
           "nextId": "scene_15_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (čtení) — u knihovních pravidel • slova",
           "nextId": "scene_15_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (čtení) — u knihovních pravidel • slova",
           "nextId": "scene_15_bambus"
         }
       ]
@@ -1103,17 +1103,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zjistit, kdo co viděl přes svědky (čtení) — u knihovních pravidel • svědci",
           "nextId": "scene_15_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (čtení) — u knihovních pravidel • svědci",
           "nextId": "scene_15_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Zkontrolovat nápis přes slova (čtení) — u knihovních pravidel • svědci",
           "nextId": "scene_15_cedule"
         }
       ]
@@ -1131,17 +1131,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Udělat pandí kontrolu přes pandu (čtení) — u knihovních pravidel • panda",
           "nextId": "scene_15_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (čtení) — u knihovních pravidel • panda",
           "nextId": "scene_15_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyslechnout papouška přes svědky (čtení) — u knihovních pravidel • panda",
           "nextId": "scene_15_drby"
         }
       ]
@@ -1159,17 +1159,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Zkontrolovat nápis přes slova (čeština) — u lyží • slova",
           "nextId": "scene_16_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (čeština) — u lyží • slova",
           "nextId": "scene_16_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (čeština) — u lyží • slova",
           "nextId": "scene_16_bambus"
         }
       ]
@@ -1187,17 +1187,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zjistit, kdo co viděl přes svědky (čeština) — u lyží • svědci",
           "nextId": "scene_16_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (čeština) — u lyží • svědci",
           "nextId": "scene_16_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Hledat pravopisnou stopu přes slova (čeština) — u lyží • svědci",
           "nextId": "scene_16_cedule"
         }
       ]
@@ -1215,17 +1215,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Udělat pandí kontrolu přes pandu (čeština) — u lyží • panda",
           "nextId": "scene_16_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Hledat pravopisnou stopu přes slova (čeština) — u lyží • panda",
           "nextId": "scene_16_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyslechnout papouška přes svědky (čeština) — u lyží • panda",
           "nextId": "scene_16_drby"
         }
       ]
@@ -1243,17 +1243,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Hledat pravopisnou stopu přes slova (počty) — u bambusového počitadla • slova",
           "nextId": "scene_17_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (počty) — u bambusového počitadla • slova",
           "nextId": "scene_17_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (počty) — u bambusového počitadla • slova",
           "nextId": "scene_17_bambus"
         }
       ]
@@ -1271,17 +1271,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zeptat se svědků přes svědky (počty) — u bambusového počitadla • svědci",
           "nextId": "scene_17_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (počty) — u bambusového počitadla • svědci",
           "nextId": "scene_17_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Hledat pravopisnou stopu přes slova (počty) — u bambusového počitadla • svědci",
           "nextId": "scene_17_cedule"
         }
       ]
@@ -1299,17 +1299,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Sledovat, kam míří panda přes pandu (počty) — u bambusového počitadla • panda",
           "nextId": "scene_17_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Porovnat, co je napsáno přes slova (počty) — u bambusového počitadla • panda",
           "nextId": "scene_17_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (počty) — u bambusového počitadla • panda",
           "nextId": "scene_17_drby"
         }
       ]
@@ -1327,17 +1327,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Hledat pravopisnou stopu přes slova (AJ) — u pozdravu • slova",
           "nextId": "scene_18_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (AJ) — u pozdravu • slova",
           "nextId": "scene_18_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Udělat pandí kontrolu přes pandu (AJ) — u pozdravu • slova",
           "nextId": "scene_18_bambus"
         }
       ]
@@ -1355,17 +1355,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Vyptat se dětí na hřišti přes svědky (AJ) — u pozdravu • svědci",
           "nextId": "scene_18_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Jít po stopě bambusu přes pandu (AJ) — u pozdravu • svědci",
           "nextId": "scene_18_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (AJ) — u pozdravu • svědci",
           "nextId": "scene_18_cedule"
         }
       ]
@@ -1383,17 +1383,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Jít po stopě bambusu přes pandu (AJ) — u pozdravu • panda",
           "nextId": "scene_18_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Porovnat, co je napsáno přes slova (AJ) — u pozdravu • panda",
           "nextId": "scene_18_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (AJ) — u pozdravu • panda",
           "nextId": "scene_18_drby"
         }
       ]
@@ -1411,17 +1411,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Porovnat, co je napsáno přes slova (logika) — u podezřelých • slova",
           "nextId": "scene_19_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (logika) — u podezřelých • slova",
           "nextId": "scene_19_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Prověřit pandí kapsy přes pandu (logika) — u podezřelých • slova",
           "nextId": "scene_19_bambus"
         }
       ]
@@ -1439,17 +1439,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Vyptat se dětí na hřišti přes svědky (logika) — u podezřelých • svědci",
           "nextId": "scene_19_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Jít po stopě bambusu přes pandu (logika) — u podezřelých • svědci",
           "nextId": "scene_19_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (logika) — u podezřelých • svědci",
           "nextId": "scene_19_cedule"
         }
       ]
@@ -1467,17 +1467,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Jít po stopě bambusu přes pandu (logika) — u podezřelých • panda",
           "nextId": "scene_19_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (logika) — u podezřelých • panda",
           "nextId": "scene_19_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (logika) — u podezřelých • panda",
           "nextId": "scene_19_drby"
         }
       ]
@@ -1495,17 +1495,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Zkontrolovat nápis přes slova (počty) — u zámku • slova",
           "nextId": "scene_20_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zeptat se svědků přes svědky (počty) — u zámku • slova",
           "nextId": "scene_20_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Prověřit pandí kapsy přes pandu (počty) — u zámku • slova",
           "nextId": "scene_20_bambus"
         }
       ]
@@ -1523,17 +1523,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Získat drb nenápadnou otázkou přes svědky (počty) — u zámku • svědci",
           "nextId": "scene_20_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Jít po stopě bambusu přes pandu (počty) — u zámku • svědci",
           "nextId": "scene_20_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Přečíst si drobnou poznámku přes slova (počty) — u zámku • svědci",
           "nextId": "scene_20_cedule"
         }
       ]
@@ -1551,17 +1551,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Prověřit pandí kapsy přes pandu (počty) — u zámku • panda",
           "nextId": "scene_20_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Hledat pravopisnou stopu přes slova (počty) — u zámku • panda",
           "nextId": "scene_20_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyslechnout papouška přes svědky (počty) — u zámku • panda",
           "nextId": "scene_20_drby"
         }
       ]
@@ -1579,17 +1579,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Hledat pravopisnou stopu přes slova (čeština) — u opravné cedule • slova",
           "nextId": "scene_21_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (čeština) — u opravné cedule • slova",
           "nextId": "scene_21_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (čeština) — u opravné cedule • slova",
           "nextId": "scene_21_bambus"
         }
       ]
@@ -1607,17 +1607,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zjistit, kdo co viděl přes svědky (čeština) — u opravné cedule • svědci",
           "nextId": "scene_21_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Jít po stopě bambusu přes pandu (čeština) — u opravné cedule • svědci",
           "nextId": "scene_21_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Opravit podezřelé slovo přes slova (čeština) — u opravné cedule • svědci",
           "nextId": "scene_21_cedule"
         }
       ]
@@ -1635,17 +1635,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Prověřit pandí kapsy přes pandu (čeština) — u opravné cedule • panda",
           "nextId": "scene_21_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Porovnat, co je napsáno přes slova (čeština) — u opravné cedule • panda",
           "nextId": "scene_21_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (čeština) — u opravné cedule • panda",
           "nextId": "scene_21_drby"
         }
       ]
@@ -1663,17 +1663,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Porovnat, co je napsáno přes slova (AJ) — u anglické věty • slova",
           "nextId": "scene_22_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Získat drb nenápadnou otázkou přes svědky (AJ) — u anglické věty • slova",
           "nextId": "scene_22_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Sledovat, kam míří panda přes pandu (AJ) — u anglické věty • slova",
           "nextId": "scene_22_bambus"
         }
       ]
@@ -1691,17 +1691,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Vyptat se dětí na hřišti přes svědky (AJ) — u anglické věty • svědci",
           "nextId": "scene_22_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Prověřit pandí kapsy přes pandu (AJ) — u anglické věty • svědci",
           "nextId": "scene_22_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Hledat pravopisnou stopu přes slova (AJ) — u anglické věty • svědci",
           "nextId": "scene_22_cedule"
         }
       ]
@@ -1719,17 +1719,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (AJ) — u anglické věty • panda",
           "nextId": "scene_22_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Porovnat, co je napsáno přes slova (AJ) — u anglické věty • panda",
           "nextId": "scene_22_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (AJ) — u anglické věty • panda",
           "nextId": "scene_22_drby"
         }
       ]
@@ -1747,17 +1747,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Opravit podezřelé slovo přes slova (čtení) — před finále • slova",
           "nextId": "scene_23_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyslechnout papouška přes svědky (čtení) — před finále • slova",
           "nextId": "scene_23_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Udělat pandí kontrolu přes pandu (čtení) — před finále • slova",
           "nextId": "scene_23_bambus"
         }
       ]
@@ -1775,17 +1775,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Zeptat se svědků přes svědky (čtení) — před finále • svědci",
           "nextId": "scene_23_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Prověřit pandí kapsy přes pandu (čtení) — před finále • svědci",
           "nextId": "scene_23_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Hledat pravopisnou stopu přes slova (čtení) — před finále • svědci",
           "nextId": "scene_23_cedule"
         }
       ]
@@ -1803,17 +1803,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Udělat pandí kontrolu přes pandu (čtení) — před finále • panda",
           "nextId": "scene_23_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Přečíst si drobnou poznámku přes slova (čtení) — před finále • panda",
           "nextId": "scene_23_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Zjistit, kdo co viděl přes svědky (čtení) — před finále • panda",
           "nextId": "scene_23_drby"
         }
       ]
@@ -1831,17 +1831,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se slov a cedule.",
+          "text": "Zkontrolovat nápis přes slova (logika) — u tří zámků • slova",
           "nextId": "scene_24_end_cedule"
         },
         {
           "key": "B",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (logika) — u tří zámků • slova",
           "nextId": "scene_24_end_drby"
         },
         {
           "key": "C",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Zkontrolovat pandí batoh přes pandu (logika) — u tří zámků • slova",
           "nextId": "scene_24_end_bambus"
         }
       ]
@@ -1859,17 +1859,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se svědků a drbů.",
+          "text": "Vyptat se dětí na hřišti přes svědky (logika) — u tří zámků • svědci",
           "nextId": "scene_24_end_drby"
         },
         {
           "key": "B",
-          "text": "Prověřit pandí „náhody“.",
+          "text": "Jít po stopě bambusu přes pandu (logika) — u tří zámků • svědci",
           "nextId": "scene_24_end_bambus"
         },
         {
           "key": "C",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Porovnat, co je napsáno přes slova (logika) — u tří zámků • svědci",
           "nextId": "scene_24_end_cedule"
         }
       ]
@@ -1887,17 +1887,17 @@
       "choices": [
         {
           "key": "A",
-          "text": "Držet se pandích „náhod“.",
+          "text": "Prověřit pandí kapsy přes pandu (logika) — u tří zámků • panda",
           "nextId": "scene_24_end_bambus"
         },
         {
           "key": "B",
-          "text": "Vrátit se ke slovům a ceduli.",
+          "text": "Zkontrolovat nápis přes slova (logika) — u tří zámků • panda",
           "nextId": "scene_24_end_cedule"
         },
         {
           "key": "C",
-          "text": "Jít po svědcích a drbech.",
+          "text": "Vyptat se dětí na hřišti přes svědky (logika) — u tří zámků • panda",
           "nextId": "scene_24_end_drby"
         }
       ]
