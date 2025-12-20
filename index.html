@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Panda na škole v přírodě</title>
+
+    <link rel="stylesheet" href="./laura.css" />
+  </head>
+
+  <body>
+    <main class="app" role="main">
+      <header class="topbar">
+        <button id="back-btn" class="icon-btn" type="button" disabled aria-label="Zpět">
+          ←
+          <span class="btn-text">Zpět</span>
+        </button>
+
+        <div class="brand" aria-label="Panda hra">
+          <div class="brand-badge" aria-hidden="true">🐼</div>
+          <div class="brand-text">
+            <div class="brand-kicker">Interaktivní příběh</div>
+            <h1 id="scene-title" class="brand-title"></h1>
+          </div>
+        </div>
+
+        <button id="restart-btn" class="icon-btn" type="button" aria-label="Restart">
+          ↻
+          <span class="btn-text">Restart</span>
+        </button>
+      </header>
+
+      <section class="scene">
+        <p id="scene-text" class="scene-text"></p>
+        <div id="scene-task" class="task" style="display:none;"></div>
+      </section>
+
+      <section id="choices" class="choices" aria-label="Volby"></section>
+
+      <!-- Restart dialog (custom) -->
+      <div id="restart-modal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-card" role="document">
+          <h2 class="modal-title">opravdu chceš odejít</h2>
+          <p class="modal-subtitle">Vrátíš se na začátek příběhu.</p>
+          <div class="modal-actions">
+            <button id="restart-confirm" class="btn danger" type="button">ano, chci odejít</button>
+            <button id="restart-cancel" class="btn secondary" type="button">ne, chci zůstat</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

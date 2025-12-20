@@ -1,0 +1,1942 @@
+{
+  "meta": {
+    "gameId": "laura_panda_klic_compact_dag_v1",
+    "title": "Panda na škole v přírodě: Ztracený knihovní klíč",
+    "language": "cs",
+    "createdAt": "2025-12-18",
+    "structure": {
+      "startId": "scene_1_start",
+      "intermediateLevels": {
+        "min": 2,
+        "max": 23
+      },
+      "endLevel": 24,
+      "tracks": [
+        "cedule",
+        "drby",
+        "bambus"
+      ],
+      "choicesPerScene": 3,
+      "acyclic": true,
+      "levelStep": 1,
+      "endGroupId": "scene_24_end"
+    },
+    "note": "Pozn.: Úrovně 2–23 tvoří 22 meziscén na cestě (1→24). Pokud engine vyžaduje doslova 23 meziscén, posuň end na úroveň 25."
+  },
+  "startId": "scene_1_start",
+  "endGroupId": "scene_24_end",
+  "scenes": {
+    "scene_1_start": {
+      "id": "scene_1_start",
+      "level": 1,
+      "type": "start",
+      "title": "Příjezd a detektivní panda",
+      "text": "Škola v přírodě začíná. U brány visí cedule o knihovně. Panda velká si nasadí neviditelné detektivní brýle: „Laura, případ století. A žádné strašení, jen fakta a bambus.“",
+      "task": {
+        "type": "fun",
+        "prompt": "Vymysli detektivní přezdívku (např. Agentka Bambus)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Jít rovnou do knihovny (stopa slov).",
+          "nextId": "scene_02_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Na hřiště pro drby (stopa svědků).",
+          "nextId": "scene_02_drby"
+        },
+        {
+          "key": "C",
+          "text": "Zkontrolovat pandu a vybavení (stopa bambusu).",
+          "nextId": "scene_02_bambus"
+        }
+      ]
+    },
+    "scene_02_cedule": {
+      "id": "scene_02_cedule",
+      "level": 2,
+      "type": "scene",
+      "title": "Rozjezd případu",
+      "text": "Stopa vede přes slova a cedule. Na bráně je cedule s podezřelými chybami a panda ji bere osobně. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "fun",
+        "prompt": "Řekni 1 vymyšlený „panda zvuk“."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_03_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_03_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_03_bambus"
+        }
+      ]
+    },
+    "scene_02_drby": {
+      "id": "scene_02_drby",
+      "level": 2,
+      "type": "scene",
+      "title": "Rozjezd případu",
+      "text": "Stopa vede přes svědky, drby a papouška. Na bráně je cedule s podezřelými chybami a panda ji bere osobně. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "fun",
+        "prompt": "Řekni 1 vymyšlený „panda zvuk“."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_03_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_03_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_03_cedule"
+        }
+      ]
+    },
+    "scene_02_bambus": {
+      "id": "scene_02_bambus",
+      "level": 2,
+      "type": "scene",
+      "title": "Rozjezd případu",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na bráně je cedule s podezřelými chybami a panda ji bere osobně. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "fun",
+        "prompt": "Řekni 1 vymyšlený „panda zvuk“."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_03_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_03_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_03_drby"
+        }
+      ]
+    },
+    "scene_03_cedule": {
+      "id": "scene_03_cedule",
+      "level": 3,
+      "type": "scene",
+      "title": "Stopy ve vzduchu",
+      "text": "Stopa vede přes slova a cedule. Ve školní chodbičce někdo šeptá, že klíč viděl „někdo, kdo se tvářil jako zvíře“. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Řekni 3 vyjmenovaná slova po B."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_04_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_04_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_04_bambus"
+        }
+      ]
+    },
+    "scene_03_drby": {
+      "id": "scene_03_drby",
+      "level": 3,
+      "type": "scene",
+      "title": "Stopy ve vzduchu",
+      "text": "Stopa vede přes svědky, drby a papouška. Ve školní chodbičce někdo šeptá, že klíč viděl „někdo, kdo se tvářil jako zvíře“. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Řekni 3 vyjmenovaná slova po B."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_04_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_04_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_04_cedule"
+        }
+      ]
+    },
+    "scene_03_bambus": {
+      "id": "scene_03_bambus",
+      "level": 3,
+      "type": "scene",
+      "title": "Stopy ve vzduchu",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Ve školní chodbičce někdo šeptá, že klíč viděl „někdo, kdo se tvářil jako zvíře“. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Řekni 3 vyjmenovaná slova po B."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_04_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_04_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_04_drby"
+        }
+      ]
+    },
+    "scene_04_cedule": {
+      "id": "scene_04_cedule",
+      "level": 4,
+      "type": "scene",
+      "title": "Jídelna a motiv",
+      "text": "Stopa vede přes slova a cedule. V jídelně se řeší, kdo měl důvod otevřít tajnou poličku (komiksy!). Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 24 − 9 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_05_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_05_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_05_bambus"
+        }
+      ]
+    },
+    "scene_04_drby": {
+      "id": "scene_04_drby",
+      "level": 4,
+      "type": "scene",
+      "title": "Jídelna a motiv",
+      "text": "Stopa vede přes svědky, drby a papouška. V jídelně se řeší, kdo měl důvod otevřít tajnou poličku (komiksy!). Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 24 − 9 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_05_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_05_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_05_cedule"
+        }
+      ]
+    },
+    "scene_04_bambus": {
+      "id": "scene_04_bambus",
+      "level": 4,
+      "type": "scene",
+      "title": "Jídelna a motiv",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. V jídelně se řeší, kdo měl důvod otevřít tajnou poličku (komiksy!). Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 24 − 9 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_05_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_05_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_05_drby"
+        }
+      ]
+    },
+    "scene_05_cedule": {
+      "id": "scene_05_cedule",
+      "level": 5,
+      "type": "scene",
+      "title": "Králíkův slovníček",
+      "text": "Stopa vede přes slova a cedule. Učebna angličtiny má kartičky se slovy, které se můžou hodit jako šifra. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "english",
+        "prompt": "Přelož: library, key, clue."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_06_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_06_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_06_bambus"
+        }
+      ]
+    },
+    "scene_05_drby": {
+      "id": "scene_05_drby",
+      "level": 5,
+      "type": "scene",
+      "title": "Králíkův slovníček",
+      "text": "Stopa vede přes svědky, drby a papouška. Učebna angličtiny má kartičky se slovy, které se můžou hodit jako šifra. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "english",
+        "prompt": "Přelož: library, key, clue."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_06_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_06_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_06_cedule"
+        }
+      ]
+    },
+    "scene_05_bambus": {
+      "id": "scene_05_bambus",
+      "level": 5,
+      "type": "scene",
+      "title": "Králíkův slovníček",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Učebna angličtiny má kartičky se slovy, které se můžou hodit jako šifra. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "english",
+        "prompt": "Přelož: library, key, clue."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_06_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_06_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_06_drby"
+        }
+      ]
+    },
+    "scene_06_cedule": {
+      "id": "scene_06_cedule",
+      "level": 6,
+      "type": "scene",
+      "title": "Knihovní hlášení",
+      "text": "Stopa vede přes slova a cedule. V knihovně veverka chce slyšet krátké detektivní hlášení, než vás pustí dál. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "reading",
+        "prompt": "Přečti nahlas 2–3 věty jako detektivní hlášení."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_07_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_07_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_07_bambus"
+        }
+      ]
+    },
+    "scene_06_drby": {
+      "id": "scene_06_drby",
+      "level": 6,
+      "type": "scene",
+      "title": "Knihovní hlášení",
+      "text": "Stopa vede přes svědky, drby a papouška. V knihovně veverka chce slyšet krátké detektivní hlášení, než vás pustí dál. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "reading",
+        "prompt": "Přečti nahlas 2–3 věty jako detektivní hlášení."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_07_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_07_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_07_cedule"
+        }
+      ]
+    },
+    "scene_06_bambus": {
+      "id": "scene_06_bambus",
+      "level": 6,
+      "type": "scene",
+      "title": "Knihovní hlášení",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. V knihovně veverka chce slyšet krátké detektivní hlášení, než vás pustí dál. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "reading",
+        "prompt": "Přečti nahlas 2–3 věty jako detektivní hlášení."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_07_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_07_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_07_drby"
+        }
+      ]
+    },
+    "scene_07_cedule": {
+      "id": "scene_07_cedule",
+      "level": 7,
+      "type": "scene",
+      "title": "Rýmová laboratoř",
+      "text": "Stopa vede přes slova a cedule. Na stole je sešit „Rýmy pro krizové situace“. Panda tvrdí, že je to důkaz. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "wordplay",
+        "prompt": "Vymysli 3 slova, která se rýmují s „panda“ (klidně blbiny)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_08_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_08_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_08_bambus"
+        }
+      ]
+    },
+    "scene_07_drby": {
+      "id": "scene_07_drby",
+      "level": 7,
+      "type": "scene",
+      "title": "Rýmová laboratoř",
+      "text": "Stopa vede přes svědky, drby a papouška. Na stole je sešit „Rýmy pro krizové situace“. Panda tvrdí, že je to důkaz. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "wordplay",
+        "prompt": "Vymysli 3 slova, která se rýmují s „panda“ (klidně blbiny)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_08_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_08_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_08_cedule"
+        }
+      ]
+    },
+    "scene_07_bambus": {
+      "id": "scene_07_bambus",
+      "level": 7,
+      "type": "scene",
+      "title": "Rýmová laboratoř",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na stole je sešit „Rýmy pro krizové situace“. Panda tvrdí, že je to důkaz. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "wordplay",
+        "prompt": "Vymysli 3 slova, která se rýmují s „panda“ (klidně blbiny)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_08_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_08_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_08_drby"
+        }
+      ]
+    },
+    "scene_08_cedule": {
+      "id": "scene_08_cedule",
+      "level": 8,
+      "type": "scene",
+      "title": "Co je stopa?",
+      "text": "Stopa vede přes slova a cedule. Před vámi jsou tři typy stop: slovo, číslo, svědek. Musíte vybrat, čemu věřit. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "logic",
+        "prompt": "Řekni, co je lepší stopa: slovo, číslo, nebo svědek – a proč (1 věta)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_09_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_09_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_09_bambus"
+        }
+      ]
+    },
+    "scene_08_drby": {
+      "id": "scene_08_drby",
+      "level": 8,
+      "type": "scene",
+      "title": "Co je stopa?",
+      "text": "Stopa vede přes svědky, drby a papouška. Před vámi jsou tři typy stop: slovo, číslo, svědek. Musíte vybrat, čemu věřit. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "logic",
+        "prompt": "Řekni, co je lepší stopa: slovo, číslo, nebo svědek – a proč (1 věta)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_09_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_09_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_09_cedule"
+        }
+      ]
+    },
+    "scene_08_bambus": {
+      "id": "scene_08_bambus",
+      "level": 8,
+      "type": "scene",
+      "title": "Co je stopa?",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Před vámi jsou tři typy stop: slovo, číslo, svědek. Musíte vybrat, čemu věřit. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "logic",
+        "prompt": "Řekni, co je lepší stopa: slovo, číslo, nebo svědek – a proč (1 věta)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_09_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_09_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_09_drby"
+        }
+      ]
+    },
+    "scene_09_cedule": {
+      "id": "scene_09_cedule",
+      "level": 9,
+      "type": "scene",
+      "title": "Kódovací vydra",
+      "text": "Stopa vede přes slova a cedule. Vydra matematik vytáhne krabičku se zámkem a tváří se důležitě. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 50 − 17 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_10_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_10_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_10_bambus"
+        }
+      ]
+    },
+    "scene_09_drby": {
+      "id": "scene_09_drby",
+      "level": 9,
+      "type": "scene",
+      "title": "Kódovací vydra",
+      "text": "Stopa vede přes svědky, drby a papouška. Vydra matematik vytáhne krabičku se zámkem a tváří se důležitě. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 50 − 17 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_10_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_10_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_10_cedule"
+        }
+      ]
+    },
+    "scene_09_bambus": {
+      "id": "scene_09_bambus",
+      "level": 9,
+      "type": "scene",
+      "title": "Kódovací vydra",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Vydra matematik vytáhne krabičku se zámkem a tváří se důležitě. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 50 − 17 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_10_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_10_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_10_drby"
+        }
+      ]
+    },
+    "scene_10_cedule": {
+      "id": "scene_10_cedule",
+      "level": 10,
+      "type": "scene",
+      "title": "Pravopisná past",
+      "text": "Stopa vede přes slova a cedule. Sova učitelka ukáže větu, která může být klíčem k pravdě (a k i/y). Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Doplň: Panda __la v knihovně. (byla/bílá) a proč."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_11_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_11_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_11_bambus"
+        }
+      ]
+    },
+    "scene_10_drby": {
+      "id": "scene_10_drby",
+      "level": 10,
+      "type": "scene",
+      "title": "Pravopisná past",
+      "text": "Stopa vede přes svědky, drby a papouška. Sova učitelka ukáže větu, která může být klíčem k pravdě (a k i/y). Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Doplň: Panda __la v knihovně. (byla/bílá) a proč."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_11_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_11_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_11_cedule"
+        }
+      ]
+    },
+    "scene_10_bambus": {
+      "id": "scene_10_bambus",
+      "level": 10,
+      "type": "scene",
+      "title": "Pravopisná past",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Sova učitelka ukáže větu, která může být klíčem k pravdě (a k i/y). Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Doplň: Panda __la v knihovně. (byla/bílá) a proč."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_11_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_11_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_11_drby"
+        }
+      ]
+    },
+    "scene_11_cedule": {
+      "id": "scene_11_cedule",
+      "level": 11,
+      "type": "scene",
+      "title": "Hledání slov",
+      "text": "Stopa vede přes slova a cedule. Na nástěnce je seznam věcí, které se v knihovně ztratily dřív (včetně ponožky). Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "english",
+        "prompt": "Řekni anglicky 5 věcí, které vidíš (např. book, pen…)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_12_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_12_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_12_bambus"
+        }
+      ]
+    },
+    "scene_11_drby": {
+      "id": "scene_11_drby",
+      "level": 11,
+      "type": "scene",
+      "title": "Hledání slov",
+      "text": "Stopa vede přes svědky, drby a papouška. Na nástěnce je seznam věcí, které se v knihovně ztratily dřív (včetně ponožky). Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "english",
+        "prompt": "Řekni anglicky 5 věcí, které vidíš (např. book, pen…)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_12_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_12_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_12_cedule"
+        }
+      ]
+    },
+    "scene_11_bambus": {
+      "id": "scene_11_bambus",
+      "level": 11,
+      "type": "scene",
+      "title": "Hledání slov",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na nástěnce je seznam věcí, které se v knihovně ztratily dřív (včetně ponožky). Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "english",
+        "prompt": "Řekni anglicky 5 věcí, které vidíš (např. book, pen…)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_12_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_12_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_12_drby"
+        }
+      ]
+    },
+    "scene_12_cedule": {
+      "id": "scene_12_cedule",
+      "level": 12,
+      "type": "scene",
+      "title": "Malé souhlásky",
+      "text": "Stopa vede přes slova a cedule. Na mapě areálu jsou čísla u chatiček a někdo je přepsal tužkou. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: (9 + 8) = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_13_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_13_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_13_bambus"
+        }
+      ]
+    },
+    "scene_12_drby": {
+      "id": "scene_12_drby",
+      "level": 12,
+      "type": "scene",
+      "title": "Malé souhlásky",
+      "text": "Stopa vede přes svědky, drby a papouška. Na mapě areálu jsou čísla u chatiček a někdo je přepsal tužkou. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: (9 + 8) = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_13_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_13_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_13_cedule"
+        }
+      ]
+    },
+    "scene_12_bambus": {
+      "id": "scene_12_bambus",
+      "level": 12,
+      "type": "scene",
+      "title": "Malé souhlásky",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na mapě areálu jsou čísla u chatiček a někdo je přepsal tužkou. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: (9 + 8) = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_13_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_13_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_13_drby"
+        }
+      ]
+    },
+    "scene_13_cedule": {
+      "id": "scene_13_cedule",
+      "level": 13,
+      "type": "scene",
+      "title": "Detektivní slovní hříčky",
+      "text": "Stopa vede přes slova a cedule. Panda chce změnit slovo „panda“ na co nejvíc nesmyslů, prý to odhalí pachatele. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "wordplay",
+        "prompt": "Změň první písmeno ve slově PANDA (3×): panda→…"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_14_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_14_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_14_bambus"
+        }
+      ]
+    },
+    "scene_13_drby": {
+      "id": "scene_13_drby",
+      "level": 13,
+      "type": "scene",
+      "title": "Detektivní slovní hříčky",
+      "text": "Stopa vede přes svědky, drby a papouška. Panda chce změnit slovo „panda“ na co nejvíc nesmyslů, prý to odhalí pachatele. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "wordplay",
+        "prompt": "Změň první písmeno ve slově PANDA (3×): panda→…"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_14_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_14_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_14_cedule"
+        }
+      ]
+    },
+    "scene_13_bambus": {
+      "id": "scene_13_bambus",
+      "level": 13,
+      "type": "scene",
+      "title": "Detektivní slovní hříčky",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Panda chce změnit slovo „panda“ na co nejvíc nesmyslů, prý to odhalí pachatele. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "wordplay",
+        "prompt": "Změň první písmeno ve slově PANDA (3×): panda→…"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_14_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_14_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_14_drby"
+        }
+      ]
+    },
+    "scene_14_cedule": {
+      "id": "scene_14_cedule",
+      "level": 14,
+      "type": "scene",
+      "title": "Detektivní zákoník",
+      "text": "Stopa vede přes slova a cedule. Veverka vytáhne knížku pravidel knihovny. Je to vážnější než matematika. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "reading",
+        "prompt": "Přečti nahlas krátký „zákon detektivů“ (vymysli 2 věty)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_15_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_15_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_15_bambus"
+        }
+      ]
+    },
+    "scene_14_drby": {
+      "id": "scene_14_drby",
+      "level": 14,
+      "type": "scene",
+      "title": "Detektivní zákoník",
+      "text": "Stopa vede přes svědky, drby a papouška. Veverka vytáhne knížku pravidel knihovny. Je to vážnější než matematika. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "reading",
+        "prompt": "Přečti nahlas krátký „zákon detektivů“ (vymysli 2 věty)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_15_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_15_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_15_cedule"
+        }
+      ]
+    },
+    "scene_14_bambus": {
+      "id": "scene_14_bambus",
+      "level": 14,
+      "type": "scene",
+      "title": "Detektivní zákoník",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Veverka vytáhne knížku pravidel knihovny. Je to vážnější než matematika. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "reading",
+        "prompt": "Přečti nahlas krátký „zákon detektivů“ (vymysli 2 věty)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_15_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_15_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_15_drby"
+        }
+      ]
+    },
+    "scene_15_cedule": {
+      "id": "scene_15_cedule",
+      "level": 15,
+      "type": "scene",
+      "title": "Lyže a logika",
+      "text": "Stopa vede přes slova a cedule. Na lavičce leží lístek s vyjmenovanými slovy po L a někdo k němu přimaloval lyže. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Řekni 2 vyjmenovaná slova po L."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_16_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_16_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_16_bambus"
+        }
+      ]
+    },
+    "scene_15_drby": {
+      "id": "scene_15_drby",
+      "level": 15,
+      "type": "scene",
+      "title": "Lyže a logika",
+      "text": "Stopa vede přes svědky, drby a papouška. Na lavičce leží lístek s vyjmenovanými slovy po L a někdo k němu přimaloval lyže. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Řekni 2 vyjmenovaná slova po L."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_16_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_16_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_16_cedule"
+        }
+      ]
+    },
+    "scene_15_bambus": {
+      "id": "scene_15_bambus",
+      "level": 15,
+      "type": "scene",
+      "title": "Lyže a logika",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Na lavičce leží lístek s vyjmenovanými slovy po L a někdo k němu přimaloval lyže. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Řekni 2 vyjmenovaná slova po L."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_16_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_16_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_16_drby"
+        }
+      ]
+    },
+    "scene_16_cedule": {
+      "id": "scene_16_cedule",
+      "level": 16,
+      "type": "scene",
+      "title": "Bambusové počty",
+      "text": "Stopa vede přes slova a cedule. Před vámi je malý bambusový počítací přívěsek (ne, není to zbraň, jen počítadlo). Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 6 × 4 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_17_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_17_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_17_bambus"
+        }
+      ]
+    },
+    "scene_16_drby": {
+      "id": "scene_16_drby",
+      "level": 16,
+      "type": "scene",
+      "title": "Bambusové počty",
+      "text": "Stopa vede přes svědky, drby a papouška. Před vámi je malý bambusový počítací přívěsek (ne, není to zbraň, jen počítadlo). Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 6 × 4 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_17_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_17_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_17_cedule"
+        }
+      ]
+    },
+    "scene_16_bambus": {
+      "id": "scene_16_bambus",
+      "level": 16,
+      "type": "scene",
+      "title": "Bambusové počty",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Před vámi je malý bambusový počítací přívěsek (ne, není to zbraň, jen počítadlo). Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 6 × 4 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_17_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_17_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_17_drby"
+        }
+      ]
+    },
+    "scene_17_cedule": {
+      "id": "scene_17_cedule",
+      "level": 17,
+      "type": "scene",
+      "title": "Pozdrav do světa",
+      "text": "Stopa vede přes slova a cedule. Králík angličtinář chce, abyste uměli říct, kdo jste a co máte rádi. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "english",
+        "prompt": "Řekni mini-dialog: “Hello, my name is …” + “I like …”."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_18_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_18_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_18_bambus"
+        }
+      ]
+    },
+    "scene_17_drby": {
+      "id": "scene_17_drby",
+      "level": 17,
+      "type": "scene",
+      "title": "Pozdrav do světa",
+      "text": "Stopa vede přes svědky, drby a papouška. Králík angličtinář chce, abyste uměli říct, kdo jste a co máte rádi. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "english",
+        "prompt": "Řekni mini-dialog: “Hello, my name is …” + “I like …”."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_18_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_18_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_18_cedule"
+        }
+      ]
+    },
+    "scene_17_bambus": {
+      "id": "scene_17_bambus",
+      "level": 17,
+      "type": "scene",
+      "title": "Pozdrav do světa",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Králík angličtinář chce, abyste uměli říct, kdo jste a co máte rádi. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "english",
+        "prompt": "Řekni mini-dialog: “Hello, my name is …” + “I like …”."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_18_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_18_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_18_drby"
+        }
+      ]
+    },
+    "scene_18_cedule": {
+      "id": "scene_18_cedule",
+      "level": 18,
+      "type": "scene",
+      "title": "Hlavní podezřelý",
+      "text": "Stopa vede přes slova a cedule. Je čas určit hlavního podezřelého… aspoň na jednu scénu, než to zas bude jinak. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "logic",
+        "prompt": "Vyber, kdo je nejpodezřelejší: veverka/papoušek/panda – a proč (1 věta)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_19_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_19_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_19_bambus"
+        }
+      ]
+    },
+    "scene_18_drby": {
+      "id": "scene_18_drby",
+      "level": 18,
+      "type": "scene",
+      "title": "Hlavní podezřelý",
+      "text": "Stopa vede přes svědky, drby a papouška. Je čas určit hlavního podezřelého… aspoň na jednu scénu, než to zas bude jinak. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "logic",
+        "prompt": "Vyber, kdo je nejpodezřelejší: veverka/papoušek/panda – a proč (1 věta)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_19_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_19_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_19_cedule"
+        }
+      ]
+    },
+    "scene_18_bambus": {
+      "id": "scene_18_bambus",
+      "level": 18,
+      "type": "scene",
+      "title": "Hlavní podezřelý",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Je čas určit hlavního podezřelého… aspoň na jednu scénu, než to zas bude jinak. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "logic",
+        "prompt": "Vyber, kdo je nejpodezřelejší: veverka/papoušek/panda – a proč (1 věta)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_19_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_19_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_19_drby"
+        }
+      ]
+    },
+    "scene_19_cedule": {
+      "id": "scene_19_cedule",
+      "level": 19,
+      "type": "scene",
+      "title": "Krabička se zámečkem",
+      "text": "Stopa vede přes slova a cedule. Krabička cvakne a něco v ní chrastí. Panda šeptá: „To může být klíč… nebo bonbon.“ Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 30 + 12 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_20_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_20_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_20_bambus"
+        }
+      ]
+    },
+    "scene_19_drby": {
+      "id": "scene_19_drby",
+      "level": 19,
+      "type": "scene",
+      "title": "Krabička se zámečkem",
+      "text": "Stopa vede přes svědky, drby a papouška. Krabička cvakne a něco v ní chrastí. Panda šeptá: „To může být klíč… nebo bonbon.“ Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 30 + 12 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_20_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_20_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_20_cedule"
+        }
+      ]
+    },
+    "scene_19_bambus": {
+      "id": "scene_19_bambus",
+      "level": 19,
+      "type": "scene",
+      "title": "Krabička se zámečkem",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Krabička cvakne a něco v ní chrastí. Panda šeptá: „To může být klíč… nebo bonbon.“ Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "math",
+        "prompt": "Spočítej: 30 + 12 = ?"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_20_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_20_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_20_drby"
+        }
+      ]
+    },
+    "scene_20_cedule": {
+      "id": "scene_20_cedule",
+      "level": 20,
+      "type": "scene",
+      "title": "Oprava cedule",
+      "text": "Stopa vede přes slova a cedule. U brány někdo zkusil ceduli „opravit“ a teď je ještě horší. To už je umění. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Najdi a oprav 1 chybu ve větě: „Vítáme vas v knihovňe.“"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_21_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_21_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_21_bambus"
+        }
+      ]
+    },
+    "scene_20_drby": {
+      "id": "scene_20_drby",
+      "level": 20,
+      "type": "scene",
+      "title": "Oprava cedule",
+      "text": "Stopa vede přes svědky, drby a papouška. U brány někdo zkusil ceduli „opravit“ a teď je ještě horší. To už je umění. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Najdi a oprav 1 chybu ve větě: „Vítáme vas v knihovňe.“"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_21_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_21_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_21_cedule"
+        }
+      ]
+    },
+    "scene_20_bambus": {
+      "id": "scene_20_bambus",
+      "level": 20,
+      "type": "scene",
+      "title": "Oprava cedule",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. U brány někdo zkusil ceduli „opravit“ a teď je ještě horší. To už je umění. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "czech",
+        "prompt": "Najdi a oprav 1 chybu ve větě: „Vítáme vas v knihovňe.“"
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_21_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_21_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_21_drby"
+        }
+      ]
+    },
+    "scene_21_cedule": {
+      "id": "scene_21_cedule",
+      "level": 21,
+      "type": "scene",
+      "title": "Poslední anglický klíč",
+      "text": "Stopa vede přes slova a cedule. Poslední karta je v angličtině. Pokud ji přečtete, otevře se poslední nápověda. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "english",
+        "prompt": "Doplň: “I like ____.” (1 slovo)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_22_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_22_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_22_bambus"
+        }
+      ]
+    },
+    "scene_21_drby": {
+      "id": "scene_21_drby",
+      "level": 21,
+      "type": "scene",
+      "title": "Poslední anglický klíč",
+      "text": "Stopa vede přes svědky, drby a papouška. Poslední karta je v angličtině. Pokud ji přečtete, otevře se poslední nápověda. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "english",
+        "prompt": "Doplň: “I like ____.” (1 slovo)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_22_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_22_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_22_cedule"
+        }
+      ]
+    },
+    "scene_21_bambus": {
+      "id": "scene_21_bambus",
+      "level": 21,
+      "type": "scene",
+      "title": "Poslední anglický klíč",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Poslední karta je v angličtině. Pokud ji přečtete, otevře se poslední nápověda. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "english",
+        "prompt": "Doplň: “I like ____.” (1 slovo)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_22_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_22_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_22_drby"
+        }
+      ]
+    },
+    "scene_22_cedule": {
+      "id": "scene_22_cedule",
+      "level": 22,
+      "type": "scene",
+      "title": "Tiché čtení před finále",
+      "text": "Stopa vede přes slova a cedule. Před finále je tichá chvilka: čtení nahlas, ať se detektivní mozek srovná. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "reading",
+        "prompt": "Přečti nahlas 1 odstavec z knížky (nebo vymysli)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_23_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_23_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_23_bambus"
+        }
+      ]
+    },
+    "scene_22_drby": {
+      "id": "scene_22_drby",
+      "level": 22,
+      "type": "scene",
+      "title": "Tiché čtení před finále",
+      "text": "Stopa vede přes svědky, drby a papouška. Před finále je tichá chvilka: čtení nahlas, ať se detektivní mozek srovná. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "reading",
+        "prompt": "Přečti nahlas 1 odstavec z knížky (nebo vymysli)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_23_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_23_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_23_cedule"
+        }
+      ]
+    },
+    "scene_22_bambus": {
+      "id": "scene_22_bambus",
+      "level": 22,
+      "type": "scene",
+      "title": "Tiché čtení před finále",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Před finále je tichá chvilka: čtení nahlas, ať se detektivní mozek srovná. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "reading",
+        "prompt": "Přečti nahlas 1 odstavec z knížky (nebo vymysli)."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_23_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_23_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_23_drby"
+        }
+      ]
+    },
+    "scene_23_cedule": {
+      "id": "scene_23_cedule",
+      "level": 23,
+      "type": "scene",
+      "title": "Tři zámky a poslední otázka",
+      "text": "Stopa vede přes slova a cedule. Stojíte před tajnou poličkou se třemi zámky. Teď už se rozhoduje. Panda: „Chyba v textu je jako drobek… vede k viníkovi.“",
+      "task": {
+        "type": "logic",
+        "prompt": "Řekni 1 otázku, kterou by položila panda-detektivka."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se slov a cedule.",
+          "nextId": "scene_24_end_cedule"
+        },
+        {
+          "key": "B",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_24_end_drby"
+        },
+        {
+          "key": "C",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_24_end_bambus"
+        }
+      ]
+    },
+    "scene_23_drby": {
+      "id": "scene_23_drby",
+      "level": 23,
+      "type": "scene",
+      "title": "Tři zámky a poslední otázka",
+      "text": "Stopa vede přes svědky, drby a papouška. Stojíte před tajnou poličkou se třemi zámky. Teď už se rozhoduje. Panda: „Papoušek mluví hodně. Mezi tím někdy spadne pravda.“",
+      "task": {
+        "type": "logic",
+        "prompt": "Řekni 1 otázku, kterou by položila panda-detektivka."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se svědků a drbů.",
+          "nextId": "scene_24_end_drby"
+        },
+        {
+          "key": "B",
+          "text": "Prověřit pandí „náhody“.",
+          "nextId": "scene_24_end_bambus"
+        },
+        {
+          "key": "C",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_24_end_cedule"
+        }
+      ]
+    },
+    "scene_23_bambus": {
+      "id": "scene_23_bambus",
+      "level": 23,
+      "type": "scene",
+      "title": "Tři zámky a poslední otázka",
+      "text": "Stopa vede přes pandu, bambus a podezřelé „náhody“. Stojíte před tajnou poličkou se třemi zámky. Teď už se rozhoduje. Panda: „Pokud jsem podezřelá, je to jen proto, že jsem… perfektní.“",
+      "task": {
+        "type": "logic",
+        "prompt": "Řekni 1 otázku, kterou by položila panda-detektivka."
+      },
+      "choices": [
+        {
+          "key": "A",
+          "text": "Držet se pandích „náhod“.",
+          "nextId": "scene_24_end_bambus"
+        },
+        {
+          "key": "B",
+          "text": "Vrátit se ke slovům a ceduli.",
+          "nextId": "scene_24_end_cedule"
+        },
+        {
+          "key": "C",
+          "text": "Jít po svědcích a drbech.",
+          "nextId": "scene_24_end_drby"
+        }
+      ]
+    },
+    "scene_24_end_cedule": {
+      "id": "scene_24_end_cedule",
+      "level": 24,
+      "type": "end",
+      "title": "scene_24_end",
+      "text": "Tajná polička cvakne. Klíč byl použit jako záložka v knížce „Jak psát cedule bez chyb“. Veverka ho „bezpečně“ založila. Uvnitř jsou komiksy, diplom a panda prohlásí: „Případ uzavřen. Bambus slaví.“",
+      "task": {
+        "type": "celebration",
+        "prompt": "Vyberte si jednu knížku/komiks a přečtěte 2 věty na oslavu."
+      },
+      "choices": []
+    },
+    "scene_24_end_drby": {
+      "id": "scene_24_end_drby",
+      "level": 24,
+      "type": "end",
+      "title": "scene_24_end",
+      "text": "Tajná polička cvakne. Klíč visel na šňůrce u dveří knihovny jako mikrofon. Papoušek ho pořád hlásil, protože si myslel, že je to „zpěvák“. Uvnitř jsou komiksy, diplom a panda prohlásí: „Případ uzavřen. Bambus slaví.“",
+      "task": {
+        "type": "celebration",
+        "prompt": "Vyberte si jednu knížku/komiks a přečtěte 2 věty na oslavu."
+      },
+      "choices": []
+    },
+    "scene_24_end_bambus": {
+      "id": "scene_24_end_bambus",
+      "level": 24,
+      "type": "end",
+      "title": "scene_24_end",
+      "text": "Tajná polička cvakne. Klíč byl na pandě jako přívěsek celou dobu. Panda vážně: „To byla kontrola pozornosti. Prošla jsi.“ Uvnitř jsou komiksy, diplom a panda prohlásí: „Případ uzavřen. Bambus slaví.“",
+      "task": {
+        "type": "celebration",
+        "prompt": "Vyberte si jednu knížku/komiks a přečtěte 2 věty na oslavu."
+      },
+      "choices": []
+    }
+  }
+}
