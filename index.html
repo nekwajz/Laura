@@ -3,52 +3,53 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Panda na škole v přírodě</title>
-
+    <title>Laura & Panda — interaktivní příběh</title>
     <link rel="stylesheet" href="./laura.css" />
   </head>
 
   <body>
-    <main class="app" role="main">
-      <header class="topbar">
-        <button id="back-btn" class="icon-btn" type="button" disabled aria-label="Zpět">
-          ←
-          <span class="btn-text">Zpět</span>
-        </button>
+    <main class="app">
+      <header class="top-row">
+        <button id="back-btn" class="btn" type="button" disabled aria-label="Zpět">←</button>
 
-        <div class="brand" aria-label="Panda hra">
-          <div class="brand-badge" aria-hidden="true">🐼</div>
-          <div class="brand-text">
-            <div class="brand-kicker">Interaktivní příběh</div>
-            <h1 id="scene-title" class="brand-title"></h1>
-          </div>
+        <div class="icon-pill" aria-hidden="true">🐼</div>
+
+        <div class="brand">
+          <p class="subtitle">Interaktivní příběh</p>
+          <h1 id="scene-title" class="title"></h1>
         </div>
 
-        <button id="restart-btn" class="icon-btn" type="button" aria-label="Restart">
-          ↻
-          <span class="btn-text">Restart</span>
-        </button>
+        <div class="actions">
+          <button id="restart-btn" class="btn restart" type="button" aria-label="Restart">↻</button>
+        </div>
       </header>
 
-      <section class="scene">
-        <p id="scene-text" class="scene-text"></p>
-        <div id="scene-task" class="task" style="display:none;"></div>
+      <section class="content">
+        <div class="card" aria-live="polite">
+          <p id="scene-text"></p>
+          <div id="scene-task" class="task-box" style="display:none;"></div>
+        </div>
+
+        <section id="choices" class="choices" aria-label="Volby"></section>
       </section>
+    </main>
 
-      <section id="choices" class="choices" aria-label="Volby"></section>
-
-      <!-- Restart dialog (custom) -->
-      <div id="restart-modal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
-        <div class="modal-card" role="document">
-          <h2 class="modal-title">opravdu chceš odejít</h2>
-          <p class="modal-subtitle">Vrátíš se na začátek příběhu.</p>
-          <div class="modal-actions">
-            <button id="restart-confirm" class="btn danger" type="button">ano, chci odejít</button>
-            <button id="restart-cancel" class="btn secondary" type="button">ne, chci zůstat</button>
-          </div>
+    <!-- Restart confirm modal -->
+    <div id="restart-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="restart-title">
+      <div class="modal">
+        <header>
+          <div class="modal-icon" aria-hidden="true">🐼</div>
+          <h2 id="restart-title">opravdu chceš odejít</h2>
+        </header>
+        <div class="body">
+          Tímhle se příběh vrátí na začátek. Historie se smaže.
+        </div>
+        <div class="actions">
+          <button id="restart-cancel" class="btn btn-safe" type="button">ne, chci zůstat</button>
+          <button id="restart-confirm" class="btn btn-danger" type="button">ano, chci odejít</button>
         </div>
       </div>
-    </main>
+    </div>
 
     <script src="./app.js"></script>
   </body>
