@@ -1,19 +1,18 @@
 {
   "meta": {
-    "gameId": "laura_panda_detective_v2",
-    "title": "Laura & Panda: Ztracený knihovní klíč",
+    "gameId": "laura_panda_detective_edu_v1",
+    "title": "Laura & Panda: Ztracený knihovní klíč (edu)",
     "language": "cs",
-    "version": "2.0",
-    "createdAt": "2025-12-20",
+    "version": "1.0",
+    "createdAt": "2025-12-21",
     "structure": {
+      "mode": "variant2",
       "startId": "scene_1_start",
-      "levels": {
-        "start": 1,
-        "intermediate": 18,
-        "end": 20
-      },
+      "levelsPerPlaythrough": 20,
+      "intermediateLevels": 18,
       "choicesPerScene": 3,
-      "note": "Každé hraní má 20 scén: úvod + 18 meziscén + konec. Tři výrazně odlišné linie; konec vždy odhalí, že klíč měla panda."
+      "noLoops": true,
+      "note": "Každá scéna obsahuje mini příběh + zajímavost + mikrootázku (AJ/MAT/CZ + panda fakta)."
     }
   },
   "startId": "scene_1_start",
@@ -22,23 +21,19 @@
       "id": "scene_1_start",
       "level": 1,
       "type": "start",
-      "title": "Laura a Inspektor Pchňou",
-      "text": "Laura je hlavní hrdinka na škole v přírodě. Její úkol: najít ztracený knihovní klíč a otevřít tajnou poličku s komiksy — s pomocí detektivní pandy.",
-      "task": {
-        "type": "fun",
-        "prompt": "Řekni: „Jsem Laura, detektivka!“ (a můžeš si vymyslet i přezdívku)."
-      },
+      "title": "Laura a detektivní panda",
+      "text": "Laura je hlavní hrdinka na škole v přírodě. V knihovně se ztratil klíč od tajné poličky s komiksy.\nZ batohu vykoukne panda velká v plášti: „Jsem Inspektor Pchňou. Jdeme na případ!“",
       "choices": [
         {
-          "text": "Jít do knihovny pro první stopu",
+          "text": "Vyrazit do knihovny",
           "nextId": "scene_02_lib_a"
         },
         {
-          "text": "Jít na hřiště vyslechnout svědky",
+          "text": "Vyrazit na hřiště",
           "nextId": "scene_02_play_a"
         },
         {
-          "text": "Jít po věcech a stopách (lego)",
+          "text": "Vyrazit po lego stopě",
           "nextId": "scene_02_lego_a"
         }
       ]
@@ -47,23 +42,19 @@
       "id": "scene_02_lib_a",
       "level": 2,
       "type": "scene",
-      "title": "📚 Knihovna zavřená",
-      "text": "Veverka knihovnice šeptá: „Klíč zmizel.“ Laura si všimne, že u dveří leží podezřelá záložka. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "fun",
-        "prompt": "Vymysli název detektivní kanceláře (2–4 slova)."
-      },
+      "title": "📚 Záložka u dveří",
+      "text": "U knihovny leží záložka s pandou a šipkou k regálu s detektivkami. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Prohlédnout okolí",
+          "text": "Prohlédnout stopu blíž",
           "nextId": "scene_03_lib_a"
         },
         {
-          "text": "Zeptat se zvířátka",
+          "text": "Zeptat se někoho",
           "nextId": "scene_03_lib_b"
         },
         {
-          "text": "Zkusit rychlou hádanku",
+          "text": "Zkusit malou hádanku",
           "nextId": "scene_03_lib_c"
         }
       ]
@@ -72,23 +63,19 @@
       "id": "scene_02_lib_b",
       "level": 2,
       "type": "scene",
-      "title": "📚 Knihovna zavřená",
-      "text": "Veverka knihovnice šeptá: „Klíč zmizel.“ Laura si všimne, že u dveří leží podezřelá záložka. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "fun",
-        "prompt": "Vymysli název detektivní kanceláře (2–4 slova)."
-      },
+      "title": "📚 Záložka u dveří",
+      "text": "U knihovny leží záložka s pandou a šipkou k regálu s detektivkami. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Prohlédnout okolí",
+          "text": "Prohlédnout stopu blíž",
           "nextId": "scene_03_lib_a"
         },
         {
-          "text": "Zeptat se zvířátka",
+          "text": "Zeptat se někoho",
           "nextId": "scene_03_lib_b"
         },
         {
-          "text": "Zkusit rychlou hádanku",
+          "text": "Zkusit malou hádanku",
           "nextId": "scene_03_lib_c"
         }
       ]
@@ -97,23 +84,19 @@
       "id": "scene_02_lib_c",
       "level": 2,
       "type": "scene",
-      "title": "📚 Knihovna zavřená",
-      "text": "Veverka knihovnice šeptá: „Klíč zmizel.“ Laura si všimne, že u dveří leží podezřelá záložka. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "fun",
-        "prompt": "Vymysli název detektivní kanceláře (2–4 slova)."
-      },
+      "title": "📚 Záložka u dveří",
+      "text": "U knihovny leží záložka s pandou a šipkou k regálu s detektivkami. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Prohlédnout okolí",
+          "text": "Prohlédnout stopu blíž",
           "nextId": "scene_03_lib_a"
         },
         {
-          "text": "Zeptat se zvířátka",
+          "text": "Zeptat se někoho",
           "nextId": "scene_03_lib_b"
         },
         {
-          "text": "Zkusit rychlou hádanku",
+          "text": "Zkusit malou hádanku",
           "nextId": "scene_03_lib_c"
         }
       ]
@@ -122,23 +105,19 @@
       "id": "scene_03_lib_a",
       "level": 3,
       "type": "scene",
-      "title": "📚 Záložka s pandou",
-      "text": "Záložka má nakreslenou pandu a nápis „NEKOUKEJ SEM“. To je přesně důvod, proč se Laura koukne. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 3 vyjmenovaná slova po B."
-      },
+      "title": "📚 Kniha, co vyčuhuje",
+      "text": "Jedna knížka vyčnívá o kousek víc než ostatní — jako by chtěla být nalezena. Laura postupuje klidně a pečlivě. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Najít další lístek",
+          "text": "Jít za tím, co vyčnívá",
           "nextId": "scene_04_lib_a"
         },
         {
-          "text": "Sledovat stopu",
+          "text": "Jít za zvukem",
           "nextId": "scene_04_lib_b"
         },
         {
-          "text": "Podívat se výš",
+          "text": "Jít za šipkou",
           "nextId": "scene_04_lib_c"
         }
       ]
@@ -147,23 +126,19 @@
       "id": "scene_03_lib_b",
       "level": 3,
       "type": "scene",
-      "title": "📚 Záložka s pandou",
-      "text": "Záložka má nakreslenou pandu a nápis „NEKOUKEJ SEM“. To je přesně důvod, proč se Laura koukne. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 3 vyjmenovaná slova po B."
-      },
+      "title": "📚 Kniha, co vyčuhuje",
+      "text": "Jedna knížka vyčnívá o kousek víc než ostatní — jako by chtěla být nalezena. Panda to komentuje legračně a dramaticky. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Najít další lístek",
+          "text": "Jít za tím, co vyčnívá",
           "nextId": "scene_04_lib_a"
         },
         {
-          "text": "Sledovat stopu",
+          "text": "Jít za zvukem",
           "nextId": "scene_04_lib_b"
         },
         {
-          "text": "Podívat se výš",
+          "text": "Jít za šipkou",
           "nextId": "scene_04_lib_c"
         }
       ]
@@ -172,23 +147,19 @@
       "id": "scene_03_lib_c",
       "level": 3,
       "type": "scene",
-      "title": "📚 Záložka s pandou",
-      "text": "Záložka má nakreslenou pandu a nápis „NEKOUKEJ SEM“. To je přesně důvod, proč se Laura koukne. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 3 vyjmenovaná slova po B."
-      },
+      "title": "📚 Kniha, co vyčuhuje",
+      "text": "Jedna knížka vyčnívá o kousek víc než ostatní — jako by chtěla být nalezena. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Najít další lístek",
+          "text": "Jít za tím, co vyčnívá",
           "nextId": "scene_04_lib_a"
         },
         {
-          "text": "Sledovat stopu",
+          "text": "Jít za zvukem",
           "nextId": "scene_04_lib_b"
         },
         {
-          "text": "Podívat se výš",
+          "text": "Jít za šipkou",
           "nextId": "scene_04_lib_c"
         }
       ]
@@ -198,22 +169,18 @@
       "level": 4,
       "type": "scene",
       "title": "📚 Cedule s chybou",
-      "text": "Na nástěnce visí cedulka s chybou. Panda ji bere osobně, jako by to byla detektivní šifra. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 8 + 7 = ?"
-      },
+      "text": "Na nástěnce visí cedule s malou chybou. To je pro Lauru stopa. Laura postupuje klidně a pečlivě. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Jít za mapou",
+          "text": "Ověřit nápis",
           "nextId": "scene_05_lib_a"
         },
         {
-          "text": "Jít za zvukem",
+          "text": "Najít další lístek",
           "nextId": "scene_05_lib_b"
         },
         {
-          "text": "Jít za šipkou",
+          "text": "Podívat se kolem sebe",
           "nextId": "scene_05_lib_c"
         }
       ]
@@ -223,22 +190,18 @@
       "level": 4,
       "type": "scene",
       "title": "📚 Cedule s chybou",
-      "text": "Na nástěnce visí cedulka s chybou. Panda ji bere osobně, jako by to byla detektivní šifra. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 8 + 7 = ?"
-      },
+      "text": "Na nástěnce visí cedule s malou chybou. To je pro Lauru stopa. Panda to komentuje legračně a dramaticky. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Jít za mapou",
+          "text": "Ověřit nápis",
           "nextId": "scene_05_lib_a"
         },
         {
-          "text": "Jít za zvukem",
+          "text": "Najít další lístek",
           "nextId": "scene_05_lib_b"
         },
         {
-          "text": "Jít za šipkou",
+          "text": "Podívat se kolem sebe",
           "nextId": "scene_05_lib_c"
         }
       ]
@@ -248,22 +211,18 @@
       "level": 4,
       "type": "scene",
       "title": "📚 Cedule s chybou",
-      "text": "Na nástěnce visí cedulka s chybou. Panda ji bere osobně, jako by to byla detektivní šifra. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 8 + 7 = ?"
-      },
+      "text": "Na nástěnce visí cedule s malou chybou. To je pro Lauru stopa. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Jít za mapou",
+          "text": "Ověřit nápis",
           "nextId": "scene_05_lib_a"
         },
         {
-          "text": "Jít za zvukem",
+          "text": "Najít další lístek",
           "nextId": "scene_05_lib_b"
         },
         {
-          "text": "Jít za šipkou",
+          "text": "Podívat se kolem sebe",
           "nextId": "scene_05_lib_c"
         }
       ]
@@ -272,23 +231,19 @@
       "id": "scene_05_lib_a",
       "level": 5,
       "type": "scene",
-      "title": "📚 Sova a i/y",
-      "text": "Sova učitelka vytáhne větu a čeká, jestli Laura odhalí správné i/y. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Přelož: key, library, clue."
-      },
+      "title": "📚 Tichý koutek",
+      "text": "V tichém koutku někdo nechal lísteček: „Hledej tam, kde se čte nejradši.“ Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Použít slovíčka",
+          "text": "Prozkoumat mapku",
           "nextId": "scene_06_lib_a"
         },
         {
-          "text": "Zkusit mini-dialog",
+          "text": "Jít po puntících",
           "nextId": "scene_06_lib_b"
         },
         {
-          "text": "Najít kartičku",
+          "text": "Najít tajné místo",
           "nextId": "scene_06_lib_c"
         }
       ]
@@ -297,23 +252,19 @@
       "id": "scene_05_lib_b",
       "level": 5,
       "type": "scene",
-      "title": "📚 Sova a i/y",
-      "text": "Sova učitelka vytáhne větu a čeká, jestli Laura odhalí správné i/y. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Přelož: key, library, clue."
-      },
+      "title": "📚 Tichý koutek",
+      "text": "V tichém koutku někdo nechal lísteček: „Hledej tam, kde se čte nejradši.“ Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Použít slovíčka",
+          "text": "Prozkoumat mapku",
           "nextId": "scene_06_lib_a"
         },
         {
-          "text": "Zkusit mini-dialog",
+          "text": "Jít po puntících",
           "nextId": "scene_06_lib_b"
         },
         {
-          "text": "Najít kartičku",
+          "text": "Najít tajné místo",
           "nextId": "scene_06_lib_c"
         }
       ]
@@ -322,23 +273,19 @@
       "id": "scene_05_lib_c",
       "level": 5,
       "type": "scene",
-      "title": "📚 Sova a i/y",
-      "text": "Sova učitelka vytáhne větu a čeká, jestli Laura odhalí správné i/y. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Přelož: key, library, clue."
-      },
+      "title": "📚 Tichý koutek",
+      "text": "V tichém koutku někdo nechal lísteček: „Hledej tam, kde se čte nejradši.“ Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Použít slovíčka",
+          "text": "Prozkoumat mapku",
           "nextId": "scene_06_lib_a"
         },
         {
-          "text": "Zkusit mini-dialog",
+          "text": "Jít po puntících",
           "nextId": "scene_06_lib_b"
         },
         {
-          "text": "Najít kartičku",
+          "text": "Najít tajné místo",
           "nextId": "scene_06_lib_c"
         }
       ]
@@ -347,23 +294,19 @@
       "id": "scene_06_lib_a",
       "level": 6,
       "type": "scene",
-      "title": "📚 Vyjmenovaná stopa",
-      "text": "V knížce je lístek s vyjmenovanými slovy a malou šipkou k regálu. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Doplň správně: Panda __la v knihovně. (byla/bílá) + proč."
-      },
+      "title": "📚 Komiksová mapa",
+      "text": "Mezi komiksy je načmáraná mapka se třemi puntíky. Laura postupuje klidně a pečlivě. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Opravit větu",
+          "text": "Srovnat to jako kód",
           "nextId": "scene_07_lib_a"
         },
         {
-          "text": "Najít chybu",
+          "text": "Hledat vzor",
           "nextId": "scene_07_lib_b"
         },
         {
-          "text": "Vymyslet důkaz",
+          "text": "Zkusit jiný směr",
           "nextId": "scene_07_lib_c"
         }
       ]
@@ -372,23 +315,19 @@
       "id": "scene_06_lib_b",
       "level": 6,
       "type": "scene",
-      "title": "📚 Vyjmenovaná stopa",
-      "text": "V knížce je lístek s vyjmenovanými slovy a malou šipkou k regálu. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Doplň správně: Panda __la v knihovně. (byla/bílá) + proč."
-      },
+      "title": "📚 Komiksová mapa",
+      "text": "Mezi komiksy je načmáraná mapka se třemi puntíky. Panda to komentuje legračně a dramaticky. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Opravit větu",
+          "text": "Srovnat to jako kód",
           "nextId": "scene_07_lib_a"
         },
         {
-          "text": "Najít chybu",
+          "text": "Hledat vzor",
           "nextId": "scene_07_lib_b"
         },
         {
-          "text": "Vymyslet důkaz",
+          "text": "Zkusit jiný směr",
           "nextId": "scene_07_lib_c"
         }
       ]
@@ -397,23 +336,19 @@
       "id": "scene_06_lib_c",
       "level": 6,
       "type": "scene",
-      "title": "📚 Vyjmenovaná stopa",
-      "text": "V knížce je lístek s vyjmenovanými slovy a malou šipkou k regálu. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Doplň správně: Panda __la v knihovně. (byla/bílá) + proč."
-      },
+      "title": "📚 Komiksová mapa",
+      "text": "Mezi komiksy je načmáraná mapka se třemi puntíky. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Opravit větu",
+          "text": "Srovnat to jako kód",
           "nextId": "scene_07_lib_a"
         },
         {
-          "text": "Najít chybu",
+          "text": "Hledat vzor",
           "nextId": "scene_07_lib_b"
         },
         {
-          "text": "Vymyslet důkaz",
+          "text": "Zkusit jiný směr",
           "nextId": "scene_07_lib_c"
         }
       ]
@@ -422,23 +357,19 @@
       "id": "scene_07_lib_a",
       "level": 7,
       "type": "scene",
-      "title": "📚 Tajný lístek",
-      "text": "Za hřbetem knihy je schovaný lísteček s úkolem: čtení, počty a angličtina. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "wordplay",
-        "prompt": "Vymysli 2 rýmy na „panda“ (klidně blbiny)."
-      },
+      "title": "📚 Šifra z obálek",
+      "text": "Obálky knížek jsou seřazené podle barev. Vypadá to jako kód. Laura postupuje klidně a pečlivě. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Zkusit rým",
+          "text": "Najít schovaný papír",
           "nextId": "scene_08_lib_a"
         },
         {
-          "text": "Zkusit vtip",
+          "text": "Mrknout pod věci",
           "nextId": "scene_08_lib_b"
         },
         {
-          "text": "Zkusit slovní trik",
+          "text": "Podívat se výš",
           "nextId": "scene_08_lib_c"
         }
       ]
@@ -447,23 +378,19 @@
       "id": "scene_07_lib_b",
       "level": 7,
       "type": "scene",
-      "title": "📚 Tajný lístek",
-      "text": "Za hřbetem knihy je schovaný lísteček s úkolem: čtení, počty a angličtina. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "wordplay",
-        "prompt": "Vymysli 2 rýmy na „panda“ (klidně blbiny)."
-      },
+      "title": "📚 Šifra z obálek",
+      "text": "Obálky knížek jsou seřazené podle barev. Vypadá to jako kód. Panda to komentuje legračně a dramaticky. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Zkusit rým",
+          "text": "Najít schovaný papír",
           "nextId": "scene_08_lib_a"
         },
         {
-          "text": "Zkusit vtip",
+          "text": "Mrknout pod věci",
           "nextId": "scene_08_lib_b"
         },
         {
-          "text": "Zkusit slovní trik",
+          "text": "Podívat se výš",
           "nextId": "scene_08_lib_c"
         }
       ]
@@ -472,23 +399,19 @@
       "id": "scene_07_lib_c",
       "level": 7,
       "type": "scene",
-      "title": "📚 Tajný lístek",
-      "text": "Za hřbetem knihy je schovaný lísteček s úkolem: čtení, počty a angličtina. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "wordplay",
-        "prompt": "Vymysli 2 rýmy na „panda“ (klidně blbiny)."
-      },
+      "title": "📚 Šifra z obálek",
+      "text": "Obálky knížek jsou seřazené podle barev. Vypadá to jako kód. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Zkusit rým",
+          "text": "Najít schovaný papír",
           "nextId": "scene_08_lib_a"
         },
         {
-          "text": "Zkusit vtip",
+          "text": "Mrknout pod věci",
           "nextId": "scene_08_lib_b"
         },
         {
-          "text": "Zkusit slovní trik",
+          "text": "Podívat se výš",
           "nextId": "scene_08_lib_c"
         }
       ]
@@ -497,23 +420,19 @@
       "id": "scene_08_lib_a",
       "level": 8,
       "type": "scene",
-      "title": "📚 Regál se šifrou",
-      "text": "Jeden regál je poskládaný podle barev obálek. Vypadá to jako kód, ne jako náhoda. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 24 − 9 = ?"
-      },
+      "title": "📚 Papírek v knize",
+      "text": "V knížce je schovaný papírek s jediným slovem: „PODÍVEJ SE“. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Spočítat stopu",
+          "text": "Zvednout samolepku",
           "nextId": "scene_09_lib_a"
         },
         {
-          "text": "Najít číslo",
+          "text": "Hledat šipku",
           "nextId": "scene_09_lib_b"
         },
         {
-          "text": "Vybrat směr",
+          "text": "Jít potichu dál",
           "nextId": "scene_09_lib_c"
         }
       ]
@@ -522,23 +441,19 @@
       "id": "scene_08_lib_b",
       "level": 8,
       "type": "scene",
-      "title": "📚 Regál se šifrou",
-      "text": "Jeden regál je poskládaný podle barev obálek. Vypadá to jako kód, ne jako náhoda. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 24 − 9 = ?"
-      },
+      "title": "📚 Papírek v knize",
+      "text": "V knížce je schovaný papírek s jediným slovem: „PODÍVEJ SE“. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Spočítat stopu",
+          "text": "Zvednout samolepku",
           "nextId": "scene_09_lib_a"
         },
         {
-          "text": "Najít číslo",
+          "text": "Hledat šipku",
           "nextId": "scene_09_lib_b"
         },
         {
-          "text": "Vybrat směr",
+          "text": "Jít potichu dál",
           "nextId": "scene_09_lib_c"
         }
       ]
@@ -547,23 +462,19 @@
       "id": "scene_08_lib_c",
       "level": 8,
       "type": "scene",
-      "title": "📚 Regál se šifrou",
-      "text": "Jeden regál je poskládaný podle barev obálek. Vypadá to jako kód, ne jako náhoda. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 24 − 9 = ?"
-      },
+      "title": "📚 Papírek v knize",
+      "text": "V knížce je schovaný papírek s jediným slovem: „PODÍVEJ SE“. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Spočítat stopu",
+          "text": "Zvednout samolepku",
           "nextId": "scene_09_lib_a"
         },
         {
-          "text": "Najít číslo",
+          "text": "Hledat šipku",
           "nextId": "scene_09_lib_b"
         },
         {
-          "text": "Vybrat směr",
+          "text": "Jít potichu dál",
           "nextId": "scene_09_lib_c"
         }
       ]
@@ -572,23 +483,19 @@
       "id": "scene_09_lib_a",
       "level": 9,
       "type": "scene",
-      "title": "📚 Čtení nahlas",
-      "text": "Laura přečte dvě věty a panda dělá, že zapisuje do neviditelného notesu. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 2 věty (z knížky nebo vymyšlené)."
-      },
+      "title": "📚 Parapetní nápověda",
+      "text": "Na parapetu je malá samolepka bambusu a pod ní šipka. Laura postupuje klidně a pečlivě. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Přečíst nápovědu",
+          "text": "Použít angličtinu",
           "nextId": "scene_10_lib_a"
         },
         {
-          "text": "Číst nahlas",
+          "text": "Najít slovíčko",
           "nextId": "scene_10_lib_b"
         },
         {
-          "text": "Číst potichu",
+          "text": "Říct krátkou větu",
           "nextId": "scene_10_lib_c"
         }
       ]
@@ -597,23 +504,19 @@
       "id": "scene_09_lib_b",
       "level": 9,
       "type": "scene",
-      "title": "📚 Čtení nahlas",
-      "text": "Laura přečte dvě věty a panda dělá, že zapisuje do neviditelného notesu. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 2 věty (z knížky nebo vymyšlené)."
-      },
+      "title": "📚 Parapetní nápověda",
+      "text": "Na parapetu je malá samolepka bambusu a pod ní šipka. Panda to komentuje legračně a dramaticky. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Přečíst nápovědu",
+          "text": "Použít angličtinu",
           "nextId": "scene_10_lib_a"
         },
         {
-          "text": "Číst nahlas",
+          "text": "Najít slovíčko",
           "nextId": "scene_10_lib_b"
         },
         {
-          "text": "Číst potichu",
+          "text": "Říct krátkou větu",
           "nextId": "scene_10_lib_c"
         }
       ]
@@ -622,23 +525,19 @@
       "id": "scene_09_lib_c",
       "level": 9,
       "type": "scene",
-      "title": "📚 Čtení nahlas",
-      "text": "Laura přečte dvě věty a panda dělá, že zapisuje do neviditelného notesu. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 2 věty (z knížky nebo vymyšlené)."
-      },
+      "title": "📚 Parapetní nápověda",
+      "text": "Na parapetu je malá samolepka bambusu a pod ní šipka. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Přečíst nápovědu",
+          "text": "Použít angličtinu",
           "nextId": "scene_10_lib_a"
         },
         {
-          "text": "Číst nahlas",
+          "text": "Najít slovíčko",
           "nextId": "scene_10_lib_b"
         },
         {
-          "text": "Číst potichu",
+          "text": "Říct krátkou větu",
           "nextId": "scene_10_lib_c"
         }
       ]
@@ -647,23 +546,19 @@
       "id": "scene_10_lib_a",
       "level": 10,
       "type": "scene",
-      "title": "📚 Anglické kartičky",
-      "text": "Na stole jsou kartičky: key, library, clue. Někdo je poskládal do podezřelého tvaru. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni: “My name is Laura.” + “I like books.”"
-      },
+      "title": "📚 Karta v angličtině",
+      "text": "Na stole je kartička se slovem „key“. Panda ji prohlásí za důkaz. Laura postupuje klidně a pečlivě. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Říct to anglicky",
+          "text": "Složit správnou větu",
           "nextId": "scene_11_lib_a"
         },
         {
-          "text": "Položit otázku",
+          "text": "Opravit chybu",
           "nextId": "scene_11_lib_b"
         },
         {
-          "text": "Najít další clue",
+          "text": "Vybrat správné slovo",
           "nextId": "scene_11_lib_c"
         }
       ]
@@ -672,23 +567,19 @@
       "id": "scene_10_lib_b",
       "level": 10,
       "type": "scene",
-      "title": "📚 Anglické kartičky",
-      "text": "Na stole jsou kartičky: key, library, clue. Někdo je poskládal do podezřelého tvaru. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni: “My name is Laura.” + “I like books.”"
-      },
+      "title": "📚 Karta v angličtině",
+      "text": "Na stole je kartička se slovem „key“. Panda ji prohlásí za důkaz. Panda to komentuje legračně a dramaticky. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Říct to anglicky",
+          "text": "Složit správnou větu",
           "nextId": "scene_11_lib_a"
         },
         {
-          "text": "Položit otázku",
+          "text": "Opravit chybu",
           "nextId": "scene_11_lib_b"
         },
         {
-          "text": "Najít další clue",
+          "text": "Vybrat správné slovo",
           "nextId": "scene_11_lib_c"
         }
       ]
@@ -697,23 +588,19 @@
       "id": "scene_10_lib_c",
       "level": 10,
       "type": "scene",
-      "title": "📚 Anglické kartičky",
-      "text": "Na stole jsou kartičky: key, library, clue. Někdo je poskládal do podezřelého tvaru. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni: “My name is Laura.” + “I like books.”"
-      },
+      "title": "📚 Karta v angličtině",
+      "text": "Na stole je kartička se slovem „key“. Panda ji prohlásí za důkaz. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Říct to anglicky",
+          "text": "Složit správnou větu",
           "nextId": "scene_11_lib_a"
         },
         {
-          "text": "Položit otázku",
+          "text": "Opravit chybu",
           "nextId": "scene_11_lib_b"
         },
         {
-          "text": "Najít další clue",
+          "text": "Vybrat správné slovo",
           "nextId": "scene_11_lib_c"
         }
       ]
@@ -722,23 +609,19 @@
       "id": "scene_11_lib_a",
       "level": 11,
       "type": "scene",
-      "title": "📚 Kód ve slovech",
-      "text": "Na papírku je krátká slovní hádanka. Laura má pocit, že odpověď ukazuje „kam se podívat“. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "logic",
-        "prompt": "Pravda/nepravda: „Knihovna = library“ (řekni proč)."
-      },
+      "title": "📚 Věta do zámku",
+      "text": "U tajné poličky visí vzkaz: „Otevře to správná věta.“ Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Ověřit pravdu",
+          "text": "Prohlédnout sešit",
           "nextId": "scene_12_lib_a"
         },
         {
-          "text": "Zkontrolovat detail",
+          "text": "Najít podtržené",
           "nextId": "scene_12_lib_b"
         },
         {
-          "text": "Spojit stopy",
+          "text": "Zkusit logiku",
           "nextId": "scene_12_lib_c"
         }
       ]
@@ -747,23 +630,19 @@
       "id": "scene_11_lib_b",
       "level": 11,
       "type": "scene",
-      "title": "📚 Kód ve slovech",
-      "text": "Na papírku je krátká slovní hádanka. Laura má pocit, že odpověď ukazuje „kam se podívat“. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "logic",
-        "prompt": "Pravda/nepravda: „Knihovna = library“ (řekni proč)."
-      },
+      "title": "📚 Věta do zámku",
+      "text": "U tajné poličky visí vzkaz: „Otevře to správná věta.“ Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Ověřit pravdu",
+          "text": "Prohlédnout sešit",
           "nextId": "scene_12_lib_a"
         },
         {
-          "text": "Zkontrolovat detail",
+          "text": "Najít podtržené",
           "nextId": "scene_12_lib_b"
         },
         {
-          "text": "Spojit stopy",
+          "text": "Zkusit logiku",
           "nextId": "scene_12_lib_c"
         }
       ]
@@ -772,23 +651,19 @@
       "id": "scene_11_lib_c",
       "level": 11,
       "type": "scene",
-      "title": "📚 Kód ve slovech",
-      "text": "Na papírku je krátká slovní hádanka. Laura má pocit, že odpověď ukazuje „kam se podívat“. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "logic",
-        "prompt": "Pravda/nepravda: „Knihovna = library“ (řekni proč)."
-      },
+      "title": "📚 Věta do zámku",
+      "text": "U tajné poličky visí vzkaz: „Otevře to správná věta.“ Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Ověřit pravdu",
+          "text": "Prohlédnout sešit",
           "nextId": "scene_12_lib_a"
         },
         {
-          "text": "Zkontrolovat detail",
+          "text": "Najít podtržené",
           "nextId": "scene_12_lib_b"
         },
         {
-          "text": "Spojit stopy",
+          "text": "Zkusit logiku",
           "nextId": "scene_12_lib_c"
         }
       ]
@@ -797,23 +672,19 @@
       "id": "scene_12_lib_a",
       "level": 12,
       "type": "scene",
-      "title": "📚 Komiksová mapa",
-      "text": "Mezi komiksy je mapa areálu se třemi puntíky. Jeden puntík je přímo u knihovny. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 6 × 4 = ? (nebo 6+6+6+6)."
-      },
+      "title": "📚 Sešit s poznámkami",
+      "text": "V sešitě jsou tři podtržená slova a malé kolečko kolem jednoho z nich. Laura postupuje klidně a pečlivě. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Otevřít krabičku",
+          "text": "Vzít novou záložku",
           "nextId": "scene_13_lib_a"
         },
         {
-          "text": "Zkusit kód",
+          "text": "Podívat se do kapsy",
           "nextId": "scene_13_lib_b"
         },
         {
-          "text": "Najít dílek",
+          "text": "Zkontrolovat háček",
           "nextId": "scene_13_lib_c"
         }
       ]
@@ -822,23 +693,19 @@
       "id": "scene_12_lib_b",
       "level": 12,
       "type": "scene",
-      "title": "📚 Komiksová mapa",
-      "text": "Mezi komiksy je mapa areálu se třemi puntíky. Jeden puntík je přímo u knihovny. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 6 × 4 = ? (nebo 6+6+6+6)."
-      },
+      "title": "📚 Sešit s poznámkami",
+      "text": "V sešitě jsou tři podtržená slova a malé kolečko kolem jednoho z nich. Panda to komentuje legračně a dramaticky. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Otevřít krabičku",
+          "text": "Vzít novou záložku",
           "nextId": "scene_13_lib_a"
         },
         {
-          "text": "Zkusit kód",
+          "text": "Podívat se do kapsy",
           "nextId": "scene_13_lib_b"
         },
         {
-          "text": "Najít dílek",
+          "text": "Zkontrolovat háček",
           "nextId": "scene_13_lib_c"
         }
       ]
@@ -847,23 +714,19 @@
       "id": "scene_12_lib_c",
       "level": 12,
       "type": "scene",
-      "title": "📚 Komiksová mapa",
-      "text": "Mezi komiksy je mapa areálu se třemi puntíky. Jeden puntík je přímo u knihovny. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 6 × 4 = ? (nebo 6+6+6+6)."
-      },
+      "title": "📚 Sešit s poznámkami",
+      "text": "V sešitě jsou tři podtržená slova a malé kolečko kolem jednoho z nich. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Otevřít krabičku",
+          "text": "Vzít novou záložku",
           "nextId": "scene_13_lib_a"
         },
         {
-          "text": "Zkusit kód",
+          "text": "Podívat se do kapsy",
           "nextId": "scene_13_lib_b"
         },
         {
-          "text": "Najít dílek",
+          "text": "Zkontrolovat háček",
           "nextId": "scene_13_lib_c"
         }
       ]
@@ -872,23 +735,19 @@
       "id": "scene_13_lib_a",
       "level": 13,
       "type": "scene",
-      "title": "📚 Kniha vyčuhuje",
-      "text": "Jedna detektivka vyčnívá o centimetr. Panda dramaticky šeptá: „To není náhoda.“ Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 2 vyjmenovaná slova po L."
-      },
+      "title": "📚 Záhadná záložka",
+      "text": "Další záložka je zastrčená tak, aby ji našel jen někdo pozorný. Laura postupuje klidně a pečlivě. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Vzít stopu",
+          "text": "Vyřešit hádanku",
           "nextId": "scene_14_lib_a"
         },
         {
-          "text": "Kouknout do regálu",
+          "text": "Přečíst si nápovědu",
           "nextId": "scene_14_lib_b"
         },
         {
-          "text": "Prověřit kapsu",
+          "text": "Zeptat se pandy",
           "nextId": "scene_14_lib_c"
         }
       ]
@@ -897,23 +756,19 @@
       "id": "scene_13_lib_b",
       "level": 13,
       "type": "scene",
-      "title": "📚 Kniha vyčuhuje",
-      "text": "Jedna detektivka vyčnívá o centimetr. Panda dramaticky šeptá: „To není náhoda.“ Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 2 vyjmenovaná slova po L."
-      },
+      "title": "📚 Záhadná záložka",
+      "text": "Další záložka je zastrčená tak, aby ji našel jen někdo pozorný. Panda to komentuje legračně a dramaticky. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Vzít stopu",
+          "text": "Vyřešit hádanku",
           "nextId": "scene_14_lib_a"
         },
         {
-          "text": "Kouknout do regálu",
+          "text": "Přečíst si nápovědu",
           "nextId": "scene_14_lib_b"
         },
         {
-          "text": "Prověřit kapsu",
+          "text": "Zeptat se pandy",
           "nextId": "scene_14_lib_c"
         }
       ]
@@ -922,23 +777,19 @@
       "id": "scene_13_lib_c",
       "level": 13,
       "type": "scene",
-      "title": "📚 Kniha vyčuhuje",
-      "text": "Jedna detektivka vyčnívá o centimetr. Panda dramaticky šeptá: „To není náhoda.“ Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 2 vyjmenovaná slova po L."
-      },
+      "title": "📚 Záhadná záložka",
+      "text": "Další záložka je zastrčená tak, aby ji našel jen někdo pozorný. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Vzít stopu",
+          "text": "Vyřešit hádanku",
           "nextId": "scene_14_lib_a"
         },
         {
-          "text": "Kouknout do regálu",
+          "text": "Přečíst si nápovědu",
           "nextId": "scene_14_lib_b"
         },
         {
-          "text": "Prověřit kapsu",
+          "text": "Zeptat se pandy",
           "nextId": "scene_14_lib_c"
         }
       ]
@@ -947,23 +798,19 @@
       "id": "scene_14_lib_a",
       "level": 14,
       "type": "scene",
-      "title": "📚 Hádanka u okna",
-      "text": "Na parapetu je vzkaz: „Kdo hledá klíč, kouká i nahoru.“ Laura zvedne oči. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni anglicky 5 čísel (1–10)."
-      },
+      "title": "📚 Knihovní hádanka",
+      "text": "Na lístku je hádanka o tichu a čtení. Laura se usměje. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Počítat anglicky",
+          "text": "Jít po stopě tužky",
           "nextId": "scene_15_lib_a"
         },
         {
-          "text": "Říct větu",
+          "text": "Najít značku",
           "nextId": "scene_15_lib_b"
         },
         {
-          "text": "Najít slovo",
+          "text": "Prohlédnout stěnu",
           "nextId": "scene_15_lib_c"
         }
       ]
@@ -972,23 +819,19 @@
       "id": "scene_14_lib_b",
       "level": 14,
       "type": "scene",
-      "title": "📚 Hádanka u okna",
-      "text": "Na parapetu je vzkaz: „Kdo hledá klíč, kouká i nahoru.“ Laura zvedne oči. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni anglicky 5 čísel (1–10)."
-      },
+      "title": "📚 Knihovní hádanka",
+      "text": "Na lístku je hádanka o tichu a čtení. Laura se usměje. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Počítat anglicky",
+          "text": "Jít po stopě tužky",
           "nextId": "scene_15_lib_a"
         },
         {
-          "text": "Říct větu",
+          "text": "Najít značku",
           "nextId": "scene_15_lib_b"
         },
         {
-          "text": "Najít slovo",
+          "text": "Prohlédnout stěnu",
           "nextId": "scene_15_lib_c"
         }
       ]
@@ -997,23 +840,19 @@
       "id": "scene_14_lib_c",
       "level": 14,
       "type": "scene",
-      "title": "📚 Hádanka u okna",
-      "text": "Na parapetu je vzkaz: „Kdo hledá klíč, kouká i nahoru.“ Laura zvedne oči. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni anglicky 5 čísel (1–10)."
-      },
+      "title": "📚 Knihovní hádanka",
+      "text": "Na lístku je hádanka o tichu a čtení. Laura se usměje. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Počítat anglicky",
+          "text": "Jít po stopě tužky",
           "nextId": "scene_15_lib_a"
         },
         {
-          "text": "Říct větu",
+          "text": "Najít značku",
           "nextId": "scene_15_lib_b"
         },
         {
-          "text": "Najít slovo",
+          "text": "Prohlédnout stěnu",
           "nextId": "scene_15_lib_c"
         }
       ]
@@ -1022,23 +861,19 @@
       "id": "scene_15_lib_a",
       "level": 15,
       "type": "scene",
-      "title": "📚 Bambusová poznámka",
-      "text": "V krabičce na tužky je bambusová nálepka a pod ní maličká šipka. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 1 krátký odstavec (nebo ho vymysli)."
-      },
+      "title": "📚 Malá stopa na zemi",
+      "text": "Na zemi je drobná šmouha od tužky vedoucí k háčku na stěně. Laura postupuje klidně a pečlivě. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Číst a hledat",
+          "text": "Udělat poslední kontrolu",
           "nextId": "scene_16_lib_a"
         },
         {
-          "text": "Číst a smát se",
+          "text": "Zkusit ještě jednou",
           "nextId": "scene_16_lib_b"
         },
         {
-          "text": "Číst jako detektiv",
+          "text": "Jít rovnou k poličce",
           "nextId": "scene_16_lib_c"
         }
       ]
@@ -1047,23 +882,19 @@
       "id": "scene_15_lib_b",
       "level": 15,
       "type": "scene",
-      "title": "📚 Bambusová poznámka",
-      "text": "V krabičce na tužky je bambusová nálepka a pod ní maličká šipka. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 1 krátký odstavec (nebo ho vymysli)."
-      },
+      "title": "📚 Malá stopa na zemi",
+      "text": "Na zemi je drobná šmouha od tužky vedoucí k háčku na stěně. Panda to komentuje legračně a dramaticky. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Číst a hledat",
+          "text": "Udělat poslední kontrolu",
           "nextId": "scene_16_lib_a"
         },
         {
-          "text": "Číst a smát se",
+          "text": "Zkusit ještě jednou",
           "nextId": "scene_16_lib_b"
         },
         {
-          "text": "Číst jako detektiv",
+          "text": "Jít rovnou k poličce",
           "nextId": "scene_16_lib_c"
         }
       ]
@@ -1072,23 +903,19 @@
       "id": "scene_15_lib_c",
       "level": 15,
       "type": "scene",
-      "title": "📚 Bambusová poznámka",
-      "text": "V krabičce na tužky je bambusová nálepka a pod ní maličká šipka. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 1 krátký odstavec (nebo ho vymysli)."
-      },
+      "title": "📚 Malá stopa na zemi",
+      "text": "Na zemi je drobná šmouha od tužky vedoucí k háčku na stěně. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Číst a hledat",
+          "text": "Udělat poslední kontrolu",
           "nextId": "scene_16_lib_a"
         },
         {
-          "text": "Číst a smát se",
+          "text": "Zkusit ještě jednou",
           "nextId": "scene_16_lib_b"
         },
         {
-          "text": "Číst jako detektiv",
+          "text": "Jít rovnou k poličce",
           "nextId": "scene_16_lib_c"
         }
       ]
@@ -1097,23 +924,19 @@
       "id": "scene_16_lib_a",
       "level": 16,
       "type": "scene",
-      "title": "📚 Zámek: slovo",
-      "text": "U tajné poličky je papírek: „Než otevřeš, řekni správnou větu.“ Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 17 + 13 = ?"
-      },
+      "title": "📚 Poslední kontrola",
+      "text": "Laura prochází police ještě jednou. Panda dělá, že nic necinká. Laura postupuje klidně a pečlivě. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Spočítat finále",
+          "text": "Zkusit otevřít",
           "nextId": "scene_17_lib_a"
         },
         {
-          "text": "Zkusit rychle",
+          "text": "Hledat klíč u sebe",
           "nextId": "scene_17_lib_b"
         },
         {
-          "text": "Vysvětlit krok",
+          "text": "Podívat se na pandu",
           "nextId": "scene_17_lib_c"
         }
       ]
@@ -1122,23 +945,19 @@
       "id": "scene_16_lib_b",
       "level": 16,
       "type": "scene",
-      "title": "📚 Zámek: slovo",
-      "text": "U tajné poličky je papírek: „Než otevřeš, řekni správnou větu.“ Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 17 + 13 = ?"
-      },
+      "title": "📚 Poslední kontrola",
+      "text": "Laura prochází police ještě jednou. Panda dělá, že nic necinká. Panda to komentuje legračně a dramaticky. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Spočítat finále",
+          "text": "Zkusit otevřít",
           "nextId": "scene_17_lib_a"
         },
         {
-          "text": "Zkusit rychle",
+          "text": "Hledat klíč u sebe",
           "nextId": "scene_17_lib_b"
         },
         {
-          "text": "Vysvětlit krok",
+          "text": "Podívat se na pandu",
           "nextId": "scene_17_lib_c"
         }
       ]
@@ -1147,23 +966,19 @@
       "id": "scene_16_lib_c",
       "level": 16,
       "type": "scene",
-      "title": "📚 Zámek: slovo",
-      "text": "U tajné poličky je papírek: „Než otevřeš, řekni správnou větu.“ Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 17 + 13 = ?"
-      },
+      "title": "📚 Poslední kontrola",
+      "text": "Laura prochází police ještě jednou. Panda dělá, že nic necinká. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Spočítat finále",
+          "text": "Zkusit otevřít",
           "nextId": "scene_17_lib_a"
         },
         {
-          "text": "Zkusit rychle",
+          "text": "Hledat klíč u sebe",
           "nextId": "scene_17_lib_b"
         },
         {
-          "text": "Vysvětlit krok",
+          "text": "Podívat se na pandu",
           "nextId": "scene_17_lib_c"
         }
       ]
@@ -1172,23 +987,19 @@
       "id": "scene_17_lib_a",
       "level": 17,
       "type": "scene",
-      "title": "📚 Poslední věta",
-      "text": "Laura dá dohromady poslední větu z útržků. Panda vypadá až podezřele klidně. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Oprav větu: „Vítáme vas v knihovňe.“"
-      },
+      "title": "📚 Krok k poličce",
+      "text": "Stojíte u tajné poličky. Všechno sedí… kromě klíče. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Opravit ceduli",
+          "text": "Podívat se zblízka",
           "nextId": "scene_18_lib_a"
         },
         {
-          "text": "Napsat správně",
+          "text": "Zkontrolovat přívěsek",
           "nextId": "scene_18_lib_b"
         },
         {
-          "text": "Najít viníka",
+          "text": "Všimnout si detailu",
           "nextId": "scene_18_lib_c"
         }
       ]
@@ -1197,23 +1008,19 @@
       "id": "scene_17_lib_b",
       "level": 17,
       "type": "scene",
-      "title": "📚 Poslední věta",
-      "text": "Laura dá dohromady poslední větu z útržků. Panda vypadá až podezřele klidně. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Oprav větu: „Vítáme vas v knihovňe.“"
-      },
+      "title": "📚 Krok k poličce",
+      "text": "Stojíte u tajné poličky. Všechno sedí… kromě klíče. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Opravit ceduli",
+          "text": "Podívat se zblízka",
           "nextId": "scene_18_lib_a"
         },
         {
-          "text": "Napsat správně",
+          "text": "Zkontrolovat přívěsek",
           "nextId": "scene_18_lib_b"
         },
         {
-          "text": "Najít viníka",
+          "text": "Všimnout si detailu",
           "nextId": "scene_18_lib_c"
         }
       ]
@@ -1222,23 +1029,19 @@
       "id": "scene_17_lib_c",
       "level": 17,
       "type": "scene",
-      "title": "📚 Poslední věta",
-      "text": "Laura dá dohromady poslední větu z útržků. Panda vypadá až podezřele klidně. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Oprav větu: „Vítáme vas v knihovňe.“"
-      },
+      "title": "📚 Krok k poličce",
+      "text": "Stojíte u tajné poličky. Všechno sedí… kromě klíče. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Opravit ceduli",
+          "text": "Podívat se zblízka",
           "nextId": "scene_18_lib_a"
         },
         {
-          "text": "Napsat správně",
+          "text": "Zkontrolovat přívěsek",
           "nextId": "scene_18_lib_b"
         },
         {
-          "text": "Najít viníka",
+          "text": "Všimnout si detailu",
           "nextId": "scene_18_lib_c"
         }
       ]
@@ -1247,23 +1050,19 @@
       "id": "scene_18_lib_a",
       "level": 18,
       "type": "scene",
-      "title": "📚 Před poličkou",
-      "text": "Stojí před tajnou poličkou. Všechno sedí… jen klíč pořád nikde. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Doplň: “I can ____.” (read/play/run…)."
-      },
+      "title": "📚 Pohled na plášť",
+      "text": "Laura si všimne, že pandin plášť se trochu leskne. Laura postupuje klidně a pečlivě. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Doplnit slovo",
+          "text": "Říct podezření",
           "nextId": "scene_19_lib_a"
         },
         {
-          "text": "Říct to nahlas",
+          "text": "Položit otázku",
           "nextId": "scene_19_lib_b"
         },
         {
-          "text": "Zkusit jinak",
+          "text": "Počkat na reakci",
           "nextId": "scene_19_lib_c"
         }
       ]
@@ -1272,23 +1071,19 @@
       "id": "scene_18_lib_b",
       "level": 18,
       "type": "scene",
-      "title": "📚 Před poličkou",
-      "text": "Stojí před tajnou poličkou. Všechno sedí… jen klíč pořád nikde. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Doplň: “I can ____.” (read/play/run…)."
-      },
+      "title": "📚 Pohled na plášť",
+      "text": "Laura si všimne, že pandin plášť se trochu leskne. Panda to komentuje legračně a dramaticky. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Doplnit slovo",
+          "text": "Říct podezření",
           "nextId": "scene_19_lib_a"
         },
         {
-          "text": "Říct to nahlas",
+          "text": "Položit otázku",
           "nextId": "scene_19_lib_b"
         },
         {
-          "text": "Zkusit jinak",
+          "text": "Počkat na reakci",
           "nextId": "scene_19_lib_c"
         }
       ]
@@ -1297,23 +1092,19 @@
       "id": "scene_18_lib_c",
       "level": 18,
       "type": "scene",
-      "title": "📚 Před poličkou",
-      "text": "Stojí před tajnou poličkou. Všechno sedí… jen klíč pořád nikde. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Doplň: “I can ____.” (read/play/run…)."
-      },
+      "title": "📚 Pohled na plášť",
+      "text": "Laura si všimne, že pandin plášť se trochu leskne. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Doplnit slovo",
+          "text": "Říct podezření",
           "nextId": "scene_19_lib_a"
         },
         {
-          "text": "Říct to nahlas",
+          "text": "Položit otázku",
           "nextId": "scene_19_lib_b"
         },
         {
-          "text": "Zkusit jinak",
+          "text": "Počkat na reakci",
           "nextId": "scene_19_lib_c"
         }
       ]
@@ -1322,23 +1113,19 @@
       "id": "scene_19_lib_a",
       "level": 19,
       "type": "scene",
-      "title": "📚 Jdeme na odhalení",
-      "text": "Je čas říct nahlas, co už Laura tuší. Panda si upravuje plášť, jako by nic. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "logic",
-        "prompt": "Řekni 1 detektivní otázku, kterou teď položíš."
-      },
+      "title": "📚 Čas říct pravdu",
+      "text": "Laura se nadechne: „Pando… co to máš u sebe?“ Laura postupuje klidně a pečlivě. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Ukázat na klíč a usmát se",
+          "text": "Ukázat, co jsi zjistila",
           "nextId": "scene_20_end_lib"
         },
         {
-          "text": "Říct to jako detektivní projev",
+          "text": "Nechat pandu promluvit",
           "nextId": "scene_20_end_lib"
         },
         {
-          "text": "Nechat pandu, ať se přizná",
+          "text": "Otevřít poličku spolu",
           "nextId": "scene_20_end_lib"
         }
       ]
@@ -1347,23 +1134,19 @@
       "id": "scene_19_lib_b",
       "level": 19,
       "type": "scene",
-      "title": "📚 Jdeme na odhalení",
-      "text": "Je čas říct nahlas, co už Laura tuší. Panda si upravuje plášť, jako by nic. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "logic",
-        "prompt": "Řekni 1 detektivní otázku, kterou teď položíš."
-      },
+      "title": "📚 Čas říct pravdu",
+      "text": "Laura se nadechne: „Pando… co to máš u sebe?“ Panda to komentuje legračně a dramaticky. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Ukázat na klíč a usmát se",
+          "text": "Ukázat, co jsi zjistila",
           "nextId": "scene_20_end_lib"
         },
         {
-          "text": "Říct to jako detektivní projev",
+          "text": "Nechat pandu promluvit",
           "nextId": "scene_20_end_lib"
         },
         {
-          "text": "Nechat pandu, ať se přizná",
+          "text": "Otevřít poličku spolu",
           "nextId": "scene_20_end_lib"
         }
       ]
@@ -1372,23 +1155,19 @@
       "id": "scene_19_lib_c",
       "level": 19,
       "type": "scene",
-      "title": "📚 Jdeme na odhalení",
-      "text": "Je čas říct nahlas, co už Laura tuší. Panda si upravuje plášť, jako by nic. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "logic",
-        "prompt": "Řekni 1 detektivní otázku, kterou teď položíš."
-      },
+      "title": "📚 Čas říct pravdu",
+      "text": "Laura se nadechne: „Pando… co to máš u sebe?“ Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Ukázat na klíč a usmát se",
+          "text": "Ukázat, co jsi zjistila",
           "nextId": "scene_20_end_lib"
         },
         {
-          "text": "Říct to jako detektivní projev",
+          "text": "Nechat pandu promluvit",
           "nextId": "scene_20_end_lib"
         },
         {
-          "text": "Nechat pandu, ať se přizná",
+          "text": "Otevřít poličku spolu",
           "nextId": "scene_20_end_lib"
         }
       ]
@@ -1397,23 +1176,19 @@
       "id": "scene_02_play_a",
       "level": 2,
       "type": "scene",
-      "title": "🏃 Drb u houpaček",
-      "text": "Na hřišti papoušek křičí „KLÍČ!“ a směje se. Laura zjišťuje, že někdo něco viděl. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "fun",
-        "prompt": "Vymysli název detektivní kanceláře (2–4 slova)."
-      },
+      "title": "🏃 Papouščí hlášení",
+      "text": "Na hřišti papoušek křičí „KLÍČ!“ a pak se tváří, že nic. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Prohlédnout okolí",
+          "text": "Prohlédnout stopu blíž",
           "nextId": "scene_03_play_a"
         },
         {
-          "text": "Zeptat se zvířátka",
+          "text": "Zeptat se někoho",
           "nextId": "scene_03_play_b"
         },
         {
-          "text": "Zkusit rychlou hádanku",
+          "text": "Zkusit malou hádanku",
           "nextId": "scene_03_play_c"
         }
       ]
@@ -1422,23 +1197,19 @@
       "id": "scene_02_play_b",
       "level": 2,
       "type": "scene",
-      "title": "🏃 Drb u houpaček",
-      "text": "Na hřišti papoušek křičí „KLÍČ!“ a směje se. Laura zjišťuje, že někdo něco viděl. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "fun",
-        "prompt": "Vymysli název detektivní kanceláře (2–4 slova)."
-      },
+      "title": "🏃 Papouščí hlášení",
+      "text": "Na hřišti papoušek křičí „KLÍČ!“ a pak se tváří, že nic. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Prohlédnout okolí",
+          "text": "Prohlédnout stopu blíž",
           "nextId": "scene_03_play_a"
         },
         {
-          "text": "Zeptat se zvířátka",
+          "text": "Zeptat se někoho",
           "nextId": "scene_03_play_b"
         },
         {
-          "text": "Zkusit rychlou hádanku",
+          "text": "Zkusit malou hádanku",
           "nextId": "scene_03_play_c"
         }
       ]
@@ -1447,23 +1218,19 @@
       "id": "scene_02_play_c",
       "level": 2,
       "type": "scene",
-      "title": "🏃 Drb u houpaček",
-      "text": "Na hřišti papoušek křičí „KLÍČ!“ a směje se. Laura zjišťuje, že někdo něco viděl. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "fun",
-        "prompt": "Vymysli název detektivní kanceláře (2–4 slova)."
-      },
+      "title": "🏃 Papouščí hlášení",
+      "text": "Na hřišti papoušek křičí „KLÍČ!“ a pak se tváří, že nic. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Prohlédnout okolí",
+          "text": "Prohlédnout stopu blíž",
           "nextId": "scene_03_play_a"
         },
         {
-          "text": "Zeptat se zvířátka",
+          "text": "Zeptat se někoho",
           "nextId": "scene_03_play_b"
         },
         {
-          "text": "Zkusit rychlou hádanku",
+          "text": "Zkusit malou hádanku",
           "nextId": "scene_03_play_c"
         }
       ]
@@ -1472,23 +1239,19 @@
       "id": "scene_03_play_a",
       "level": 3,
       "type": "scene",
-      "title": "🏃 Papouščí stopa",
-      "text": "Papoušek opakuje jen půlky vět. Laura musí poskládat smysl z útržků. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 3 vyjmenovaná slova po B."
-      },
+      "title": "🏃 Svědci u houpaček",
+      "text": "Dvě děti říkají dvě různé verze. Laura hledá, co mají společného. Laura postupuje klidně a pečlivě. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Najít další lístek",
+          "text": "Jít za tím, co vyčnívá",
           "nextId": "scene_04_play_a"
         },
         {
-          "text": "Sledovat stopu",
+          "text": "Jít za zvukem",
           "nextId": "scene_04_play_b"
         },
         {
-          "text": "Podívat se výš",
+          "text": "Jít za šipkou",
           "nextId": "scene_04_play_c"
         }
       ]
@@ -1497,23 +1260,19 @@
       "id": "scene_03_play_b",
       "level": 3,
       "type": "scene",
-      "title": "🏃 Papouščí stopa",
-      "text": "Papoušek opakuje jen půlky vět. Laura musí poskládat smysl z útržků. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 3 vyjmenovaná slova po B."
-      },
+      "title": "🏃 Svědci u houpaček",
+      "text": "Dvě děti říkají dvě různé verze. Laura hledá, co mají společného. Panda to komentuje legračně a dramaticky. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Najít další lístek",
+          "text": "Jít za tím, co vyčnívá",
           "nextId": "scene_04_play_a"
         },
         {
-          "text": "Sledovat stopu",
+          "text": "Jít za zvukem",
           "nextId": "scene_04_play_b"
         },
         {
-          "text": "Podívat se výš",
+          "text": "Jít za šipkou",
           "nextId": "scene_04_play_c"
         }
       ]
@@ -1522,23 +1281,19 @@
       "id": "scene_03_play_c",
       "level": 3,
       "type": "scene",
-      "title": "🏃 Papouščí stopa",
-      "text": "Papoušek opakuje jen půlky vět. Laura musí poskládat smysl z útržků. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 3 vyjmenovaná slova po B."
-      },
+      "title": "🏃 Svědci u houpaček",
+      "text": "Dvě děti říkají dvě různé verze. Laura hledá, co mají společného. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Najít další lístek",
+          "text": "Jít za tím, co vyčnívá",
           "nextId": "scene_04_play_a"
         },
         {
-          "text": "Sledovat stopu",
+          "text": "Jít za zvukem",
           "nextId": "scene_04_play_b"
         },
         {
-          "text": "Podívat se výš",
+          "text": "Jít za šipkou",
           "nextId": "scene_04_play_c"
         }
       ]
@@ -1547,23 +1302,19 @@
       "id": "scene_04_play_a",
       "level": 4,
       "type": "scene",
-      "title": "🏃 Kdo byl kde",
-      "text": "Děti ukazují, kdo šel ráno kolem knihovny. Panda z toho dělá „mapu podezření“. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 8 + 7 = ?"
-      },
+      "title": "🏃 Křídové šipky",
+      "text": "Na zemi jsou šipky z křídy. Vypadají jako hra, ale vedou správně. Laura postupuje klidně a pečlivě. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Jít za mapou",
+          "text": "Ověřit nápis",
           "nextId": "scene_05_play_a"
         },
         {
-          "text": "Jít za zvukem",
+          "text": "Najít další lístek",
           "nextId": "scene_05_play_b"
         },
         {
-          "text": "Jít za šipkou",
+          "text": "Podívat se kolem sebe",
           "nextId": "scene_05_play_c"
         }
       ]
@@ -1572,23 +1323,19 @@
       "id": "scene_04_play_b",
       "level": 4,
       "type": "scene",
-      "title": "🏃 Kdo byl kde",
-      "text": "Děti ukazují, kdo šel ráno kolem knihovny. Panda z toho dělá „mapu podezření“. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 8 + 7 = ?"
-      },
+      "title": "🏃 Křídové šipky",
+      "text": "Na zemi jsou šipky z křídy. Vypadají jako hra, ale vedou správně. Panda to komentuje legračně a dramaticky. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Jít za mapou",
+          "text": "Ověřit nápis",
           "nextId": "scene_05_play_a"
         },
         {
-          "text": "Jít za zvukem",
+          "text": "Najít další lístek",
           "nextId": "scene_05_play_b"
         },
         {
-          "text": "Jít za šipkou",
+          "text": "Podívat se kolem sebe",
           "nextId": "scene_05_play_c"
         }
       ]
@@ -1597,23 +1344,19 @@
       "id": "scene_04_play_c",
       "level": 4,
       "type": "scene",
-      "title": "🏃 Kdo byl kde",
-      "text": "Děti ukazují, kdo šel ráno kolem knihovny. Panda z toho dělá „mapu podezření“. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 8 + 7 = ?"
-      },
+      "title": "🏃 Křídové šipky",
+      "text": "Na zemi jsou šipky z křídy. Vypadají jako hra, ale vedou správně. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Jít za mapou",
+          "text": "Ověřit nápis",
           "nextId": "scene_05_play_a"
         },
         {
-          "text": "Jít za zvukem",
+          "text": "Najít další lístek",
           "nextId": "scene_05_play_b"
         },
         {
-          "text": "Jít za šipkou",
+          "text": "Podívat se kolem sebe",
           "nextId": "scene_05_play_c"
         }
       ]
@@ -1622,23 +1365,19 @@
       "id": "scene_05_play_a",
       "level": 5,
       "type": "scene",
-      "title": "🏃 Pravda/nepravda",
-      "text": "Vydra navrhne hru: pravda/nepravda o tom, kdo měl klíč. Laura poslouchá detaily. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Přelož: key, library, clue."
-      },
+      "title": "🏃 Závod za stopou",
+      "text": "Laura s pandou popoběhnou a všimnou si cinknutí někde vpředu. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Použít slovíčka",
+          "text": "Prozkoumat mapku",
           "nextId": "scene_06_play_a"
         },
         {
-          "text": "Zkusit mini-dialog",
+          "text": "Jít po puntících",
           "nextId": "scene_06_play_b"
         },
         {
-          "text": "Najít kartičku",
+          "text": "Najít tajné místo",
           "nextId": "scene_06_play_c"
         }
       ]
@@ -1647,23 +1386,19 @@
       "id": "scene_05_play_b",
       "level": 5,
       "type": "scene",
-      "title": "🏃 Pravda/nepravda",
-      "text": "Vydra navrhne hru: pravda/nepravda o tom, kdo měl klíč. Laura poslouchá detaily. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Přelož: key, library, clue."
-      },
+      "title": "🏃 Závod za stopou",
+      "text": "Laura s pandou popoběhnou a všimnou si cinknutí někde vpředu. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Použít slovíčka",
+          "text": "Prozkoumat mapku",
           "nextId": "scene_06_play_a"
         },
         {
-          "text": "Zkusit mini-dialog",
+          "text": "Jít po puntících",
           "nextId": "scene_06_play_b"
         },
         {
-          "text": "Najít kartičku",
+          "text": "Najít tajné místo",
           "nextId": "scene_06_play_c"
         }
       ]
@@ -1672,23 +1407,19 @@
       "id": "scene_05_play_c",
       "level": 5,
       "type": "scene",
-      "title": "🏃 Pravda/nepravda",
-      "text": "Vydra navrhne hru: pravda/nepravda o tom, kdo měl klíč. Laura poslouchá detaily. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Přelož: key, library, clue."
-      },
+      "title": "🏃 Závod za stopou",
+      "text": "Laura s pandou popoběhnou a všimnou si cinknutí někde vpředu. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Použít slovíčka",
+          "text": "Prozkoumat mapku",
           "nextId": "scene_06_play_a"
         },
         {
-          "text": "Zkusit mini-dialog",
+          "text": "Jít po puntících",
           "nextId": "scene_06_play_b"
         },
         {
-          "text": "Najít kartičku",
+          "text": "Najít tajné místo",
           "nextId": "scene_06_play_c"
         }
       ]
@@ -1697,23 +1428,19 @@
       "id": "scene_06_play_a",
       "level": 6,
       "type": "scene",
-      "title": "🏃 Směšný svědek",
-      "text": "Králík tvrdí, že slyšel cinknutí. Papoušek tvrdí, že slyšel zpěv. Panda tvrdí, že slyšela bambus. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Doplň správně: Panda __la v knihovně. (byla/bílá) + proč."
-      },
+      "title": "🏃 Směšný zvuk",
+      "text": "Někdo napodobuje pandu. Panda tvrdí, že to je „pachatel v převleku“. Laura postupuje klidně a pečlivě. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Opravit větu",
+          "text": "Srovnat to jako kód",
           "nextId": "scene_07_play_a"
         },
         {
-          "text": "Najít chybu",
+          "text": "Hledat vzor",
           "nextId": "scene_07_play_b"
         },
         {
-          "text": "Vymyslet důkaz",
+          "text": "Zkusit jiný směr",
           "nextId": "scene_07_play_c"
         }
       ]
@@ -1722,23 +1449,19 @@
       "id": "scene_06_play_b",
       "level": 6,
       "type": "scene",
-      "title": "🏃 Směšný svědek",
-      "text": "Králík tvrdí, že slyšel cinknutí. Papoušek tvrdí, že slyšel zpěv. Panda tvrdí, že slyšela bambus. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Doplň správně: Panda __la v knihovně. (byla/bílá) + proč."
-      },
+      "title": "🏃 Směšný zvuk",
+      "text": "Někdo napodobuje pandu. Panda tvrdí, že to je „pachatel v převleku“. Panda to komentuje legračně a dramaticky. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Opravit větu",
+          "text": "Srovnat to jako kód",
           "nextId": "scene_07_play_a"
         },
         {
-          "text": "Najít chybu",
+          "text": "Hledat vzor",
           "nextId": "scene_07_play_b"
         },
         {
-          "text": "Vymyslet důkaz",
+          "text": "Zkusit jiný směr",
           "nextId": "scene_07_play_c"
         }
       ]
@@ -1747,23 +1470,19 @@
       "id": "scene_06_play_c",
       "level": 6,
       "type": "scene",
-      "title": "🏃 Směšný svědek",
-      "text": "Králík tvrdí, že slyšel cinknutí. Papoušek tvrdí, že slyšel zpěv. Panda tvrdí, že slyšela bambus. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Doplň správně: Panda __la v knihovně. (byla/bílá) + proč."
-      },
+      "title": "🏃 Směšný zvuk",
+      "text": "Někdo napodobuje pandu. Panda tvrdí, že to je „pachatel v převleku“. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Opravit větu",
+          "text": "Srovnat to jako kód",
           "nextId": "scene_07_play_a"
         },
         {
-          "text": "Najít chybu",
+          "text": "Hledat vzor",
           "nextId": "scene_07_play_b"
         },
         {
-          "text": "Vymyslet důkaz",
+          "text": "Zkusit jiný směr",
           "nextId": "scene_07_play_c"
         }
       ]
@@ -1773,22 +1492,18 @@
       "level": 7,
       "type": "scene",
       "title": "🏃 Hádanka od dětí",
-      "text": "Děti dají Lauře hádanku, prý „jen pro opravdové detektivy“. Laura se směje a řeší. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "wordplay",
-        "prompt": "Vymysli 2 rýmy na „panda“ (klidně blbiny)."
-      },
+      "text": "Děti dají Lauře hádanku a čekají, jestli se zasměje i zamyslí. Laura postupuje klidně a pečlivě. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Zkusit rým",
+          "text": "Najít schovaný papír",
           "nextId": "scene_08_play_a"
         },
         {
-          "text": "Zkusit vtip",
+          "text": "Mrknout pod věci",
           "nextId": "scene_08_play_b"
         },
         {
-          "text": "Zkusit slovní trik",
+          "text": "Podívat se výš",
           "nextId": "scene_08_play_c"
         }
       ]
@@ -1798,22 +1513,18 @@
       "level": 7,
       "type": "scene",
       "title": "🏃 Hádanka od dětí",
-      "text": "Děti dají Lauře hádanku, prý „jen pro opravdové detektivy“. Laura se směje a řeší. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "wordplay",
-        "prompt": "Vymysli 2 rýmy na „panda“ (klidně blbiny)."
-      },
+      "text": "Děti dají Lauře hádanku a čekají, jestli se zasměje i zamyslí. Panda to komentuje legračně a dramaticky. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Zkusit rým",
+          "text": "Najít schovaný papír",
           "nextId": "scene_08_play_a"
         },
         {
-          "text": "Zkusit vtip",
+          "text": "Mrknout pod věci",
           "nextId": "scene_08_play_b"
         },
         {
-          "text": "Zkusit slovní trik",
+          "text": "Podívat se výš",
           "nextId": "scene_08_play_c"
         }
       ]
@@ -1823,22 +1534,18 @@
       "level": 7,
       "type": "scene",
       "title": "🏃 Hádanka od dětí",
-      "text": "Děti dají Lauře hádanku, prý „jen pro opravdové detektivy“. Laura se směje a řeší. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "wordplay",
-        "prompt": "Vymysli 2 rýmy na „panda“ (klidně blbiny)."
-      },
+      "text": "Děti dají Lauře hádanku a čekají, jestli se zasměje i zamyslí. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Zkusit rým",
+          "text": "Najít schovaný papír",
           "nextId": "scene_08_play_a"
         },
         {
-          "text": "Zkusit vtip",
+          "text": "Mrknout pod věci",
           "nextId": "scene_08_play_b"
         },
         {
-          "text": "Zkusit slovní trik",
+          "text": "Podívat se výš",
           "nextId": "scene_08_play_c"
         }
       ]
@@ -1847,23 +1554,19 @@
       "id": "scene_08_play_a",
       "level": 8,
       "type": "scene",
-      "title": "🏃 Závod o stopu",
-      "text": "Na zemi je křída a šipky. Vypadají jako hra, ale vedou na správné místo. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 24 − 9 = ?"
-      },
+      "title": "🏃 Mapa podezření",
+      "text": "Panda nakreslí mapu podezření… která vypadá jako panda. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Spočítat stopu",
+          "text": "Zvednout samolepku",
           "nextId": "scene_09_play_a"
         },
         {
-          "text": "Najít číslo",
+          "text": "Hledat šipku",
           "nextId": "scene_09_play_b"
         },
         {
-          "text": "Vybrat směr",
+          "text": "Jít potichu dál",
           "nextId": "scene_09_play_c"
         }
       ]
@@ -1872,23 +1575,19 @@
       "id": "scene_08_play_b",
       "level": 8,
       "type": "scene",
-      "title": "🏃 Závod o stopu",
-      "text": "Na zemi je křída a šipky. Vypadají jako hra, ale vedou na správné místo. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 24 − 9 = ?"
-      },
+      "title": "🏃 Mapa podezření",
+      "text": "Panda nakreslí mapu podezření… která vypadá jako panda. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Spočítat stopu",
+          "text": "Zvednout samolepku",
           "nextId": "scene_09_play_a"
         },
         {
-          "text": "Najít číslo",
+          "text": "Hledat šipku",
           "nextId": "scene_09_play_b"
         },
         {
-          "text": "Vybrat směr",
+          "text": "Jít potichu dál",
           "nextId": "scene_09_play_c"
         }
       ]
@@ -1897,23 +1596,19 @@
       "id": "scene_08_play_c",
       "level": 8,
       "type": "scene",
-      "title": "🏃 Závod o stopu",
-      "text": "Na zemi je křída a šipky. Vypadají jako hra, ale vedou na správné místo. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 24 − 9 = ?"
-      },
+      "title": "🏃 Mapa podezření",
+      "text": "Panda nakreslí mapu podezření… která vypadá jako panda. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Spočítat stopu",
+          "text": "Zvednout samolepku",
           "nextId": "scene_09_play_a"
         },
         {
-          "text": "Najít číslo",
+          "text": "Hledat šipku",
           "nextId": "scene_09_play_b"
         },
         {
-          "text": "Vybrat směr",
+          "text": "Jít potichu dál",
           "nextId": "scene_09_play_c"
         }
       ]
@@ -1922,23 +1617,19 @@
       "id": "scene_09_play_a",
       "level": 9,
       "type": "scene",
-      "title": "🏃 Pauza na čtení",
-      "text": "Laura si na lavičce přečte krátký odstavec. Panda přikyvuje, jako by byla porota. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 2 věty (z knížky nebo vymyšlené)."
-      },
+      "title": "🏃 Lavička na čtení",
+      "text": "Na lavičce je vzkaz: „Detektiv čte, i když běží.“ Laura postupuje klidně a pečlivě. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Přečíst nápovědu",
+          "text": "Použít angličtinu",
           "nextId": "scene_10_play_a"
         },
         {
-          "text": "Číst nahlas",
+          "text": "Najít slovíčko",
           "nextId": "scene_10_play_b"
         },
         {
-          "text": "Číst potichu",
+          "text": "Říct krátkou větu",
           "nextId": "scene_10_play_c"
         }
       ]
@@ -1947,23 +1638,19 @@
       "id": "scene_09_play_b",
       "level": 9,
       "type": "scene",
-      "title": "🏃 Pauza na čtení",
-      "text": "Laura si na lavičce přečte krátký odstavec. Panda přikyvuje, jako by byla porota. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 2 věty (z knížky nebo vymyšlené)."
-      },
+      "title": "🏃 Lavička na čtení",
+      "text": "Na lavičce je vzkaz: „Detektiv čte, i když běží.“ Panda to komentuje legračně a dramaticky. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Přečíst nápovědu",
+          "text": "Použít angličtinu",
           "nextId": "scene_10_play_a"
         },
         {
-          "text": "Číst nahlas",
+          "text": "Najít slovíčko",
           "nextId": "scene_10_play_b"
         },
         {
-          "text": "Číst potichu",
+          "text": "Říct krátkou větu",
           "nextId": "scene_10_play_c"
         }
       ]
@@ -1972,23 +1659,19 @@
       "id": "scene_09_play_c",
       "level": 9,
       "type": "scene",
-      "title": "🏃 Pauza na čtení",
-      "text": "Laura si na lavičce přečte krátký odstavec. Panda přikyvuje, jako by byla porota. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 2 věty (z knížky nebo vymyšlené)."
-      },
+      "title": "🏃 Lavička na čtení",
+      "text": "Na lavičce je vzkaz: „Detektiv čte, i když běží.“ Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Přečíst nápovědu",
+          "text": "Použít angličtinu",
           "nextId": "scene_10_play_a"
         },
         {
-          "text": "Číst nahlas",
+          "text": "Najít slovíčko",
           "nextId": "scene_10_play_b"
         },
         {
-          "text": "Číst potichu",
+          "text": "Říct krátkou větu",
           "nextId": "scene_10_play_c"
         }
       ]
@@ -1997,23 +1680,19 @@
       "id": "scene_10_play_a",
       "level": 10,
       "type": "scene",
-      "title": "🏃 Angličtina v terénu",
-      "text": "Králík chce slyšet anglickou větu, aby „vylákal stopu“. Je to podezřele zábavné. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni: “My name is Laura.” + “I like books.”"
-      },
+      "title": "🏃 Anglický test",
+      "text": "Králík chce slyšet krátkou anglickou větu, prý „kvůli stopě“. Laura postupuje klidně a pečlivě. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Říct to anglicky",
+          "text": "Složit správnou větu",
           "nextId": "scene_11_play_a"
         },
         {
-          "text": "Položit otázku",
+          "text": "Opravit chybu",
           "nextId": "scene_11_play_b"
         },
         {
-          "text": "Najít další clue",
+          "text": "Vybrat správné slovo",
           "nextId": "scene_11_play_c"
         }
       ]
@@ -2022,23 +1701,19 @@
       "id": "scene_10_play_b",
       "level": 10,
       "type": "scene",
-      "title": "🏃 Angličtina v terénu",
-      "text": "Králík chce slyšet anglickou větu, aby „vylákal stopu“. Je to podezřele zábavné. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni: “My name is Laura.” + “I like books.”"
-      },
+      "title": "🏃 Anglický test",
+      "text": "Králík chce slyšet krátkou anglickou větu, prý „kvůli stopě“. Panda to komentuje legračně a dramaticky. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Říct to anglicky",
+          "text": "Složit správnou větu",
           "nextId": "scene_11_play_a"
         },
         {
-          "text": "Položit otázku",
+          "text": "Opravit chybu",
           "nextId": "scene_11_play_b"
         },
         {
-          "text": "Najít další clue",
+          "text": "Vybrat správné slovo",
           "nextId": "scene_11_play_c"
         }
       ]
@@ -2047,23 +1722,19 @@
       "id": "scene_10_play_c",
       "level": 10,
       "type": "scene",
-      "title": "🏃 Angličtina v terénu",
-      "text": "Králík chce slyšet anglickou větu, aby „vylákal stopu“. Je to podezřele zábavné. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni: “My name is Laura.” + “I like books.”"
-      },
+      "title": "🏃 Anglický test",
+      "text": "Králík chce slyšet krátkou anglickou větu, prý „kvůli stopě“. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Říct to anglicky",
+          "text": "Složit správnou větu",
           "nextId": "scene_11_play_a"
         },
         {
-          "text": "Položit otázku",
+          "text": "Opravit chybu",
           "nextId": "scene_11_play_b"
         },
         {
-          "text": "Najít další clue",
+          "text": "Vybrat správné slovo",
           "nextId": "scene_11_play_c"
         }
       ]
@@ -2072,23 +1743,19 @@
       "id": "scene_11_play_a",
       "level": 11,
       "type": "scene",
-      "title": "🏃 Počítací výzva",
-      "text": "Vydra dá mini-příklad a řekne: „Správné číslo = správný směr.“ Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "logic",
-        "prompt": "Pravda/nepravda: „Knihovna = library“ (řekni proč)."
-      },
+      "title": "🏃 Počítání směrů",
+      "text": "Vydra ukáže tři cesty a řekne: „Správné číslo = správná cesta.“ Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Ověřit pravdu",
+          "text": "Prohlédnout sešit",
           "nextId": "scene_12_play_a"
         },
         {
-          "text": "Zkontrolovat detail",
+          "text": "Najít podtržené",
           "nextId": "scene_12_play_b"
         },
         {
-          "text": "Spojit stopy",
+          "text": "Zkusit logiku",
           "nextId": "scene_12_play_c"
         }
       ]
@@ -2097,23 +1764,19 @@
       "id": "scene_11_play_b",
       "level": 11,
       "type": "scene",
-      "title": "🏃 Počítací výzva",
-      "text": "Vydra dá mini-příklad a řekne: „Správné číslo = správný směr.“ Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "logic",
-        "prompt": "Pravda/nepravda: „Knihovna = library“ (řekni proč)."
-      },
+      "title": "🏃 Počítání směrů",
+      "text": "Vydra ukáže tři cesty a řekne: „Správné číslo = správná cesta.“ Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Ověřit pravdu",
+          "text": "Prohlédnout sešit",
           "nextId": "scene_12_play_a"
         },
         {
-          "text": "Zkontrolovat detail",
+          "text": "Najít podtržené",
           "nextId": "scene_12_play_b"
         },
         {
-          "text": "Spojit stopy",
+          "text": "Zkusit logiku",
           "nextId": "scene_12_play_c"
         }
       ]
@@ -2122,23 +1785,19 @@
       "id": "scene_11_play_c",
       "level": 11,
       "type": "scene",
-      "title": "🏃 Počítací výzva",
-      "text": "Vydra dá mini-příklad a řekne: „Správné číslo = správný směr.“ Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "logic",
-        "prompt": "Pravda/nepravda: „Knihovna = library“ (řekni proč)."
-      },
+      "title": "🏃 Počítání směrů",
+      "text": "Vydra ukáže tři cesty a řekne: „Správné číslo = správná cesta.“ Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Ověřit pravdu",
+          "text": "Prohlédnout sešit",
           "nextId": "scene_12_play_a"
         },
         {
-          "text": "Zkontrolovat detail",
+          "text": "Najít podtržené",
           "nextId": "scene_12_play_b"
         },
         {
-          "text": "Spojit stopy",
+          "text": "Zkusit logiku",
           "nextId": "scene_12_play_c"
         }
       ]
@@ -2147,23 +1806,19 @@
       "id": "scene_12_play_a",
       "level": 12,
       "type": "scene",
-      "title": "🏃 Podezřelý zvuk",
-      "text": "Někde zacinká kov. Laura se otočí přesně ve správný moment. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 6 × 4 = ? (nebo 6+6+6+6)."
-      },
+      "title": "🏃 Cink u batohu",
+      "text": "Z batohu někde zacinká kov. Laura se otočí ve správnou chvíli. Laura postupuje klidně a pečlivě. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Otevřít krabičku",
+          "text": "Vzít novou záložku",
           "nextId": "scene_13_play_a"
         },
         {
-          "text": "Zkusit kód",
+          "text": "Podívat se do kapsy",
           "nextId": "scene_13_play_b"
         },
         {
-          "text": "Najít dílek",
+          "text": "Zkontrolovat háček",
           "nextId": "scene_13_play_c"
         }
       ]
@@ -2172,23 +1827,19 @@
       "id": "scene_12_play_b",
       "level": 12,
       "type": "scene",
-      "title": "🏃 Podezřelý zvuk",
-      "text": "Někde zacinká kov. Laura se otočí přesně ve správný moment. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 6 × 4 = ? (nebo 6+6+6+6)."
-      },
+      "title": "🏃 Cink u batohu",
+      "text": "Z batohu někde zacinká kov. Laura se otočí ve správnou chvíli. Panda to komentuje legračně a dramaticky. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Otevřít krabičku",
+          "text": "Vzít novou záložku",
           "nextId": "scene_13_play_a"
         },
         {
-          "text": "Zkusit kód",
+          "text": "Podívat se do kapsy",
           "nextId": "scene_13_play_b"
         },
         {
-          "text": "Najít dílek",
+          "text": "Zkontrolovat háček",
           "nextId": "scene_13_play_c"
         }
       ]
@@ -2197,23 +1848,19 @@
       "id": "scene_12_play_c",
       "level": 12,
       "type": "scene",
-      "title": "🏃 Podezřelý zvuk",
-      "text": "Někde zacinká kov. Laura se otočí přesně ve správný moment. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 6 × 4 = ? (nebo 6+6+6+6)."
-      },
+      "title": "🏃 Cink u batohu",
+      "text": "Z batohu někde zacinká kov. Laura se otočí ve správnou chvíli. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Otevřít krabičku",
+          "text": "Vzít novou záložku",
           "nextId": "scene_13_play_a"
         },
         {
-          "text": "Zkusit kód",
+          "text": "Podívat se do kapsy",
           "nextId": "scene_13_play_b"
         },
         {
-          "text": "Najít dílek",
+          "text": "Zkontrolovat háček",
           "nextId": "scene_13_play_c"
         }
       ]
@@ -2222,23 +1869,19 @@
       "id": "scene_13_play_a",
       "level": 13,
       "type": "scene",
-      "title": "🏃 Stín, co není strašidlo",
-      "text": "Za stromem je jen batoh a na něm šňůrka. Panda tvrdí, že šňůrky jsou vždycky podezřelé. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 2 vyjmenovaná slova po L."
-      },
+      "title": "🏃 Šňůrka na plotě",
+      "text": "Na plotě visí šňůrka s přívěskem. Panda ji pozoruje až moc dlouho. Laura postupuje klidně a pečlivě. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Vzít stopu",
+          "text": "Vyřešit hádanku",
           "nextId": "scene_14_play_a"
         },
         {
-          "text": "Kouknout do regálu",
+          "text": "Přečíst si nápovědu",
           "nextId": "scene_14_play_b"
         },
         {
-          "text": "Prověřit kapsu",
+          "text": "Zeptat se pandy",
           "nextId": "scene_14_play_c"
         }
       ]
@@ -2247,23 +1890,19 @@
       "id": "scene_13_play_b",
       "level": 13,
       "type": "scene",
-      "title": "🏃 Stín, co není strašidlo",
-      "text": "Za stromem je jen batoh a na něm šňůrka. Panda tvrdí, že šňůrky jsou vždycky podezřelé. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 2 vyjmenovaná slova po L."
-      },
+      "title": "🏃 Šňůrka na plotě",
+      "text": "Na plotě visí šňůrka s přívěskem. Panda ji pozoruje až moc dlouho. Panda to komentuje legračně a dramaticky. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Vzít stopu",
+          "text": "Vyřešit hádanku",
           "nextId": "scene_14_play_a"
         },
         {
-          "text": "Kouknout do regálu",
+          "text": "Přečíst si nápovědu",
           "nextId": "scene_14_play_b"
         },
         {
-          "text": "Prověřit kapsu",
+          "text": "Zeptat se pandy",
           "nextId": "scene_14_play_c"
         }
       ]
@@ -2272,23 +1911,19 @@
       "id": "scene_13_play_c",
       "level": 13,
       "type": "scene",
-      "title": "🏃 Stín, co není strašidlo",
-      "text": "Za stromem je jen batoh a na něm šňůrka. Panda tvrdí, že šňůrky jsou vždycky podezřelé. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 2 vyjmenovaná slova po L."
-      },
+      "title": "🏃 Šňůrka na plotě",
+      "text": "Na plotě visí šňůrka s přívěskem. Panda ji pozoruje až moc dlouho. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Vzít stopu",
+          "text": "Vyřešit hádanku",
           "nextId": "scene_14_play_a"
         },
         {
-          "text": "Kouknout do regálu",
+          "text": "Přečíst si nápovědu",
           "nextId": "scene_14_play_b"
         },
         {
-          "text": "Prověřit kapsu",
+          "text": "Zeptat se pandy",
           "nextId": "scene_14_play_c"
         }
       ]
@@ -2297,23 +1932,19 @@
       "id": "scene_14_play_a",
       "level": 14,
       "type": "scene",
-      "title": "🏃 Lego pod lavičkou",
-      "text": "Pod lavičkou je lego dílek. Laura ho zvedne a všimne si, že je úplně čistý. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni anglicky 5 čísel (1–10)."
-      },
+      "title": "🏃 Lego nález",
+      "text": "Pod lavičkou je lego dílek. Je čistý, jako by ho někdo právě položil. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Počítat anglicky",
+          "text": "Jít po stopě tužky",
           "nextId": "scene_15_play_a"
         },
         {
-          "text": "Říct větu",
+          "text": "Najít značku",
           "nextId": "scene_15_play_b"
         },
         {
-          "text": "Najít slovo",
+          "text": "Prohlédnout stěnu",
           "nextId": "scene_15_play_c"
         }
       ]
@@ -2322,23 +1953,19 @@
       "id": "scene_14_play_b",
       "level": 14,
       "type": "scene",
-      "title": "🏃 Lego pod lavičkou",
-      "text": "Pod lavičkou je lego dílek. Laura ho zvedne a všimne si, že je úplně čistý. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni anglicky 5 čísel (1–10)."
-      },
+      "title": "🏃 Lego nález",
+      "text": "Pod lavičkou je lego dílek. Je čistý, jako by ho někdo právě položil. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Počítat anglicky",
+          "text": "Jít po stopě tužky",
           "nextId": "scene_15_play_a"
         },
         {
-          "text": "Říct větu",
+          "text": "Najít značku",
           "nextId": "scene_15_play_b"
         },
         {
-          "text": "Najít slovo",
+          "text": "Prohlédnout stěnu",
           "nextId": "scene_15_play_c"
         }
       ]
@@ -2347,23 +1974,19 @@
       "id": "scene_14_play_c",
       "level": 14,
       "type": "scene",
-      "title": "🏃 Lego pod lavičkou",
-      "text": "Pod lavičkou je lego dílek. Laura ho zvedne a všimne si, že je úplně čistý. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni anglicky 5 čísel (1–10)."
-      },
+      "title": "🏃 Lego nález",
+      "text": "Pod lavičkou je lego dílek. Je čistý, jako by ho někdo právě položil. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Počítat anglicky",
+          "text": "Jít po stopě tužky",
           "nextId": "scene_15_play_a"
         },
         {
-          "text": "Říct větu",
+          "text": "Najít značku",
           "nextId": "scene_15_play_b"
         },
         {
-          "text": "Najít slovo",
+          "text": "Prohlédnout stěnu",
           "nextId": "scene_15_play_c"
         }
       ]
@@ -2372,23 +1995,19 @@
       "id": "scene_15_play_a",
       "level": 15,
       "type": "scene",
-      "title": "🏃 Svědecká věta",
-      "text": "Každý řekne jednu větu. Laura vybere tu, která nejvíc sedí dohromady. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 1 krátký odstavec (nebo ho vymysli)."
-      },
+      "title": "🏃 Jedna důležitá věta",
+      "text": "Každý řekne jednu větu. Laura vybere tu nejpřesnější. Laura postupuje klidně a pečlivě. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Číst a hledat",
+          "text": "Udělat poslední kontrolu",
           "nextId": "scene_16_play_a"
         },
         {
-          "text": "Číst a smát se",
+          "text": "Zkusit ještě jednou",
           "nextId": "scene_16_play_b"
         },
         {
-          "text": "Číst jako detektiv",
+          "text": "Jít rovnou k poličce",
           "nextId": "scene_16_play_c"
         }
       ]
@@ -2397,23 +2016,19 @@
       "id": "scene_15_play_b",
       "level": 15,
       "type": "scene",
-      "title": "🏃 Svědecká věta",
-      "text": "Každý řekne jednu větu. Laura vybere tu, která nejvíc sedí dohromady. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 1 krátký odstavec (nebo ho vymysli)."
-      },
+      "title": "🏃 Jedna důležitá věta",
+      "text": "Každý řekne jednu větu. Laura vybere tu nejpřesnější. Panda to komentuje legračně a dramaticky. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Číst a hledat",
+          "text": "Udělat poslední kontrolu",
           "nextId": "scene_16_play_a"
         },
         {
-          "text": "Číst a smát se",
+          "text": "Zkusit ještě jednou",
           "nextId": "scene_16_play_b"
         },
         {
-          "text": "Číst jako detektiv",
+          "text": "Jít rovnou k poličce",
           "nextId": "scene_16_play_c"
         }
       ]
@@ -2422,23 +2037,19 @@
       "id": "scene_15_play_c",
       "level": 15,
       "type": "scene",
-      "title": "🏃 Svědecká věta",
-      "text": "Každý řekne jednu větu. Laura vybere tu, která nejvíc sedí dohromady. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 1 krátký odstavec (nebo ho vymysli)."
-      },
+      "title": "🏃 Jedna důležitá věta",
+      "text": "Každý řekne jednu větu. Laura vybere tu nejpřesnější. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Číst a hledat",
+          "text": "Udělat poslední kontrolu",
           "nextId": "scene_16_play_a"
         },
         {
-          "text": "Číst a smát se",
+          "text": "Zkusit ještě jednou",
           "nextId": "scene_16_play_b"
         },
         {
-          "text": "Číst jako detektiv",
+          "text": "Jít rovnou k poličce",
           "nextId": "scene_16_play_c"
         }
       ]
@@ -2447,23 +2058,19 @@
       "id": "scene_16_play_a",
       "level": 16,
       "type": "scene",
-      "title": "🏃 Poslední dotaz",
-      "text": "Laura položí poslední otázku. Všichni ukážou jinam… ale Laura kouká na pandu. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 17 + 13 = ?"
-      },
+      "title": "🏃 Detektivní otázka",
+      "text": "Laura položí poslední otázku a všimne si, kdo uhne očima. Laura postupuje klidně a pečlivě. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Spočítat finále",
+          "text": "Zkusit otevřít",
           "nextId": "scene_17_play_a"
         },
         {
-          "text": "Zkusit rychle",
+          "text": "Hledat klíč u sebe",
           "nextId": "scene_17_play_b"
         },
         {
-          "text": "Vysvětlit krok",
+          "text": "Podívat se na pandu",
           "nextId": "scene_17_play_c"
         }
       ]
@@ -2472,23 +2079,19 @@
       "id": "scene_16_play_b",
       "level": 16,
       "type": "scene",
-      "title": "🏃 Poslední dotaz",
-      "text": "Laura položí poslední otázku. Všichni ukážou jinam… ale Laura kouká na pandu. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 17 + 13 = ?"
-      },
+      "title": "🏃 Detektivní otázka",
+      "text": "Laura položí poslední otázku a všimne si, kdo uhne očima. Panda to komentuje legračně a dramaticky. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Spočítat finále",
+          "text": "Zkusit otevřít",
           "nextId": "scene_17_play_a"
         },
         {
-          "text": "Zkusit rychle",
+          "text": "Hledat klíč u sebe",
           "nextId": "scene_17_play_b"
         },
         {
-          "text": "Vysvětlit krok",
+          "text": "Podívat se na pandu",
           "nextId": "scene_17_play_c"
         }
       ]
@@ -2497,23 +2100,19 @@
       "id": "scene_16_play_c",
       "level": 16,
       "type": "scene",
-      "title": "🏃 Poslední dotaz",
-      "text": "Laura položí poslední otázku. Všichni ukážou jinam… ale Laura kouká na pandu. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 17 + 13 = ?"
-      },
+      "title": "🏃 Detektivní otázka",
+      "text": "Laura položí poslední otázku a všimne si, kdo uhne očima. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Spočítat finále",
+          "text": "Zkusit otevřít",
           "nextId": "scene_17_play_a"
         },
         {
-          "text": "Zkusit rychle",
+          "text": "Hledat klíč u sebe",
           "nextId": "scene_17_play_b"
         },
         {
-          "text": "Vysvětlit krok",
+          "text": "Podívat se na pandu",
           "nextId": "scene_17_play_c"
         }
       ]
@@ -2522,23 +2121,19 @@
       "id": "scene_17_play_a",
       "level": 17,
       "type": "scene",
-      "title": "🏃 Zkouška pozornosti",
-      "text": "Panda řekne: „Detektiv vidí to, co je před nosem.“ Laura se rozhlédne znovu. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Oprav větu: „Vítáme vas v knihovňe.“"
-      },
+      "title": "🏃 Návrat ke knihovně",
+      "text": "Stopy vás vedou zpátky. Panda jde o krok napřed, sebejistě. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Opravit ceduli",
+          "text": "Podívat se zblízka",
           "nextId": "scene_18_play_a"
         },
         {
-          "text": "Napsat správně",
+          "text": "Zkontrolovat přívěsek",
           "nextId": "scene_18_play_b"
         },
         {
-          "text": "Najít viníka",
+          "text": "Všimnout si detailu",
           "nextId": "scene_18_play_c"
         }
       ]
@@ -2547,23 +2142,19 @@
       "id": "scene_17_play_b",
       "level": 17,
       "type": "scene",
-      "title": "🏃 Zkouška pozornosti",
-      "text": "Panda řekne: „Detektiv vidí to, co je před nosem.“ Laura se rozhlédne znovu. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Oprav větu: „Vítáme vas v knihovňe.“"
-      },
+      "title": "🏃 Návrat ke knihovně",
+      "text": "Stopy vás vedou zpátky. Panda jde o krok napřed, sebejistě. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Opravit ceduli",
+          "text": "Podívat se zblízka",
           "nextId": "scene_18_play_a"
         },
         {
-          "text": "Napsat správně",
+          "text": "Zkontrolovat přívěsek",
           "nextId": "scene_18_play_b"
         },
         {
-          "text": "Najít viníka",
+          "text": "Všimnout si detailu",
           "nextId": "scene_18_play_c"
         }
       ]
@@ -2572,23 +2163,19 @@
       "id": "scene_17_play_c",
       "level": 17,
       "type": "scene",
-      "title": "🏃 Zkouška pozornosti",
-      "text": "Panda řekne: „Detektiv vidí to, co je před nosem.“ Laura se rozhlédne znovu. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Oprav větu: „Vítáme vas v knihovňe.“"
-      },
+      "title": "🏃 Návrat ke knihovně",
+      "text": "Stopy vás vedou zpátky. Panda jde o krok napřed, sebejistě. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Opravit ceduli",
+          "text": "Podívat se zblízka",
           "nextId": "scene_18_play_a"
         },
         {
-          "text": "Napsat správně",
+          "text": "Zkontrolovat přívěsek",
           "nextId": "scene_18_play_b"
         },
         {
-          "text": "Najít viníka",
+          "text": "Všimnout si detailu",
           "nextId": "scene_18_play_c"
         }
       ]
@@ -2597,23 +2184,19 @@
       "id": "scene_18_play_a",
       "level": 18,
       "type": "scene",
-      "title": "🏃 Finální kroky",
-      "text": "Stopa vás vede zpátky ke knihovně. Panda jde o půl kroku napřed, až moc sebejistě. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Doplň: “I can ____.” (read/play/run…)."
-      },
+      "title": "🏃 Pohled zblízka",
+      "text": "Laura si všimne lesklého přívěsku u pandy. Laura postupuje klidně a pečlivě. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Doplnit slovo",
+          "text": "Říct podezření",
           "nextId": "scene_19_play_a"
         },
         {
-          "text": "Říct to nahlas",
+          "text": "Položit otázku",
           "nextId": "scene_19_play_b"
         },
         {
-          "text": "Zkusit jinak",
+          "text": "Počkat na reakci",
           "nextId": "scene_19_play_c"
         }
       ]
@@ -2622,23 +2205,19 @@
       "id": "scene_18_play_b",
       "level": 18,
       "type": "scene",
-      "title": "🏃 Finální kroky",
-      "text": "Stopa vás vede zpátky ke knihovně. Panda jde o půl kroku napřed, až moc sebejistě. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Doplň: “I can ____.” (read/play/run…)."
-      },
+      "title": "🏃 Pohled zblízka",
+      "text": "Laura si všimne lesklého přívěsku u pandy. Panda to komentuje legračně a dramaticky. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Doplnit slovo",
+          "text": "Říct podezření",
           "nextId": "scene_19_play_a"
         },
         {
-          "text": "Říct to nahlas",
+          "text": "Položit otázku",
           "nextId": "scene_19_play_b"
         },
         {
-          "text": "Zkusit jinak",
+          "text": "Počkat na reakci",
           "nextId": "scene_19_play_c"
         }
       ]
@@ -2647,23 +2226,19 @@
       "id": "scene_18_play_c",
       "level": 18,
       "type": "scene",
-      "title": "🏃 Finální kroky",
-      "text": "Stopa vás vede zpátky ke knihovně. Panda jde o půl kroku napřed, až moc sebejistě. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Doplň: “I can ____.” (read/play/run…)."
-      },
+      "title": "🏃 Pohled zblízka",
+      "text": "Laura si všimne lesklého přívěsku u pandy. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Doplnit slovo",
+          "text": "Říct podezření",
           "nextId": "scene_19_play_a"
         },
         {
-          "text": "Říct to nahlas",
+          "text": "Položit otázku",
           "nextId": "scene_19_play_b"
         },
         {
-          "text": "Zkusit jinak",
+          "text": "Počkat na reakci",
           "nextId": "scene_19_play_c"
         }
       ]
@@ -2672,23 +2247,19 @@
       "id": "scene_19_play_a",
       "level": 19,
       "type": "scene",
-      "title": "🏃 Odhalení na tři…",
-      "text": "Laura už ví, co řekne. Panda si odkašle, jako by se připravovala na projev. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "logic",
-        "prompt": "Řekni 1 detektivní otázku, kterou teď položíš."
-      },
+      "title": "🏃 Odhalení před všemi",
+      "text": "Laura se usměje: „Mám pocit, že klíč je blíž, než myslíme.“ Laura postupuje klidně a pečlivě. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Ukázat na klíč a usmát se",
+          "text": "Ukázat, co jsi zjistila",
           "nextId": "scene_20_end_play"
         },
         {
-          "text": "Říct to jako detektivní projev",
+          "text": "Nechat pandu promluvit",
           "nextId": "scene_20_end_play"
         },
         {
-          "text": "Nechat pandu, ať se přizná",
+          "text": "Otevřít poličku spolu",
           "nextId": "scene_20_end_play"
         }
       ]
@@ -2697,23 +2268,19 @@
       "id": "scene_19_play_b",
       "level": 19,
       "type": "scene",
-      "title": "🏃 Odhalení na tři…",
-      "text": "Laura už ví, co řekne. Panda si odkašle, jako by se připravovala na projev. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "logic",
-        "prompt": "Řekni 1 detektivní otázku, kterou teď položíš."
-      },
+      "title": "🏃 Odhalení před všemi",
+      "text": "Laura se usměje: „Mám pocit, že klíč je blíž, než myslíme.“ Panda to komentuje legračně a dramaticky. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Ukázat na klíč a usmát se",
+          "text": "Ukázat, co jsi zjistila",
           "nextId": "scene_20_end_play"
         },
         {
-          "text": "Říct to jako detektivní projev",
+          "text": "Nechat pandu promluvit",
           "nextId": "scene_20_end_play"
         },
         {
-          "text": "Nechat pandu, ať se přizná",
+          "text": "Otevřít poličku spolu",
           "nextId": "scene_20_end_play"
         }
       ]
@@ -2722,23 +2289,19 @@
       "id": "scene_19_play_c",
       "level": 19,
       "type": "scene",
-      "title": "🏃 Odhalení na tři…",
-      "text": "Laura už ví, co řekne. Panda si odkašle, jako by se připravovala na projev. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "logic",
-        "prompt": "Řekni 1 detektivní otázku, kterou teď položíš."
-      },
+      "title": "🏃 Odhalení před všemi",
+      "text": "Laura se usměje: „Mám pocit, že klíč je blíž, než myslíme.“ Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Ukázat na klíč a usmát se",
+          "text": "Ukázat, co jsi zjistila",
           "nextId": "scene_20_end_play"
         },
         {
-          "text": "Říct to jako detektivní projev",
+          "text": "Nechat pandu promluvit",
           "nextId": "scene_20_end_play"
         },
         {
-          "text": "Nechat pandu, ať se přizná",
+          "text": "Otevřít poličku spolu",
           "nextId": "scene_20_end_play"
         }
       ]
@@ -2747,23 +2310,19 @@
       "id": "scene_02_lego_a",
       "level": 2,
       "type": "scene",
-      "title": "🧩 Brašna a drobnost",
-      "text": "Laura kontroluje batoh a najde v něm drobnost, kterou si nepamatuje. Panda dělá nevinnou. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "fun",
-        "prompt": "Vymysli název detektivní kanceláře (2–4 slova)."
-      },
+      "title": "🧩 Batoh a kapsa",
+      "text": "Laura kontroluje batoh a najde drobnost, kterou si nepamatuje. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Prohlédnout okolí",
+          "text": "Prohlédnout stopu blíž",
           "nextId": "scene_03_lego_a"
         },
         {
-          "text": "Zeptat se zvířátka",
+          "text": "Zeptat se někoho",
           "nextId": "scene_03_lego_b"
         },
         {
-          "text": "Zkusit rychlou hádanku",
+          "text": "Zkusit malou hádanku",
           "nextId": "scene_03_lego_c"
         }
       ]
@@ -2772,23 +2331,19 @@
       "id": "scene_02_lego_b",
       "level": 2,
       "type": "scene",
-      "title": "🧩 Brašna a drobnost",
-      "text": "Laura kontroluje batoh a najde v něm drobnost, kterou si nepamatuje. Panda dělá nevinnou. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "fun",
-        "prompt": "Vymysli název detektivní kanceláře (2–4 slova)."
-      },
+      "title": "🧩 Batoh a kapsa",
+      "text": "Laura kontroluje batoh a najde drobnost, kterou si nepamatuje. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Prohlédnout okolí",
+          "text": "Prohlédnout stopu blíž",
           "nextId": "scene_03_lego_a"
         },
         {
-          "text": "Zeptat se zvířátka",
+          "text": "Zeptat se někoho",
           "nextId": "scene_03_lego_b"
         },
         {
-          "text": "Zkusit rychlou hádanku",
+          "text": "Zkusit malou hádanku",
           "nextId": "scene_03_lego_c"
         }
       ]
@@ -2797,23 +2352,19 @@
       "id": "scene_02_lego_c",
       "level": 2,
       "type": "scene",
-      "title": "🧩 Brašna a drobnost",
-      "text": "Laura kontroluje batoh a najde v něm drobnost, kterou si nepamatuje. Panda dělá nevinnou. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "fun",
-        "prompt": "Vymysli název detektivní kanceláře (2–4 slova)."
-      },
+      "title": "🧩 Batoh a kapsa",
+      "text": "Laura kontroluje batoh a najde drobnost, kterou si nepamatuje. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Prohlédnout okolí",
+          "text": "Prohlédnout stopu blíž",
           "nextId": "scene_03_lego_a"
         },
         {
-          "text": "Zeptat se zvířátka",
+          "text": "Zeptat se někoho",
           "nextId": "scene_03_lego_b"
         },
         {
-          "text": "Zkusit rychlou hádanku",
+          "text": "Zkusit malou hádanku",
           "nextId": "scene_03_lego_c"
         }
       ]
@@ -2822,23 +2373,19 @@
       "id": "scene_03_lego_a",
       "level": 3,
       "type": "scene",
-      "title": "🧩 Mapa areálu",
-      "text": "Na mapě areálu je tužkou udělaný puntík. Vypadá jako plán, ne jako čmáranice. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 3 vyjmenovaná slova po B."
-      },
+      "title": "🧩 Puntík na mapě",
+      "text": "Na mapě areálu je tužkou udělaný puntík. Panda tvrdí, že je to šifra. Laura postupuje klidně a pečlivě. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Najít další lístek",
+          "text": "Jít za tím, co vyčnívá",
           "nextId": "scene_04_lego_a"
         },
         {
-          "text": "Sledovat stopu",
+          "text": "Jít za zvukem",
           "nextId": "scene_04_lego_b"
         },
         {
-          "text": "Podívat se výš",
+          "text": "Jít za šipkou",
           "nextId": "scene_04_lego_c"
         }
       ]
@@ -2847,23 +2394,19 @@
       "id": "scene_03_lego_b",
       "level": 3,
       "type": "scene",
-      "title": "🧩 Mapa areálu",
-      "text": "Na mapě areálu je tužkou udělaný puntík. Vypadá jako plán, ne jako čmáranice. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 3 vyjmenovaná slova po B."
-      },
+      "title": "🧩 Puntík na mapě",
+      "text": "Na mapě areálu je tužkou udělaný puntík. Panda tvrdí, že je to šifra. Panda to komentuje legračně a dramaticky. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Najít další lístek",
+          "text": "Jít za tím, co vyčnívá",
           "nextId": "scene_04_lego_a"
         },
         {
-          "text": "Sledovat stopu",
+          "text": "Jít za zvukem",
           "nextId": "scene_04_lego_b"
         },
         {
-          "text": "Podívat se výš",
+          "text": "Jít za šipkou",
           "nextId": "scene_04_lego_c"
         }
       ]
@@ -2872,23 +2415,19 @@
       "id": "scene_03_lego_c",
       "level": 3,
       "type": "scene",
-      "title": "🧩 Mapa areálu",
-      "text": "Na mapě areálu je tužkou udělaný puntík. Vypadá jako plán, ne jako čmáranice. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 3 vyjmenovaná slova po B."
-      },
+      "title": "🧩 Puntík na mapě",
+      "text": "Na mapě areálu je tužkou udělaný puntík. Panda tvrdí, že je to šifra. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Najít další lístek",
+          "text": "Jít za tím, co vyčnívá",
           "nextId": "scene_04_lego_a"
         },
         {
-          "text": "Sledovat stopu",
+          "text": "Jít za zvukem",
           "nextId": "scene_04_lego_b"
         },
         {
-          "text": "Podívat se výš",
+          "text": "Jít za šipkou",
           "nextId": "scene_04_lego_c"
         }
       ]
@@ -2897,23 +2436,19 @@
       "id": "scene_04_lego_a",
       "level": 4,
       "type": "scene",
-      "title": "🧩 Křída na zemi",
-      "text": "Na chodníku jsou tři křídy – bílá, zelená, modrá. Panda tvrdí, že barvy jsou šifry. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 8 + 7 = ?"
-      },
+      "title": "🧩 Barevná křída",
+      "text": "Na chodníku jsou tři křídy. Barvy vypadají jako tajná zpráva. Laura postupuje klidně a pečlivě. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Jít za mapou",
+          "text": "Ověřit nápis",
           "nextId": "scene_05_lego_a"
         },
         {
-          "text": "Jít za zvukem",
+          "text": "Najít další lístek",
           "nextId": "scene_05_lego_b"
         },
         {
-          "text": "Jít za šipkou",
+          "text": "Podívat se kolem sebe",
           "nextId": "scene_05_lego_c"
         }
       ]
@@ -2922,23 +2457,19 @@
       "id": "scene_04_lego_b",
       "level": 4,
       "type": "scene",
-      "title": "🧩 Křída na zemi",
-      "text": "Na chodníku jsou tři křídy – bílá, zelená, modrá. Panda tvrdí, že barvy jsou šifry. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 8 + 7 = ?"
-      },
+      "title": "🧩 Barevná křída",
+      "text": "Na chodníku jsou tři křídy. Barvy vypadají jako tajná zpráva. Panda to komentuje legračně a dramaticky. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Jít za mapou",
+          "text": "Ověřit nápis",
           "nextId": "scene_05_lego_a"
         },
         {
-          "text": "Jít za zvukem",
+          "text": "Najít další lístek",
           "nextId": "scene_05_lego_b"
         },
         {
-          "text": "Jít za šipkou",
+          "text": "Podívat se kolem sebe",
           "nextId": "scene_05_lego_c"
         }
       ]
@@ -2947,23 +2478,19 @@
       "id": "scene_04_lego_c",
       "level": 4,
       "type": "scene",
-      "title": "🧩 Křída na zemi",
-      "text": "Na chodníku jsou tři křídy – bílá, zelená, modrá. Panda tvrdí, že barvy jsou šifry. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 8 + 7 = ?"
-      },
+      "title": "🧩 Barevná křída",
+      "text": "Na chodníku jsou tři křídy. Barvy vypadají jako tajná zpráva. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Jít za mapou",
+          "text": "Ověřit nápis",
           "nextId": "scene_05_lego_a"
         },
         {
-          "text": "Jít za zvukem",
+          "text": "Najít další lístek",
           "nextId": "scene_05_lego_b"
         },
         {
-          "text": "Jít za šipkou",
+          "text": "Podívat se kolem sebe",
           "nextId": "scene_05_lego_c"
         }
       ]
@@ -2972,23 +2499,19 @@
       "id": "scene_05_lego_a",
       "level": 5,
       "type": "scene",
-      "title": "🧩 Počty z bambusu",
-      "text": "Vydra dá Lauře rychlý příklad „na rozcvičku“. Správný výsledek má ukázat další místo. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Přelož: key, library, clue."
-      },
+      "title": "🧩 Rychlý příklad",
+      "text": "Vydra dá rychlý příklad a ukáže další místo prstem. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Použít slovíčka",
+          "text": "Prozkoumat mapku",
           "nextId": "scene_06_lego_a"
         },
         {
-          "text": "Zkusit mini-dialog",
+          "text": "Jít po puntících",
           "nextId": "scene_06_lego_b"
         },
         {
-          "text": "Najít kartičku",
+          "text": "Najít tajné místo",
           "nextId": "scene_06_lego_c"
         }
       ]
@@ -2997,23 +2520,19 @@
       "id": "scene_05_lego_b",
       "level": 5,
       "type": "scene",
-      "title": "🧩 Počty z bambusu",
-      "text": "Vydra dá Lauře rychlý příklad „na rozcvičku“. Správný výsledek má ukázat další místo. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Přelož: key, library, clue."
-      },
+      "title": "🧩 Rychlý příklad",
+      "text": "Vydra dá rychlý příklad a ukáže další místo prstem. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Použít slovíčka",
+          "text": "Prozkoumat mapku",
           "nextId": "scene_06_lego_a"
         },
         {
-          "text": "Zkusit mini-dialog",
+          "text": "Jít po puntících",
           "nextId": "scene_06_lego_b"
         },
         {
-          "text": "Najít kartičku",
+          "text": "Najít tajné místo",
           "nextId": "scene_06_lego_c"
         }
       ]
@@ -3022,23 +2541,19 @@
       "id": "scene_05_lego_c",
       "level": 5,
       "type": "scene",
-      "title": "🧩 Počty z bambusu",
-      "text": "Vydra dá Lauře rychlý příklad „na rozcvičku“. Správný výsledek má ukázat další místo. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Přelož: key, library, clue."
-      },
+      "title": "🧩 Rychlý příklad",
+      "text": "Vydra dá rychlý příklad a ukáže další místo prstem. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Použít slovíčka",
+          "text": "Prozkoumat mapku",
           "nextId": "scene_06_lego_a"
         },
         {
-          "text": "Zkusit mini-dialog",
+          "text": "Jít po puntících",
           "nextId": "scene_06_lego_b"
         },
         {
-          "text": "Najít kartičku",
+          "text": "Najít tajné místo",
           "nextId": "scene_06_lego_c"
         }
       ]
@@ -3047,23 +2562,19 @@
       "id": "scene_06_lego_a",
       "level": 6,
       "type": "scene",
-      "title": "🧩 Nálepka na lavičce",
-      "text": "Na lavičce je nálepka bambusu. Když ji Laura zvedne, je pod ní maličká šipka. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Doplň správně: Panda __la v knihovně. (byla/bílá) + proč."
-      },
+      "title": "🧩 Samolepka bambusu",
+      "text": "Na lavičce je samolepka bambusu. Pod ní je maličká šipka. Laura postupuje klidně a pečlivě. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Opravit větu",
+          "text": "Srovnat to jako kód",
           "nextId": "scene_07_lego_a"
         },
         {
-          "text": "Najít chybu",
+          "text": "Hledat vzor",
           "nextId": "scene_07_lego_b"
         },
         {
-          "text": "Vymyslet důkaz",
+          "text": "Zkusit jiný směr",
           "nextId": "scene_07_lego_c"
         }
       ]
@@ -3072,23 +2583,19 @@
       "id": "scene_06_lego_b",
       "level": 6,
       "type": "scene",
-      "title": "🧩 Nálepka na lavičce",
-      "text": "Na lavičce je nálepka bambusu. Když ji Laura zvedne, je pod ní maličká šipka. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Doplň správně: Panda __la v knihovně. (byla/bílá) + proč."
-      },
+      "title": "🧩 Samolepka bambusu",
+      "text": "Na lavičce je samolepka bambusu. Pod ní je maličká šipka. Panda to komentuje legračně a dramaticky. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Opravit větu",
+          "text": "Srovnat to jako kód",
           "nextId": "scene_07_lego_a"
         },
         {
-          "text": "Najít chybu",
+          "text": "Hledat vzor",
           "nextId": "scene_07_lego_b"
         },
         {
-          "text": "Vymyslet důkaz",
+          "text": "Zkusit jiný směr",
           "nextId": "scene_07_lego_c"
         }
       ]
@@ -3097,23 +2604,19 @@
       "id": "scene_06_lego_c",
       "level": 6,
       "type": "scene",
-      "title": "🧩 Nálepka na lavičce",
-      "text": "Na lavičce je nálepka bambusu. Když ji Laura zvedne, je pod ní maličká šipka. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Doplň správně: Panda __la v knihovně. (byla/bílá) + proč."
-      },
+      "title": "🧩 Samolepka bambusu",
+      "text": "Na lavičce je samolepka bambusu. Pod ní je maličká šipka. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Opravit větu",
+          "text": "Srovnat to jako kód",
           "nextId": "scene_07_lego_a"
         },
         {
-          "text": "Najít chybu",
+          "text": "Hledat vzor",
           "nextId": "scene_07_lego_b"
         },
         {
-          "text": "Vymyslet důkaz",
+          "text": "Zkusit jiný směr",
           "nextId": "scene_07_lego_c"
         }
       ]
@@ -3122,23 +2625,19 @@
       "id": "scene_07_lego_a",
       "level": 7,
       "type": "scene",
-      "title": "🧩 Lego dílek",
-      "text": "Laura najde lego dílek, který sem nepatří. Je to první opravdová ‚věc‘-stopa. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "wordplay",
-        "prompt": "Vymysli 2 rýmy na „panda“ (klidně blbiny)."
-      },
+      "title": "🧩 Lego šipka",
+      "text": "Z lega je postavená šipka. Je roztomilá… a podezřelá. Laura postupuje klidně a pečlivě. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Zkusit rým",
+          "text": "Najít schovaný papír",
           "nextId": "scene_08_lego_a"
         },
         {
-          "text": "Zkusit vtip",
+          "text": "Mrknout pod věci",
           "nextId": "scene_08_lego_b"
         },
         {
-          "text": "Zkusit slovní trik",
+          "text": "Podívat se výš",
           "nextId": "scene_08_lego_c"
         }
       ]
@@ -3147,23 +2646,19 @@
       "id": "scene_07_lego_b",
       "level": 7,
       "type": "scene",
-      "title": "🧩 Lego dílek",
-      "text": "Laura najde lego dílek, který sem nepatří. Je to první opravdová ‚věc‘-stopa. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "wordplay",
-        "prompt": "Vymysli 2 rýmy na „panda“ (klidně blbiny)."
-      },
+      "title": "🧩 Lego šipka",
+      "text": "Z lega je postavená šipka. Je roztomilá… a podezřelá. Panda to komentuje legračně a dramaticky. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Zkusit rým",
+          "text": "Najít schovaný papír",
           "nextId": "scene_08_lego_a"
         },
         {
-          "text": "Zkusit vtip",
+          "text": "Mrknout pod věci",
           "nextId": "scene_08_lego_b"
         },
         {
-          "text": "Zkusit slovní trik",
+          "text": "Podívat se výš",
           "nextId": "scene_08_lego_c"
         }
       ]
@@ -3172,23 +2667,19 @@
       "id": "scene_07_lego_c",
       "level": 7,
       "type": "scene",
-      "title": "🧩 Lego dílek",
-      "text": "Laura najde lego dílek, který sem nepatří. Je to první opravdová ‚věc‘-stopa. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "wordplay",
-        "prompt": "Vymysli 2 rýmy na „panda“ (klidně blbiny)."
-      },
+      "title": "🧩 Lego šipka",
+      "text": "Z lega je postavená šipka. Je roztomilá… a podezřelá. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Zkusit rým",
+          "text": "Najít schovaný papír",
           "nextId": "scene_08_lego_a"
         },
         {
-          "text": "Zkusit vtip",
+          "text": "Mrknout pod věci",
           "nextId": "scene_08_lego_b"
         },
         {
-          "text": "Zkusit slovní trik",
+          "text": "Podívat se výš",
           "nextId": "scene_08_lego_c"
         }
       ]
@@ -3197,23 +2688,19 @@
       "id": "scene_08_lego_a",
       "level": 8,
       "type": "scene",
-      "title": "🧩 Zasunutá krabička",
-      "text": "Pod skříňkou je krabička s kolečky. Panda tvrdí, že to je „zámek pro génie“. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 24 − 9 = ?"
-      },
+      "title": "🧩 Krabička s kolečky",
+      "text": "Pod skříňkou je krabička se třemi kolečky. Panda ji miluje. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Spočítat stopu",
+          "text": "Zvednout samolepku",
           "nextId": "scene_09_lego_a"
         },
         {
-          "text": "Najít číslo",
+          "text": "Hledat šipku",
           "nextId": "scene_09_lego_b"
         },
         {
-          "text": "Vybrat směr",
+          "text": "Jít potichu dál",
           "nextId": "scene_09_lego_c"
         }
       ]
@@ -3222,23 +2709,19 @@
       "id": "scene_08_lego_b",
       "level": 8,
       "type": "scene",
-      "title": "🧩 Zasunutá krabička",
-      "text": "Pod skříňkou je krabička s kolečky. Panda tvrdí, že to je „zámek pro génie“. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 24 − 9 = ?"
-      },
+      "title": "🧩 Krabička s kolečky",
+      "text": "Pod skříňkou je krabička se třemi kolečky. Panda ji miluje. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Spočítat stopu",
+          "text": "Zvednout samolepku",
           "nextId": "scene_09_lego_a"
         },
         {
-          "text": "Najít číslo",
+          "text": "Hledat šipku",
           "nextId": "scene_09_lego_b"
         },
         {
-          "text": "Vybrat směr",
+          "text": "Jít potichu dál",
           "nextId": "scene_09_lego_c"
         }
       ]
@@ -3247,23 +2730,19 @@
       "id": "scene_08_lego_c",
       "level": 8,
       "type": "scene",
-      "title": "🧩 Zasunutá krabička",
-      "text": "Pod skříňkou je krabička s kolečky. Panda tvrdí, že to je „zámek pro génie“. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 24 − 9 = ?"
-      },
+      "title": "🧩 Krabička s kolečky",
+      "text": "Pod skříňkou je krabička se třemi kolečky. Panda ji miluje. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Spočítat stopu",
+          "text": "Zvednout samolepku",
           "nextId": "scene_09_lego_a"
         },
         {
-          "text": "Najít číslo",
+          "text": "Hledat šipku",
           "nextId": "scene_09_lego_b"
         },
         {
-          "text": "Vybrat směr",
+          "text": "Jít potichu dál",
           "nextId": "scene_09_lego_c"
         }
       ]
@@ -3273,22 +2752,18 @@
       "level": 9,
       "type": "scene",
       "title": "🧩 Čtení pro klid",
-      "text": "Laura si přečte krátkou větu, aby jí to lépe myslelo. Panda ji mezitím napodobuje. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 2 věty (z knížky nebo vymyšlené)."
-      },
+      "text": "Laura si přečte krátký kousek textu, aby se jí lépe přemýšlelo. Laura postupuje klidně a pečlivě. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Přečíst nápovědu",
+          "text": "Použít angličtinu",
           "nextId": "scene_10_lego_a"
         },
         {
-          "text": "Číst nahlas",
+          "text": "Najít slovíčko",
           "nextId": "scene_10_lego_b"
         },
         {
-          "text": "Číst potichu",
+          "text": "Říct krátkou větu",
           "nextId": "scene_10_lego_c"
         }
       ]
@@ -3298,22 +2773,18 @@
       "level": 9,
       "type": "scene",
       "title": "🧩 Čtení pro klid",
-      "text": "Laura si přečte krátkou větu, aby jí to lépe myslelo. Panda ji mezitím napodobuje. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 2 věty (z knížky nebo vymyšlené)."
-      },
+      "text": "Laura si přečte krátký kousek textu, aby se jí lépe přemýšlelo. Panda to komentuje legračně a dramaticky. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Přečíst nápovědu",
+          "text": "Použít angličtinu",
           "nextId": "scene_10_lego_a"
         },
         {
-          "text": "Číst nahlas",
+          "text": "Najít slovíčko",
           "nextId": "scene_10_lego_b"
         },
         {
-          "text": "Číst potichu",
+          "text": "Říct krátkou větu",
           "nextId": "scene_10_lego_c"
         }
       ]
@@ -3323,22 +2794,18 @@
       "level": 9,
       "type": "scene",
       "title": "🧩 Čtení pro klid",
-      "text": "Laura si přečte krátkou větu, aby jí to lépe myslelo. Panda ji mezitím napodobuje. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 2 věty (z knížky nebo vymyšlené)."
-      },
+      "text": "Laura si přečte krátký kousek textu, aby se jí lépe přemýšlelo. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Přečíst nápovědu",
+          "text": "Použít angličtinu",
           "nextId": "scene_10_lego_a"
         },
         {
-          "text": "Číst nahlas",
+          "text": "Najít slovíčko",
           "nextId": "scene_10_lego_b"
         },
         {
-          "text": "Číst potichu",
+          "text": "Říct krátkou větu",
           "nextId": "scene_10_lego_c"
         }
       ]
@@ -3347,23 +2814,19 @@
       "id": "scene_10_lego_a",
       "level": 10,
       "type": "scene",
-      "title": "🧩 English kartička",
-      "text": "Je tu kartička se slovem „key“. Někdo ji přilepil na místo, kde ji Laura určitě najde. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni: “My name is Laura.” + “I like books.”"
-      },
+      "title": "🧩 Kartička „key“",
+      "text": "Někdo přilepil kartičku „key“ na místo, kde ji Laura určitě uvidí. Laura postupuje klidně a pečlivě. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Říct to anglicky",
+          "text": "Složit správnou větu",
           "nextId": "scene_11_lego_a"
         },
         {
-          "text": "Položit otázku",
+          "text": "Opravit chybu",
           "nextId": "scene_11_lego_b"
         },
         {
-          "text": "Najít další clue",
+          "text": "Vybrat správné slovo",
           "nextId": "scene_11_lego_c"
         }
       ]
@@ -3372,23 +2835,19 @@
       "id": "scene_10_lego_b",
       "level": 10,
       "type": "scene",
-      "title": "🧩 English kartička",
-      "text": "Je tu kartička se slovem „key“. Někdo ji přilepil na místo, kde ji Laura určitě najde. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni: “My name is Laura.” + “I like books.”"
-      },
+      "title": "🧩 Kartička „key“",
+      "text": "Někdo přilepil kartičku „key“ na místo, kde ji Laura určitě uvidí. Panda to komentuje legračně a dramaticky. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Říct to anglicky",
+          "text": "Složit správnou větu",
           "nextId": "scene_11_lego_a"
         },
         {
-          "text": "Položit otázku",
+          "text": "Opravit chybu",
           "nextId": "scene_11_lego_b"
         },
         {
-          "text": "Najít další clue",
+          "text": "Vybrat správné slovo",
           "nextId": "scene_11_lego_c"
         }
       ]
@@ -3397,23 +2856,19 @@
       "id": "scene_10_lego_c",
       "level": 10,
       "type": "scene",
-      "title": "🧩 English kartička",
-      "text": "Je tu kartička se slovem „key“. Někdo ji přilepil na místo, kde ji Laura určitě najde. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni: “My name is Laura.” + “I like books.”"
-      },
+      "title": "🧩 Kartička „key“",
+      "text": "Někdo přilepil kartičku „key“ na místo, kde ji Laura určitě uvidí. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Říct to anglicky",
+          "text": "Složit správnou větu",
           "nextId": "scene_11_lego_a"
         },
         {
-          "text": "Položit otázku",
+          "text": "Opravit chybu",
           "nextId": "scene_11_lego_b"
         },
         {
-          "text": "Najít další clue",
+          "text": "Vybrat správné slovo",
           "nextId": "scene_11_lego_c"
         }
       ]
@@ -3422,23 +2877,19 @@
       "id": "scene_11_lego_a",
       "level": 11,
       "type": "scene",
-      "title": "🧩 Zvláštní šňůrka",
-      "text": "Na madle visí šňůrka jako přívěsek. Laura se zarazí: proč by tu byla? Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "logic",
-        "prompt": "Pravda/nepravda: „Knihovna = library“ (řekni proč)."
-      },
+      "title": "🧩 Šňůrka na madle",
+      "text": "Na madle visí šňůrka jako přívěsek. Laura zpozorní. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Ověřit pravdu",
+          "text": "Prohlédnout sešit",
           "nextId": "scene_12_lego_a"
         },
         {
-          "text": "Zkontrolovat detail",
+          "text": "Najít podtržené",
           "nextId": "scene_12_lego_b"
         },
         {
-          "text": "Spojit stopy",
+          "text": "Zkusit logiku",
           "nextId": "scene_12_lego_c"
         }
       ]
@@ -3447,23 +2898,19 @@
       "id": "scene_11_lego_b",
       "level": 11,
       "type": "scene",
-      "title": "🧩 Zvláštní šňůrka",
-      "text": "Na madle visí šňůrka jako přívěsek. Laura se zarazí: proč by tu byla? Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "logic",
-        "prompt": "Pravda/nepravda: „Knihovna = library“ (řekni proč)."
-      },
+      "title": "🧩 Šňůrka na madle",
+      "text": "Na madle visí šňůrka jako přívěsek. Laura zpozorní. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Ověřit pravdu",
+          "text": "Prohlédnout sešit",
           "nextId": "scene_12_lego_a"
         },
         {
-          "text": "Zkontrolovat detail",
+          "text": "Najít podtržené",
           "nextId": "scene_12_lego_b"
         },
         {
-          "text": "Spojit stopy",
+          "text": "Zkusit logiku",
           "nextId": "scene_12_lego_c"
         }
       ]
@@ -3472,23 +2919,19 @@
       "id": "scene_11_lego_c",
       "level": 11,
       "type": "scene",
-      "title": "🧩 Zvláštní šňůrka",
-      "text": "Na madle visí šňůrka jako přívěsek. Laura se zarazí: proč by tu byla? Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "logic",
-        "prompt": "Pravda/nepravda: „Knihovna = library“ (řekni proč)."
-      },
+      "title": "🧩 Šňůrka na madle",
+      "text": "Na madle visí šňůrka jako přívěsek. Laura zpozorní. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Ověřit pravdu",
+          "text": "Prohlédnout sešit",
           "nextId": "scene_12_lego_a"
         },
         {
-          "text": "Zkontrolovat detail",
+          "text": "Najít podtržené",
           "nextId": "scene_12_lego_b"
         },
         {
-          "text": "Spojit stopy",
+          "text": "Zkusit logiku",
           "nextId": "scene_12_lego_c"
         }
       ]
@@ -3498,22 +2941,18 @@
       "level": 12,
       "type": "scene",
       "title": "🧩 Krok za krokem",
-      "text": "Laura spočítá malý příklad a najednou jí dojde, kam šipky vedou. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 6 × 4 = ? (nebo 6+6+6+6)."
-      },
+      "text": "Laura spojí šipky a mapu. Vypadá to, že cíl je knihovna. Laura postupuje klidně a pečlivě. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Otevřít krabičku",
+          "text": "Vzít novou záložku",
           "nextId": "scene_13_lego_a"
         },
         {
-          "text": "Zkusit kód",
+          "text": "Podívat se do kapsy",
           "nextId": "scene_13_lego_b"
         },
         {
-          "text": "Najít dílek",
+          "text": "Zkontrolovat háček",
           "nextId": "scene_13_lego_c"
         }
       ]
@@ -3523,22 +2962,18 @@
       "level": 12,
       "type": "scene",
       "title": "🧩 Krok za krokem",
-      "text": "Laura spočítá malý příklad a najednou jí dojde, kam šipky vedou. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 6 × 4 = ? (nebo 6+6+6+6)."
-      },
+      "text": "Laura spojí šipky a mapu. Vypadá to, že cíl je knihovna. Panda to komentuje legračně a dramaticky. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Otevřít krabičku",
+          "text": "Vzít novou záložku",
           "nextId": "scene_13_lego_a"
         },
         {
-          "text": "Zkusit kód",
+          "text": "Podívat se do kapsy",
           "nextId": "scene_13_lego_b"
         },
         {
-          "text": "Najít dílek",
+          "text": "Zkontrolovat háček",
           "nextId": "scene_13_lego_c"
         }
       ]
@@ -3548,22 +2983,18 @@
       "level": 12,
       "type": "scene",
       "title": "🧩 Krok za krokem",
-      "text": "Laura spočítá malý příklad a najednou jí dojde, kam šipky vedou. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 6 × 4 = ? (nebo 6+6+6+6)."
-      },
+      "text": "Laura spojí šipky a mapu. Vypadá to, že cíl je knihovna. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Otevřít krabičku",
+          "text": "Vzít novou záložku",
           "nextId": "scene_13_lego_a"
         },
         {
-          "text": "Zkusit kód",
+          "text": "Podívat se do kapsy",
           "nextId": "scene_13_lego_b"
         },
         {
-          "text": "Najít dílek",
+          "text": "Zkontrolovat háček",
           "nextId": "scene_13_lego_c"
         }
       ]
@@ -3572,23 +3003,19 @@
       "id": "scene_13_lego_a",
       "level": 13,
       "type": "scene",
-      "title": "🧩 Mini-stavba",
-      "text": "Z pár dílků lega je postavená šipka. Je to roztomilé… a podezřelé. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 2 vyjmenovaná slova po L."
-      },
+      "title": "🧩 Mini stavba",
+      "text": "Z pár dílků lega je postavený malý „most“ k dalšímu vodítku. Laura postupuje klidně a pečlivě. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Vzít stopu",
+          "text": "Vyřešit hádanku",
           "nextId": "scene_14_lego_a"
         },
         {
-          "text": "Kouknout do regálu",
+          "text": "Přečíst si nápovědu",
           "nextId": "scene_14_lego_b"
         },
         {
-          "text": "Prověřit kapsu",
+          "text": "Zeptat se pandy",
           "nextId": "scene_14_lego_c"
         }
       ]
@@ -3597,23 +3024,19 @@
       "id": "scene_13_lego_b",
       "level": 13,
       "type": "scene",
-      "title": "🧩 Mini-stavba",
-      "text": "Z pár dílků lega je postavená šipka. Je to roztomilé… a podezřelé. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 2 vyjmenovaná slova po L."
-      },
+      "title": "🧩 Mini stavba",
+      "text": "Z pár dílků lega je postavený malý „most“ k dalšímu vodítku. Panda to komentuje legračně a dramaticky. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Vzít stopu",
+          "text": "Vyřešit hádanku",
           "nextId": "scene_14_lego_a"
         },
         {
-          "text": "Kouknout do regálu",
+          "text": "Přečíst si nápovědu",
           "nextId": "scene_14_lego_b"
         },
         {
-          "text": "Prověřit kapsu",
+          "text": "Zeptat se pandy",
           "nextId": "scene_14_lego_c"
         }
       ]
@@ -3622,23 +3045,19 @@
       "id": "scene_13_lego_c",
       "level": 13,
       "type": "scene",
-      "title": "🧩 Mini-stavba",
-      "text": "Z pár dílků lega je postavená šipka. Je to roztomilé… a podezřelé. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Řekni 2 vyjmenovaná slova po L."
-      },
+      "title": "🧩 Mini stavba",
+      "text": "Z pár dílků lega je postavený malý „most“ k dalšímu vodítku. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Vzít stopu",
+          "text": "Vyřešit hádanku",
           "nextId": "scene_14_lego_a"
         },
         {
-          "text": "Kouknout do regálu",
+          "text": "Přečíst si nápovědu",
           "nextId": "scene_14_lego_b"
         },
         {
-          "text": "Prověřit kapsu",
+          "text": "Zeptat se pandy",
           "nextId": "scene_14_lego_c"
         }
       ]
@@ -3647,23 +3066,19 @@
       "id": "scene_14_lego_a",
       "level": 14,
       "type": "scene",
-      "title": "🧩 Záhada v kapse",
-      "text": "Panda tvrdí, že nic nemá. Laura si všimne, že plášť cinkne. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni anglicky 5 čísel (1–10)."
-      },
+      "title": "🧩 Cinknutí v plášti",
+      "text": "Pandin plášť tiše cinkne. Panda se tváří nevinně. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Počítat anglicky",
+          "text": "Jít po stopě tužky",
           "nextId": "scene_15_lego_a"
         },
         {
-          "text": "Říct větu",
+          "text": "Najít značku",
           "nextId": "scene_15_lego_b"
         },
         {
-          "text": "Najít slovo",
+          "text": "Prohlédnout stěnu",
           "nextId": "scene_15_lego_c"
         }
       ]
@@ -3672,23 +3087,19 @@
       "id": "scene_14_lego_b",
       "level": 14,
       "type": "scene",
-      "title": "🧩 Záhada v kapse",
-      "text": "Panda tvrdí, že nic nemá. Laura si všimne, že plášť cinkne. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni anglicky 5 čísel (1–10)."
-      },
+      "title": "🧩 Cinknutí v plášti",
+      "text": "Pandin plášť tiše cinkne. Panda se tváří nevinně. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Počítat anglicky",
+          "text": "Jít po stopě tužky",
           "nextId": "scene_15_lego_a"
         },
         {
-          "text": "Říct větu",
+          "text": "Najít značku",
           "nextId": "scene_15_lego_b"
         },
         {
-          "text": "Najít slovo",
+          "text": "Prohlédnout stěnu",
           "nextId": "scene_15_lego_c"
         }
       ]
@@ -3697,23 +3108,19 @@
       "id": "scene_14_lego_c",
       "level": 14,
       "type": "scene",
-      "title": "🧩 Záhada v kapse",
-      "text": "Panda tvrdí, že nic nemá. Laura si všimne, že plášť cinkne. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Řekni anglicky 5 čísel (1–10)."
-      },
+      "title": "🧩 Cinknutí v plášti",
+      "text": "Pandin plášť tiše cinkne. Panda se tváří nevinně. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **panda**, **bamboo**, **clue**.",
       "choices": [
         {
-          "text": "Počítat anglicky",
+          "text": "Jít po stopě tužky",
           "nextId": "scene_15_lego_a"
         },
         {
-          "text": "Říct větu",
+          "text": "Najít značku",
           "nextId": "scene_15_lego_b"
         },
         {
-          "text": "Najít slovo",
+          "text": "Prohlédnout stěnu",
           "nextId": "scene_15_lego_c"
         }
       ]
@@ -3722,23 +3129,19 @@
       "id": "scene_15_lego_a",
       "level": 15,
       "type": "scene",
-      "title": "🧩 Cesta k poličce",
-      "text": "Všechny šipky vedou ke knihovně. Panda se tváří jako průvodce. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 1 krátký odstavec (nebo ho vymysli)."
-      },
+      "title": "🧩 Knihovní dveře",
+      "text": "U dveří knihovny je ticho. Laura slyší jen své kroky. Laura postupuje klidně a pečlivě. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Číst a hledat",
+          "text": "Udělat poslední kontrolu",
           "nextId": "scene_16_lego_a"
         },
         {
-          "text": "Číst a smát se",
+          "text": "Zkusit ještě jednou",
           "nextId": "scene_16_lego_b"
         },
         {
-          "text": "Číst jako detektiv",
+          "text": "Jít rovnou k poličce",
           "nextId": "scene_16_lego_c"
         }
       ]
@@ -3747,23 +3150,19 @@
       "id": "scene_15_lego_b",
       "level": 15,
       "type": "scene",
-      "title": "🧩 Cesta k poličce",
-      "text": "Všechny šipky vedou ke knihovně. Panda se tváří jako průvodce. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 1 krátký odstavec (nebo ho vymysli)."
-      },
+      "title": "🧩 Knihovní dveře",
+      "text": "U dveří knihovny je ticho. Laura slyší jen své kroky. Panda to komentuje legračně a dramaticky. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Číst a hledat",
+          "text": "Udělat poslední kontrolu",
           "nextId": "scene_16_lego_a"
         },
         {
-          "text": "Číst a smát se",
+          "text": "Zkusit ještě jednou",
           "nextId": "scene_16_lego_b"
         },
         {
-          "text": "Číst jako detektiv",
+          "text": "Jít rovnou k poličce",
           "nextId": "scene_16_lego_c"
         }
       ]
@@ -3772,23 +3171,19 @@
       "id": "scene_15_lego_c",
       "level": 15,
       "type": "scene",
-      "title": "🧩 Cesta k poličce",
-      "text": "Všechny šipky vedou ke knihovně. Panda se tváří jako průvodce. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "reading",
-        "prompt": "Přečti nahlas 1 krátký odstavec (nebo ho vymysli)."
-      },
+      "title": "🧩 Knihovní dveře",
+      "text": "U dveří knihovny je ticho. Laura slyší jen své kroky. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Laura našla 12 stop a panda 8 stop. Otázka: Kolik stop mají spolu? (Spočítej: 12 + 8)",
       "choices": [
         {
-          "text": "Číst a hledat",
+          "text": "Udělat poslední kontrolu",
           "nextId": "scene_16_lego_a"
         },
         {
-          "text": "Číst a smát se",
+          "text": "Zkusit ještě jednou",
           "nextId": "scene_16_lego_b"
         },
         {
-          "text": "Číst jako detektiv",
+          "text": "Jít rovnou k poličce",
           "nextId": "scene_16_lego_c"
         }
       ]
@@ -3798,22 +3193,18 @@
       "level": 16,
       "type": "scene",
       "title": "🧩 Poslední kód",
-      "text": "Je tu poslední mini-kód. Laura ho vyřeší a zvedne oči nahoru. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 17 + 13 = ?"
-      },
+      "text": "Je tu poslední mini-kód. Laura ho vyřeší a zvedne oči. Laura postupuje klidně a pečlivě. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Spočítat finále",
+          "text": "Zkusit otevřít",
           "nextId": "scene_17_lego_a"
         },
         {
-          "text": "Zkusit rychle",
+          "text": "Hledat klíč u sebe",
           "nextId": "scene_17_lego_b"
         },
         {
-          "text": "Vysvětlit krok",
+          "text": "Podívat se na pandu",
           "nextId": "scene_17_lego_c"
         }
       ]
@@ -3823,22 +3214,18 @@
       "level": 16,
       "type": "scene",
       "title": "🧩 Poslední kód",
-      "text": "Je tu poslední mini-kód. Laura ho vyřeší a zvedne oči nahoru. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 17 + 13 = ?"
-      },
+      "text": "Je tu poslední mini-kód. Laura ho vyřeší a zvedne oči. Panda to komentuje legračně a dramaticky. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Spočítat finále",
+          "text": "Zkusit otevřít",
           "nextId": "scene_17_lego_a"
         },
         {
-          "text": "Zkusit rychle",
+          "text": "Hledat klíč u sebe",
           "nextId": "scene_17_lego_b"
         },
         {
-          "text": "Vysvětlit krok",
+          "text": "Podívat se na pandu",
           "nextId": "scene_17_lego_c"
         }
       ]
@@ -3848,22 +3235,18 @@
       "level": 16,
       "type": "scene",
       "title": "🧩 Poslední kód",
-      "text": "Je tu poslední mini-kód. Laura ho vyřeší a zvedne oči nahoru. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "math",
-        "prompt": "Spočítej: 17 + 13 = ?"
-      },
+      "text": "Je tu poslední mini-kód. Laura ho vyřeší a zvedne oči. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Vyjmenovaná slova jsou takové „pravopisné heslo“ pro detektivy češtiny. Otázka: Řekni alespoň 3 vyjmenovaná slova po B.",
       "choices": [
         {
-          "text": "Spočítat finále",
+          "text": "Zkusit otevřít",
           "nextId": "scene_17_lego_a"
         },
         {
-          "text": "Zkusit rychle",
+          "text": "Hledat klíč u sebe",
           "nextId": "scene_17_lego_b"
         },
         {
-          "text": "Vysvětlit krok",
+          "text": "Podívat se na pandu",
           "nextId": "scene_17_lego_c"
         }
       ]
@@ -3872,23 +3255,19 @@
       "id": "scene_17_lego_a",
       "level": 17,
       "type": "scene",
-      "title": "🧩 Co visí před nosem",
-      "text": "Panda řekne: „Detektiv se dívá i na maličkosti.“ Laura se podívá na přívěsky. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "czech",
-        "prompt": "Oprav větu: „Vítáme vas v knihovňe.“"
-      },
+      "title": "🧩 Před nosem",
+      "text": "Panda řekne: „Detektiv vidí i maličkosti.“ Laura kouká na přívěsky. Laura postupuje klidně a pečlivě. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Opravit ceduli",
+          "text": "Podívat se zblízka",
           "nextId": "scene_18_lego_a"
         },
         {
-          "text": "Napsat správně",
+          "text": "Zkontrolovat přívěsek",
           "nextId": "scene_18_lego_b"
         },
         {
-          "text": "Najít viníka",
+          "text": "Všimnout si detailu",
           "nextId": "scene_18_lego_c"
         }
       ]
@@ -3897,23 +3276,19 @@
       "id": "scene_17_lego_b",
       "level": 17,
       "type": "scene",
-      "title": "🧩 Co visí před nosem",
-      "text": "Panda řekne: „Detektiv se dívá i na maličkosti.“ Laura se podívá na přívěsky. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "czech",
-        "prompt": "Oprav větu: „Vítáme vas v knihovňe.“"
-      },
+      "title": "🧩 Před nosem",
+      "text": "Panda řekne: „Detektiv vidí i maličkosti.“ Laura kouká na přívěsky. Panda to komentuje legračně a dramaticky. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Opravit ceduli",
+          "text": "Podívat se zblízka",
           "nextId": "scene_18_lego_a"
         },
         {
-          "text": "Napsat správně",
+          "text": "Zkontrolovat přívěsek",
           "nextId": "scene_18_lego_b"
         },
         {
-          "text": "Najít viníka",
+          "text": "Všimnout si detailu",
           "nextId": "scene_18_lego_c"
         }
       ]
@@ -3922,23 +3297,19 @@
       "id": "scene_17_lego_c",
       "level": 17,
       "type": "scene",
-      "title": "🧩 Co visí před nosem",
-      "text": "Panda řekne: „Detektiv se dívá i na maličkosti.“ Laura se podívá na přívěsky. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "czech",
-        "prompt": "Oprav větu: „Vítáme vas v knihovňe.“"
-      },
+      "title": "🧩 Před nosem",
+      "text": "Panda řekne: „Detektiv vidí i maličkosti.“ Laura kouká na přívěsky. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Panda velká jí hlavně bambus — anglicky **bamboo**. Otázka: Řekni nahlas tři slovíčka: **eat**, **sleep**, **read**.",
       "choices": [
         {
-          "text": "Opravit ceduli",
+          "text": "Podívat se zblízka",
           "nextId": "scene_18_lego_a"
         },
         {
-          "text": "Napsat správně",
+          "text": "Zkontrolovat přívěsek",
           "nextId": "scene_18_lego_b"
         },
         {
-          "text": "Najít viníka",
+          "text": "Všimnout si detailu",
           "nextId": "scene_18_lego_c"
         }
       ]
@@ -3947,23 +3318,19 @@
       "id": "scene_18_lego_a",
       "level": 18,
       "type": "scene",
-      "title": "🧩 U dveří knihovny",
-      "text": "Laura stojí u dveří knihovny. Klíč má být blízko… ale kde? Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "english",
-        "prompt": "Doplň: “I can ____.” (read/play/run…)."
-      },
+      "title": "🧩 U háčku",
+      "text": "Na háčku visí šňůrka. A přitom klíč pořád nikde… nebo? Laura postupuje klidně a pečlivě. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Doplnit slovo",
+          "text": "Říct podezření",
           "nextId": "scene_19_lego_a"
         },
         {
-          "text": "Říct to nahlas",
+          "text": "Položit otázku",
           "nextId": "scene_19_lego_b"
         },
         {
-          "text": "Zkusit jinak",
+          "text": "Počkat na reakci",
           "nextId": "scene_19_lego_c"
         }
       ]
@@ -3972,23 +3339,19 @@
       "id": "scene_18_lego_b",
       "level": 18,
       "type": "scene",
-      "title": "🧩 U dveří knihovny",
-      "text": "Laura stojí u dveří knihovny. Klíč má být blízko… ale kde? Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "english",
-        "prompt": "Doplň: “I can ____.” (read/play/run…)."
-      },
+      "title": "🧩 U háčku",
+      "text": "Na háčku visí šňůrka. A přitom klíč pořád nikde… nebo? Panda to komentuje legračně a dramaticky. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Doplnit slovo",
+          "text": "Říct podezření",
           "nextId": "scene_19_lego_a"
         },
         {
-          "text": "Říct to nahlas",
+          "text": "Položit otázku",
           "nextId": "scene_19_lego_b"
         },
         {
-          "text": "Zkusit jinak",
+          "text": "Počkat na reakci",
           "nextId": "scene_19_lego_c"
         }
       ]
@@ -3997,23 +3360,19 @@
       "id": "scene_18_lego_c",
       "level": 18,
       "type": "scene",
-      "title": "🧩 U dveří knihovny",
-      "text": "Laura stojí u dveří knihovny. Klíč má být blízko… ale kde? Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "english",
-        "prompt": "Doplň: “I can ____.” (read/play/run…)."
-      },
+      "title": "🧩 U háčku",
+      "text": "Na háčku visí šňůrka. A přitom klíč pořád nikde… nebo? Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: V krabičce je 5 dílků lega a přidáš 3. Otázka: Kolik dílků bude? (Spočítej: 5 + 3)",
       "choices": [
         {
-          "text": "Doplnit slovo",
+          "text": "Říct podezření",
           "nextId": "scene_19_lego_a"
         },
         {
-          "text": "Říct to nahlas",
+          "text": "Položit otázku",
           "nextId": "scene_19_lego_b"
         },
         {
-          "text": "Zkusit jinak",
+          "text": "Počkat na reakci",
           "nextId": "scene_19_lego_c"
         }
       ]
@@ -4023,22 +3382,18 @@
       "level": 19,
       "type": "scene",
       "title": "🧩 Řekni to nahlas",
-      "text": "Laura už tuší pravdu. Panda se usmívá tak, že to prozrazuje úplně všechno. Laura jde klidně a pečlivě.",
-      "task": {
-        "type": "logic",
-        "prompt": "Řekni 1 detektivní otázku, kterou teď položíš."
-      },
+      "text": "Laura už tuší odpověď. Panda se usmívá, jako by ji znala taky. Laura postupuje klidně a pečlivě. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Ukázat na klíč a usmát se",
+          "text": "Ukázat, co jsi zjistila",
           "nextId": "scene_20_end_lego"
         },
         {
-          "text": "Říct to jako detektivní projev",
+          "text": "Nechat pandu promluvit",
           "nextId": "scene_20_end_lego"
         },
         {
-          "text": "Nechat pandu, ať se přizná",
+          "text": "Otevřít poličku spolu",
           "nextId": "scene_20_end_lego"
         }
       ]
@@ -4048,22 +3403,18 @@
       "level": 19,
       "type": "scene",
       "title": "🧩 Řekni to nahlas",
-      "text": "Laura už tuší pravdu. Panda se usmívá tak, že to prozrazuje úplně všechno. Panda to bere dramaticky a trochu legračně.",
-      "task": {
-        "type": "logic",
-        "prompt": "Řekni 1 detektivní otázku, kterou teď položíš."
-      },
+      "text": "Laura už tuší odpověď. Panda se usmívá, jako by ji znala taky. Panda to komentuje legračně a dramaticky. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Ukázat na klíč a usmát se",
+          "text": "Ukázat, co jsi zjistila",
           "nextId": "scene_20_end_lego"
         },
         {
-          "text": "Říct to jako detektivní projev",
+          "text": "Nechat pandu promluvit",
           "nextId": "scene_20_end_lego"
         },
         {
-          "text": "Nechat pandu, ať se přizná",
+          "text": "Otevřít poličku spolu",
           "nextId": "scene_20_end_lego"
         }
       ]
@@ -4073,22 +3424,18 @@
       "level": 19,
       "type": "scene",
       "title": "🧩 Řekni to nahlas",
-      "text": "Laura už tuší pravdu. Panda se usmívá tak, že to prozrazuje úplně všechno. Laura s pandou spolupracují a zkouší to chytře.",
-      "task": {
-        "type": "logic",
-        "prompt": "Řekni 1 detektivní otázku, kterou teď položíš."
-      },
+      "text": "Laura už tuší odpověď. Panda se usmívá, jako by ji znala taky. Laura s pandou spolupracují a zkouší chytrý plán. Zajímavost: Slova příbuzná mají společný „kořen“ — jako bambus a bambusový. Otázka: Je slovo **bambusový** příbuzné ke slovu **bambus**? (Ano/Ne)",
       "choices": [
         {
-          "text": "Ukázat na klíč a usmát se",
+          "text": "Ukázat, co jsi zjistila",
           "nextId": "scene_20_end_lego"
         },
         {
-          "text": "Říct to jako detektivní projev",
+          "text": "Nechat pandu promluvit",
           "nextId": "scene_20_end_lego"
         },
         {
-          "text": "Nechat pandu, ať se přizná",
+          "text": "Otevřít poličku spolu",
           "nextId": "scene_20_end_lego"
         }
       ]
@@ -4098,11 +3445,7 @@
       "level": 20,
       "type": "end",
       "title": "🎉 Konec: klíč měla panda",
-      "text": "Tajná polička cvakne — a Laura si všimne klíče na pandině plášti. Panda se přizná: „Byla to zkouška pozornosti!“ Klíč měla celou dobu panda. Komiksy jsou zachráněné a Laura dostává diplom „Nejlepší detektivka školy v přírodě“.",
-      "task": {
-        "type": "celebration",
-        "prompt": "Vyber si komiks a přečti 2 věty na oslavu."
-      },
+      "text": "Laura si všimne klíče na pandině plášti. Panda se zasměje: „Byla to zkouška pozornosti — klíč jsem měla já.“ Tajná polička se otevře a komiksy jsou zachráněné. Laura dostane diplom „Nejlepší detektivka školy v přírodě“.",
       "choices": []
     },
     "scene_20_end_play": {
@@ -4110,11 +3453,7 @@
       "level": 20,
       "type": "end",
       "title": "🎉 Konec: klíč měla panda",
-      "text": "Laura se otočí k pandě a uvidí klíč, který jí cinká u pláště. Panda se zasměje: „Dobře… klíč jsem měla já.“ Byla to detektivní zkouška. Komiksy jsou zachráněné a Laura dostává diplom „Nejlepší detektivka školy v přírodě“.",
-      "task": {
-        "type": "celebration",
-        "prompt": "Vyber si komiks a přečti 2 věty na oslavu."
-      },
+      "text": "Při odhalení Laura uvidí, že pandě u pláště cinká klíč. Panda přizná: „Dobře… klíč jsem měla já.“ Tajná polička se otevře a komiksy jsou zachráněné. Laura dostane diplom „Nejlepší detektivka školy v přírodě“.",
       "choices": []
     },
     "scene_20_end_lego": {
@@ -4122,11 +3461,7 @@
       "level": 20,
       "type": "end",
       "title": "🎉 Konec: klíč měla panda",
-      "text": "Laura zahlédne přívěsek u pandy: klíč! Panda se tváří nevinně jen chvíli a pak přizná: „Klíč jsem měla já.“ Konec případu. Komiksy jsou zachráněné a Laura dostává diplom „Nejlepší detektivka školy v přírodě“.",
-      "task": {
-        "type": "celebration",
-        "prompt": "Vyber si komiks a přečti 2 věty na oslavu."
-      },
+      "text": "Laura ukáže na pandin přívěsek: je to klíč! Panda se usměje: „Přesně tak. Klíč jsem měla já.“ Tajná polička se otevře a komiksy jsou zachráněné. Laura dostane diplom „Nejlepší detektivka školy v přírodě“.",
       "choices": []
     }
   }
