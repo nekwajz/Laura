@@ -5,20 +5,16 @@
       "id": "scene_1_start",
       "level": 1,
       "type": "start",
-      "title": "Laura a detektivní panda",
-      "text": "Laura vejde do školní knihovny a hned vidí zamčenou tajnou poličku s komiksy. Knihovnice jen bezmocně ukáže na prázdný háček: klíč je pryč. Laura si řekne: „Dobře, Laurinko, dneska jsi detektivka.“ Z jejího batohu vykoukne panda velká v miniaturním plášti a šeptne: „Inspektor Pchňou je na místě!“ Panda se tváří přísně, ale v kapse jí trčí bambus jako svačina. Věděla jsi, že anglicky se detektiv řekne „detective“?",
+      "title": "Ztracený klíč od komiksů",
+      "text": "Laura stojí před tajnou poličkou s komiksy a zámek ani necvakne. Knihovnice ukáže na prázdný háček: „Klíč tu byl, a teď není!“ Laura si narovná cop a řekne: „Tak jo, dneska jsem detektivka.“ Z batohu vykoukne panda velká v maličkém plášti: „Inspektor Pchňou hlásí nástup!“ Laura si všimne, že klíč bývá na řetízku, a panda hned začne hledat něco, co cinká. Věděla jsi, že zvuk „ř“ je tak vzácný, že se skoro nikde na světě nepoužívá jako v češtině?",
       "choices": [
         {
-          "text": "Mrknout mezi regály",
+          "text": "Hledat v knihovně",
           "nextId": "scene_2_knihovna"
         },
         {
-          "text": "Vyrazit na hřiště",
+          "text": "Oběhnout hřiště",
           "nextId": "scene_2_hriste"
-        },
-        {
-          "text": "Proklepnout lego koutek",
-          "nextId": "scene_2_lego"
         }
       ]
     },
@@ -26,20 +22,16 @@
       "id": "scene_2_knihovna",
       "level": 2,
       "type": "scene",
-      "title": "Záložka, co voní",
-      "text": "Laura přejede prstem po regálu s detektivkami a jedna záložka se sama vysune, jako by mávala. Na záložce je nakreslená panda s lupou a pod tím malá šipka. Panda Pchňou si přičichne a zamumlá: „Tohle voní jako svačina.“ Laura se zasměje: „Jasně, bambusová stopa.“ Panda vážně přikývne a tváří se, že to byla vědecká analýza. Věděla jsi, že skoro 99 % jídelníčku pandy tvoří bambus?",
+      "title": "Záložka s bambusem",
+      "text": "Mezi detektivkami leží záložka s pandou a šipkou, jako by na Lauru mrkala. Panda Pchňou ji očichá a vážně prohlásí: „Tahle stopa voní zeleně.“ Laura se zasměje: „To je bambus, inspektore.“ Záložka ukazuje k regálu s komiksy, ale na okraji je i malý otisk kolečka. Panda si záložku hrdě strčí do kapsy a šeptne: „Důkazní kapsa, první úlovek!“ Věděla jsi, že skoro 99 % jídelníčku pandy tvoří bambus?",
       "choices": [
         {
-          "text": "Prolistovat komiksy",
+          "text": "Prohlédnout záložky",
           "nextId": "scene_3_knihovna"
         },
         {
-          "text": "Zeptat se papouška",
+          "text": "Vyslechnout papouška",
           "nextId": "scene_3_hriste"
-        },
-        {
-          "text": "Hledat zvláštní kostičku",
-          "nextId": "scene_3_lego"
         }
       ]
     },
@@ -47,41 +39,16 @@
       "id": "scene_2_hriste",
       "level": 2,
       "type": "scene",
-      "title": "Papoušek něco ví",
-      "text": "Na hřišti papoušek poskakuje na zábradlí a křičí: „Klíííč, klíííč!“ Laura se k němu nakloní a zeptá se, jestli klíč opravdu viděl. Panda Pchňou si nasadí neviditelné brýle a dělá, že zapisuje výpověď. Papoušek se rozhlédne, udělá tiché „cink“ a rozchechtá se, jako by to byla šifra. Laura si slovo „cink“ uloží jako první pořádnou stopu. Víš, že anglicky je hřiště „playground“?",
+      "title": "Papouščí poplach",
+      "text": "Na hřišti to žije, děti běhají a papoušek na zábradlí křičí: „Klíííč!“ Panda Pchňou udělá důležitý krok vpřed a zeptá se: „Kde jste viděl podezřelý kov?“ Papoušek jen nakloní hlavu, udělá „cink“ jazykem a poskočí k lavičce. Laura si všimne křídové šipky na zemi a zelené samolepky u houpaček. Panda se tváří, že všechno zapisuje, i když drží neviditelnou tužku. Víš, že anglicky se hřiště řekne „playground“?",
       "choices": [
         {
-          "text": "Vrátit se do ticha",
-          "nextId": "scene_3_knihovna"
-        },
-        {
-          "text": "Prohlédnout houpačky",
+          "text": "Jít za papouškem",
           "nextId": "scene_3_hriste"
         },
         {
-          "text": "Prošmejdit lego pod lavičkou",
-          "nextId": "scene_3_lego"
-        }
-      ]
-    },
-    "scene_2_lego": {
-      "id": "scene_2_lego",
-      "level": 2,
-      "type": "scene",
-      "title": "Kostička s číslem",
-      "text": "V lego koutku leží úplně samotná kostička, a to je podezřelé samo o sobě. Laura ji zvedne a na boku uvidí vyraženou devítku, jako by to byl detektivní podpis. Panda Pchňou kostičku dvakrát otočí a zašeptá, že devět zní důležitě. Laura se usměje: „Jako číslo, co se rádo vrací.“ Panda přikývne a tváří se, že právě odhalila matematickou mafii. Věděla jsi, že když násobíš 9 jednociferným číslem, součet cifer výsledku bývá 9 (třeba 9×6=54)?",
-      "choices": [
-        {
-          "text": "Nakouknout do knihovny",
+          "text": "Mrknout do regálu",
           "nextId": "scene_3_knihovna"
-        },
-        {
-          "text": "Vyptat se dětí u skluzavky",
-          "nextId": "scene_3_hriste"
-        },
-        {
-          "text": "Skládat stopu z dílků",
-          "nextId": "scene_3_lego"
         }
       ]
     },
@@ -89,20 +56,16 @@
       "id": "scene_3_knihovna",
       "level": 3,
       "type": "scene",
-      "title": "Komiksová polička",
-      "text": "U komiksů je ticho, ale Laura má pocit, že ticho dneska mluví. Panda Pchňou ukáže na prázdné místo v polici: „Tady něco chybí… nebo tu něco přebývalo.“ Laura najde na dřevě drobný otisk, jako když se o poličku otře kov. Panda si přitom nenápadně schová tlapku do kapsy a dělá, že nic. Laura si říká, jestli to „cink“ z hřiště nesouvisí právě s tímhle místem. Víš, že anglicky se knihovna řekne „library“?",
+      "title": "Robot s lupou",
+      "text": "Laura vytáhne komiks, kde robot drží lupu, a panda se hned tváří, že mají posilu. Na první stránce je poznámka „R.U.R.“ a malá kresba klíče na háčku. Panda zašeptá: „Robot by ten klíč našel za tři sekundy.“ Laura otočí stránku a najde razítko „Ztráty a nálezy“ – jako by to byla adresa. Panda si důležitě odkašle: „Takže máme plán: knihy, háčky a nálezy.“ Věděla jsi, že české slovo „robot“ se používá skoro po celém světě?",
       "choices": [
         {
-          "text": "Zkontrolovat čtenářský koutek",
+          "text": "Zkontrolovat obálku robota",
           "nextId": "scene_4_knihovna"
         },
         {
-          "text": "Jít po křídové šipce",
+          "text": "Prověřit křídovou šipku",
           "nextId": "scene_4_hriste"
-        },
-        {
-          "text": "Sledovat mapku z lega",
-          "nextId": "scene_4_lego"
         }
       ]
     },
@@ -110,41 +73,16 @@
       "id": "scene_3_hriste",
       "level": 3,
       "type": "scene",
-      "title": "Šipka z křídy",
-      "text": "U houpaček je na zemi křídou nakreslená šipka, která vypadá jako zobáček. Laura se otočí na pandu a řekne, že to vypadá jako papouščí práce. Panda Pchňou se zamyslí a dodá, že to mohl nakreslit i někdo, kdo si na papouška hraje. Šipka míří k lavičce, kde se povaluje malý zelený lístek. Laura ho zvedne a zjistí, že je to samolepka, takže záhada je ještě větší. Věděla jsi, že panda má skvělý čich i sluch a pozná druhé pandy po vůni?",
+      "title": "Šero pod skluzavkou",
+      "text": "Laura nakoukne pod skluzavku, kde je příjemné šero, a panda hned ztiší hlas. „Tady se stopy rády schovávají,“ šeptne panda a ukáže na drobnou třpytku v písku. Laura zvedne maličký kroužek, jako od klíče, jenže je prázdný. Jedno dítě řekne: „Něco cinkalo… jako když se někdo otáčí.“ Panda se rychle otočí, zastaví se, a pak se tváří, že to určitě nebyla ona. Věděla jsi, že pandy mají štěrbinové zornice, takže dobře vidí i v šeru?",
       "choices": [
         {
-          "text": "Prozkoumat komiksový regál",
-          "nextId": "scene_4_knihovna"
-        },
-        {
-          "text": "Vyslechnout lavičkové svědky",
+          "text": "Prohledat pod skluzavkou",
           "nextId": "scene_4_hriste"
         },
         {
-          "text": "Najít kostičku se značkou",
-          "nextId": "scene_4_lego"
-        }
-      ]
-    },
-    "scene_3_lego": {
-      "id": "scene_3_lego",
-      "level": 3,
-      "type": "scene",
-      "title": "Mapa ze tří dílků",
-      "text": "Laura poskládá tři lego dílky do šipky a najednou to vypadá jako mini mapa. Panda Pchňou přidá čtvrtý dílek a prohlásí, že to je profesionální vylepšení. Šipka míří ke knihovně, ale na druhé straně je nakreslené malé hřiště. Laura se zasměje, že stopa je cestovatel a chce na výlet. Panda přikývne a zašeptá: „Stopy chodí, když je to baví.“ Víš, že anglicky se mapa řekne „map“?",
-      "choices": [
-        {
-          "text": "Jít k poličkám s knihami",
+          "text": "Vrátit se k pultu",
           "nextId": "scene_4_knihovna"
-        },
-        {
-          "text": "Běžet za šipkou u houpaček",
-          "nextId": "scene_4_hriste"
-        },
-        {
-          "text": "Postavit větší mapu",
-          "nextId": "scene_4_lego"
         }
       ]
     },
@@ -152,20 +90,16 @@
       "id": "scene_4_knihovna",
       "level": 4,
       "type": "scene",
-      "title": "Robot v detektivce",
-      "text": "Laura vytáhne knížku, kde na obálce stojí robot s lupou a vypadá důležitě. Panda Pchňou se k ní nakloní a řekne: „Robot detektiv, panda detektiv, to zní fér.“ Uvnitř je založený lístek s nápisem „RUR“ a malá kresba klíče. Laura si lístek schová, protože detektivové mají rádi drobné stopy. Panda udělá vážné „hmm“ a z kapsy jí tiše zacinká něco kovového. Věděla jsi, že slovo „robot“ se rozšířilo do světa z české hry RUR?",
+      "title": "Cedulka s nulami",
+      "text": "V knihovně je krabice s kartičkami označená 10, 100 a 1000, jako by to byl tajný kód. Panda Pchňou říká: „Tohle je číslicová stopa, cítím to v tlapách.“ Laura si všimne, že někdo k číslům dopsal jen nuly a udělal z toho větší čísla. Pod krabicí leží lísteček: „Najdeš mě u tisícovky příběhů.“ Panda se usměje: „Tak to jsme tady správně, protože knih je tu vážně hodně.“ Víš, že když násobíš 10 nebo 100, často stačí jen připsat nuly na konec čísla?",
       "choices": [
         {
-          "text": "Prohledat tajnou poličku",
+          "text": "Najít chybné cedulky",
           "nextId": "scene_5_knihovna"
         },
         {
-          "text": "Projít křídovou šipku",
+          "text": "Ověřit lavičkovou stopu",
           "nextId": "scene_5_hriste"
-        },
-        {
-          "text": "Otočit lego šipku",
-          "nextId": "scene_5_lego"
         }
       ]
     },
@@ -173,41 +107,16 @@
       "id": "scene_4_hriste",
       "level": 4,
       "type": "scene",
-      "title": "Nápis na lavičce",
-      "text": "Na lavičce někdo tužkou napsal: „Stopa vede tam, kde se směješ.“ Panda Pchňou si sedne jako opravdový šéf vyšetřování a řekne: „Tohle je jasná clue!“ Laura se zarazí: „Počkej… ty používáš angličtinu!“ Panda se zatváří hrdě: „Detektiv musí znát tajná slova.“ Laura si všimne, že pod lavičkou je drobný otisk ve tvaru kolečka, jako od kroužku na klíče. Víš, že anglicky je stopa „clue“?",
+      "title": "Houpačkový výslech",
+      "text": "Křídová šipka vede k houpačkám a jedna houpačka se houpá úplně sama. Panda Pchňou si na ni sedne a řekne: „Začíná výslech houpačky!“ Když se houpe, něco jemně zacinká, jako kov o kov. Laura najde na řetězu uvázanou zelenou stužku a na konci uzlík, jako by něco držela. Panda se tváří nevinně a schová svůj plášť tak, aby nebylo vidět žádné šňůrky. Víš, že anglicky se houpačka řekne „swing“?",
       "choices": [
         {
-          "text": "Mrknout na komiksy",
-          "nextId": "scene_5_knihovna"
-        },
-        {
-          "text": "Obejít houpačky dokola",
+          "text": "Vyslechnout houpačky",
           "nextId": "scene_5_hriste"
         },
         {
-          "text": "Zkontrolovat krabičku s dílky",
-          "nextId": "scene_5_lego"
-        }
-      ]
-    },
-    "scene_4_lego": {
-      "id": "scene_4_lego",
-      "level": 4,
-      "type": "scene",
-      "title": "Počítání studů",
-      "text": "Laura si prohlíží lego základní desku a studů je tam tolik, že by z toho byla nuda… kdyby to nebyla stopa. Panda Pchňou ukáže na řadu deseti studů: „Tady někdo počítal!“ Laura si všimne, že některé studi jsou odřené, jako kdyby po nich něco kovového klouzalo. Panda se tváří, že to určitě nebyl klíč, a zároveň se tváří, že to určitě byl klíč. Laura se zasměje: „Ty jsi z toho úplně legodetektiv.“ Věděla jsi, že 1+2+3+4+5+6+7+8+9+10 je 55, když to páruješ do jedenáctek?",
-      "choices": [
-        {
-          "text": "Zajít za knihovnicí",
+          "text": "Zamířit k nástěnce",
           "nextId": "scene_5_knihovna"
-        },
-        {
-          "text": "Najít svědky u skluzavky",
-          "nextId": "scene_5_hriste"
-        },
-        {
-          "text": "Postavit most z dílků",
-          "nextId": "scene_5_lego"
         }
       ]
     },
@@ -215,20 +124,16 @@
       "id": "scene_5_knihovna",
       "level": 5,
       "type": "scene",
-      "title": "Zápisník knihovnice",
-      "text": "Knihovnice vytáhne malý sešit a ukáže na stránku s poznámkami. Tiše vysvětlí, že klíč vždycky dává na stejný háček u tajné poličky. Laura si všimne malé kresby bambusu a vedle slova „svačina“. Panda Pchňou hned prohlásí, že svačina je hlavní podezřelý, a vážně pokývá hlavou. Knihovnice ukáže směrem k jídelně, protože tam je teď největší ruch a nejvíc svědků. Věděla jsi, že panda má velmi silné stoličky, aby rozkousala tvrdé stonky bambusu?",
+      "title": "Sešit knihovnice",
+      "text": "Knihovnice jim půjčí svůj sešit a říká: „Jen do něj nepište pandí tlapkou.“ Panda Pchňou se samozřejmě hned nakloní: „Já píšu jen odborně.“ V sešitě je záznam: „Klíč visí na háčku u vchodu“ a pak velká šipka ven. Laura najde mezi stránkami i malý lístek s nakresleným zeleným uzlem. Panda šeptne: „Zelený uzel… to zní jako bambusová stopa číslo dvě.“ Věděla jsi, že knihovna je anglicky „library“?",
       "choices": [
         {
-          "text": "Jít k bambusové svačině",
-          "nextId": "scene_6_svacina_a"
+          "text": "Prolistovat sešit knihovnice",
+          "nextId": "scene_6_knihovna"
         },
         {
-          "text": "Zastavit se u nástěnky",
-          "nextId": "scene_6_svacina_b"
-        },
-        {
-          "text": "Mrknout na lavici v jídelně",
-          "nextId": "scene_6_svacina_c"
+          "text": "Podívat se do nálezů",
+          "nextId": "scene_6_hriste"
         }
       ]
     },
@@ -236,104 +141,50 @@
       "id": "scene_5_hriste",
       "level": 5,
       "type": "scene",
-      "title": "Řádění s „ř“",
-      "text": "U hřiště si děti zkouší jazykolam a všichni se smějí na „ř“. Laura se přidá: „Třicet tři stříbrných…“ a zamotá se jí jazyk. Panda Pchňou to zkusí taky, ale vyjde z toho „břbřbř“ a je to ještě vtipnější. Jedno dítě ukáže na školní nástěnku: „Tam je vzkaz o klíči!“ Laura pokyne pandě: „Jdeme na to, inspektore.“ Věděla jsi, že hláska „ř“ je v jiných jazycích opravdu vzácná?",
+      "title": "Krabice nálezů",
+      "text": "U hřiště je krabice ztrát a nálezů a na víku je napsáno 1089, jako by to byla tajná šifra. Panda Pchňou říká: „To určitě není náhoda, to je číslo pachatele.“ Laura krabici otevře a najde uvnitř jen samolepku pandy a malou zelenou stužku. Vedle leží papírek se třemi čísly a šipkou k knihovně. Panda se tváří, že právě vyřešila matematiku, i když jen kouká na čísla. Věděla jsi, že když vezmeš trojciferné číslo, otočíš ho, odečteš a pak přičteš obrácený výsledek, často vyjde 1089?",
       "choices": [
         {
-          "text": "Běžet k nástěnce",
-          "nextId": "scene_6_svacina_a"
+          "text": "Otevřít krabici nálezů",
+          "nextId": "scene_6_hriste"
         },
         {
-          "text": "Jít na svačinový sraz",
-          "nextId": "scene_6_svacina_b"
-        },
-        {
-          "text": "Napít se u fontánky",
-          "nextId": "scene_6_svacina_c"
+          "text": "Vrátit se mezi knihy",
+          "nextId": "scene_6_knihovna"
         }
       ]
     },
-    "scene_5_lego": {
-      "id": "scene_5_lego",
-      "level": 5,
-      "type": "scene",
-      "title": "Zápisník v plášti",
-      "text": "Panda Pchňou vytáhne opravdový zápisník, a Laura si všimne, že je podezřele nový. „Důkazy se musí psát hezky,“ řekne panda a ukáže čistou stránku. Laura ukáže na malé kolečko na okraji stránky: „To vypadá jako otisk od kroužku!“ Panda rychle zavře zápisník a dělá, že to byla umělecká tečka. Z dálky zazvoní na přestávku a všichni se sunou k jídelně. Víš, že anglicky je zápisník „notebook“?",
-      "choices": [
-        {
-          "text": "Jít poslouchat školní zvonek",
-          "nextId": "scene_6_svacina_a"
-        },
-        {
-          "text": "Zamířit k jídelnímu stolu",
-          "nextId": "scene_6_svacina_b"
-        },
-        {
-          "text": "Zaskočit k fontánce",
-          "nextId": "scene_6_svacina_c"
-        }
-      ]
-    },
-    "scene_6_svacina_a": {
-      "id": "scene_6_svacina_a",
+    "scene_6_knihovna": {
+      "id": "scene_6_knihovna",
       "level": 6,
       "type": "scene",
-      "title": "Svačina a velká panda",
-      "text": "V jídelně to šustí sáčky a voní rohlíky, takže detektivům kručí břicho. Panda Pchňou si dá bambusovou tyčinku a šeptne: „Detektiv pracuje nejlíp s plným bříškem.“ Laura se rozhlédne a zahlédne na stole malý přívěsek, který vypadá jako kroužek od klíče. Panda ho hned zakryje tlapkou: „To je jen… dekorace.“ Laura se na ni podívá tak, že panda raději odklopí tlapku a usměje se. Věděla jsi, že panda velká je národním symbolem Číny?",
+      "title": "Křupnutí bambusu",
+      "text": "Panda si ukousne bambus tak hlasitě, že to zní jako detektivní bubínek. Laura si všimne drobných kousků bambusu u regálu – někdo tu před chvílí svačil. Panda zvedne tlapku: „To nebyla svačina, to byla analýza!“ Za knihou najdou lístek: „Sejdeme se u mapy školy“ a malý obrázek kolečka. Laura řekne: „Tak jo, dáme si poradu,“ a panda přikývne až moc rychle. Věděla jsi, že panda má jedny z nejsilnějších stoliček mezi šelmami, aby rozkousala tvrdý bambus?",
       "choices": [
         {
-          "text": "Vrátit se k regálům",
+          "text": "Projít tajný katalog",
           "nextId": "scene_7_knihovna"
         },
         {
-          "text": "Zkontrolovat lavičku venku",
-          "nextId": "scene_7_hriste"
-        },
-        {
-          "text": "Prohledat lego krabici",
-          "nextId": "scene_7_lego"
+          "text": "Sejít se u mapy",
+          "nextId": "scene_7_spojeni"
         }
       ]
     },
-    "scene_6_svacina_b": {
-      "id": "scene_6_svacina_b",
+    "scene_6_hriste": {
+      "id": "scene_6_hriste",
       "level": 6,
       "type": "scene",
-      "title": "Nástěnka plná šipek",
-      "text": "U školní nástěnky visí papír s nápisem „Hledá se klíč“ a pod ním tři šipky. Panda Pchňou zašeptá, že je to detektivní menu pro chytré hlavy. Laura si všimne, že jedna šipka je zelená a připomíná bambusový list. Panda se tváří, že bambus nevidí, ale její bříško ho vidí úplně nejvíc. Laura papír opatrně schová, aby ho neodnesl vítr. Víš, že anglicky je klíč „key“?",
+      "title": "Pachová stopa",
+      "text": "U plotu panda čichá k dřevu a dělá důležitý detektivní nos. Laura se směje: „Ty ho chceš očichat celý?“ Panda vážně kývne: „Pachy jsou jako dopisy, jen jsou neviditelné.“ Na jednom prkně visí kousek zelené stužky, jako by se tam něco zachytilo. Laura ukáže na mapku hřiště a navrhne: „Pojďme to dát dohromady u mapy školy.“ Věděla jsi, že panda používá krátký ocásek jako „kartáč“ pro roznášení pachové značky?",
       "choices": [
         {
-          "text": "Zamířit do knihovny",
-          "nextId": "scene_7_knihovna"
-        },
-        {
-          "text": "Zkontrolovat houpačky",
+          "text": "Prohlédnout plot u stužky",
           "nextId": "scene_7_hriste"
         },
         {
-          "text": "Jít po lego stopě",
-          "nextId": "scene_7_lego"
-        }
-      ]
-    },
-    "scene_6_svacina_c": {
-      "id": "scene_6_svacina_c",
-      "level": 6,
-      "type": "scene",
-      "title": "Fontánka a plán",
-      "text": "U fontánky je mokrá stopička, jako by tu někdo opláchl něco kovového. Laura se sehne a řekne, že to vypadá jako práce klíče. Panda Pchňou ukáže na dlaždičky a vysvětluje, že zem je detektivní zápisník. Dlaždice tvoří obdélník, takže Laura si představí plán jako z mapy. Z dálky se ozve papoušek a připomene svoje slavné „cink“. Věděla jsi, že obsah obdélníku se počítá jako délka krát šířka?",
-      "choices": [
-        {
-          "text": "Podívat se mezi komiksy",
-          "nextId": "scene_7_knihovna"
-        },
-        {
-          "text": "Jít za papouškem",
-          "nextId": "scene_7_hriste"
-        },
-        {
-          "text": "Složit novou šipku",
-          "nextId": "scene_7_lego"
+          "text": "Srovnat důkazy společně",
+          "nextId": "scene_7_spojeni"
         }
       ]
     },
@@ -341,20 +192,16 @@
       "id": "scene_7_knihovna",
       "level": 7,
       "type": "scene",
-      "title": "Ticho, co umí mluvit",
-      "text": "Laura se vrátí do knihovny a ukáže pandě papír z nástěnky. Panda Pchňou šeptá tak potichu, že by ji neslyšel ani komár: „Tady musíme být nenápadné.“ Laura si vzpomene na jazykovou legraci ze hřiště a skoro se zasměje nahlas. Rychle si ale zakryje pusu, protože ticho je tu jako v pohádce o knihách. Panda ukáže na cedulku s legrační větou bez samohlásek a mrkne. Věděla jsi, že v češtině jde říct větu bez samohlásek: „Strč prst skrz krk“?",
+      "title": "Razítko na tlapce",
+      "text": "Laura zůstane v knihovně a otevře tlustý sešit s nápisem „Poznámky“. Panda Pchňou si potichu namočí tlapku do razítka a udělá na okraj malou pandu. Uprostřed stránky je nakreslený klíč na zelené šňůrce a vedle poznámka „háček č. 4“. Laura se podívá na pandin plášť a na chvíli se jí zdá, že má podobnou šňůrku. Panda rychle řekne: „To je jen módní doplněk inspektora!“ Víš, že anglicky je sešit „notebook“?",
       "choices": [
         {
-          "text": "Otevřít komiksový šanon",
+          "text": "Spočítat háčky věšáku",
           "nextId": "scene_8_knihovna"
         },
         {
-          "text": "Sledovat křídové značky",
+          "text": "Jít za křídovým nápisem",
           "nextId": "scene_8_hriste"
-        },
-        {
-          "text": "Prohlédnout dílky u stolu",
-          "nextId": "scene_8_lego"
         }
       ]
     },
@@ -362,41 +209,33 @@
       "id": "scene_7_hriste",
       "level": 7,
       "type": "scene",
-      "title": "Šepot u houpaček",
-      "text": "U houpaček stojí dvě děti a přetahují se o křídu, ale potichu, jako by hrály tajnou hru. Laura jim ukáže záložku s pandou a zeptá se, jestli neviděly klíč. Jedno dítě ukáže na pandin plášť: „Ten přece umí cinkat!“ Panda Pchňou se okamžitě tváří jako socha a ani nedýchá. Laura se usměje: „Tak to budeme poslouchat úplně tiše.“ Víš, že anglicky je tichý „quiet“?",
+      "title": "Skluzavka detektiva",
+      "text": "Na hřišti děti ukazují na skluzavku a tvrdí, že „tam to cinkalo“. Panda Pchňou si skluzavku vyzkouší, protože prý bez testu není důkaz. Dole Laura najde na písku otisk kolečka a maličký uzlík ze zelené nitě. Jedno dítě se směje: „To vypadalo jako plášť!“ Panda se hrdě narovná: „Plášť je znak autority, ne důkaz.“ Víš, že anglicky se skluzavka řekne „slide“?",
       "choices": [
         {
-          "text": "Vrátit se k poličkám",
-          "nextId": "scene_8_knihovna"
-        },
-        {
-          "text": "Zkontrolovat lavičku svědků",
+          "text": "Zkontrolovat otisk v písku",
           "nextId": "scene_8_hriste"
         },
         {
-          "text": "Hledat kostičku s číslem",
-          "nextId": "scene_8_lego"
+          "text": "Nahlédnout do sešitu",
+          "nextId": "scene_8_knihovna"
         }
       ]
     },
-    "scene_7_lego": {
-      "id": "scene_7_lego",
+    "scene_7_spojeni": {
+      "id": "scene_7_spojeni",
       "level": 7,
       "type": "scene",
-      "title": "Detektiv chce klid",
-      "text": "V lego koutku je konečně klid a nic nepadá na zem, což je skoro zázrak. Panda Pchňou si sedne do tureckého sedu a řekne: „Teď přemýšlíme, žádné drama.“ Laura položí před ni kostičku s devítkou a papírek s kresbou kroužku. Panda si to prohlíží a přitom si pořád upravuje kapsu, jako by v ní něco tlačilo. Laura si říká, že ten plášť je dneska nějak moc zajímavý. Věděla jsi, že pandy jsou často samotářské a raději mají klid?",
+      "title": "Porada u mapy",
+      "text": "Laura a panda se sejdou u nástěnné mapy školy a rozloží všechny drobnosti na lavici. Záložka, stužka, číslo 1089, otisk kolečka – všechno vypadá důležitě. Panda z toho začne skládat čtverec z devíti políček, jako by to byla detektivní hra. Laura se zasměje: „Ty děláš z důkazů puzzle!“ Panda vážně řekne: „Detektiv má rád, když věci do sebe zapadnou.“ Věděla jsi, že v magickém čtverci 3×3 s čísly 1–9 vyjde součet v každém řádku i sloupci 15?",
       "choices": [
         {
-          "text": "Prohlédnout knížky o pandě",
+          "text": "Zkusit stopu mezi knihami",
           "nextId": "scene_8_knihovna"
         },
         {
-          "text": "Zeptat se papouška zblízka",
+          "text": "Jít po stopě u lavičky",
           "nextId": "scene_8_hriste"
-        },
-        {
-          "text": "Postavit dílkový most",
-          "nextId": "scene_8_lego"
         }
       ]
     },
@@ -404,20 +243,16 @@
       "id": "scene_8_knihovna",
       "level": 8,
       "type": "scene",
-      "title": "Komiksové tajemství",
-      "text": "Laura vytáhne jeden komiks a z něj vypadne lístek s nápisem „NEOTVÍREJ!“ Panda Pchňou se rozzáří: „To je přesně věta, kterou detektiv má otevřít!“ Na lístku je ale jen obrázek poličky a šipka dolů. Laura ukáže na tajnou poličku: „Takže jsme zpátky u komiksů.“ Panda přitom šeptne anglické slovíčko a dělá, že je to kouzlo. Víš, že anglicky je komiks „comic“?",
+      "title": "Bílkovinný detail",
+      "text": "V knihovně Laura otevře knihu o pandách, protože v ní může být schovaný lístek. Panda Pchňou se nakloní: „Tuhle část znám – bambus, bambus, bambus.“ Mezi stránkami je malá obálka s obrázkem vajíčka a vedle drobná poznámka „bílkoviny“. Laura si říká, že autor stopy má smysl pro humor. Panda se tváří, že obálku určitě neochutná, a hned ji posune Lauře. Věděla jsi, že panda si někdy dá i hmyz nebo vejce, aby měla víc bílkovin?",
       "choices": [
         {
-          "text": "Zkontrolovat spodní polici",
+          "text": "Prohledat knihu o pandách",
           "nextId": "scene_9_knihovna"
         },
         {
-          "text": "Jít po stopě k lavičce",
+          "text": "Zkontrolovat mašli u lavičky",
           "nextId": "scene_9_hriste"
-        },
-        {
-          "text": "Najít dílek s kolečkem",
-          "nextId": "scene_9_lego"
         }
       ]
     },
@@ -425,41 +260,16 @@
       "id": "scene_8_hriste",
       "level": 8,
       "type": "scene",
-      "title": "Skákací čtverce",
-      "text": "Na zemi je nakreslená skákací hra se čtverci a čísly, jako malá detektivní mapa. Panda Pchňou ukáže na čtverce a prohlásí, že uspořádaná čísla bývají podezřelá. Jedno dítě se směje a říká, že je to jen hra, ale prý má kouzelný pořádek. Laura si všimne, že některá čísla jsou zvýrazněná a vedou pohledem k lavičce. Panda si mezitím uhladí plášť, aby vypadala jako opravdový inspektor. Věděla jsi, že magický čtverec 3×3 s čísly 1–9 má v každém řádku součet 15?",
+      "title": "Křídový nápis",
+      "text": "Venku někdo na chodník napsal velkými písmeny „CLUE“ a udělal šipku k lavičce. Panda Pchňou to přečte nahlas a je na sebe pyšná. U lavičky visí zelená stužka, tentokrát uvázaná jako mašle. Laura mašli rozváže a najde pod ní papírek: „Háček č. 4“. Panda polkne naprázdno a rychle začne ukazovat úplně jiným směrem. Víš, že anglicky je stopa nebo nápověda „clue“?",
       "choices": [
         {
-          "text": "Vrátit se za knihovnicí",
-          "nextId": "scene_9_knihovna"
-        },
-        {
-          "text": "Prohledat okolí skluzavky",
+          "text": "Sledovat šipku k plotu",
           "nextId": "scene_9_hriste"
         },
         {
-          "text": "Postavit čtverec z dílků",
-          "nextId": "scene_9_lego"
-        }
-      ]
-    },
-    "scene_8_lego": {
-      "id": "scene_8_lego",
-      "level": 8,
-      "type": "scene",
-      "title": "Most pro stopu",
-      "text": "Laura postaví z dílků malý most a pod něj schová papírek se šipkou, aby „neulétl“. Panda Pchňou most slavnostně přejde a udělá u toho detektivní pochůzku. Za mostem leží další dílek, tentokrát s hladkým kolečkem jako malý kroužek. Laura ho zvedne: „Tohle vypadá skoro jako klíčový kamarád.“ Panda se zasměje tak tiše, že to zní jako plyšové „he-he“. Víš, že anglicky je přítel „friend“?",
-      "choices": [
-        {
-          "text": "Jít zpátky do regálů",
+          "text": "Vrátit se do čtenářského koutku",
           "nextId": "scene_9_knihovna"
-        },
-        {
-          "text": "Vyslechnout svědky venku",
-          "nextId": "scene_9_hriste"
-        },
-        {
-          "text": "Složit mapu z koleček",
-          "nextId": "scene_9_lego"
         }
       ]
     },
@@ -467,20 +277,16 @@
       "id": "scene_9_knihovna",
       "level": 9,
       "type": "scene",
-      "title": "Žebřík a hrdinství",
-      "text": "V knihovně je malý žebřík a panda Pchňou na něj vyleze, jako by to byla hora. Laura ji jistí a šeptá, že detektivové padají jen do polštářů, ne do prachu. Panda nahoře najde prachovou stopu a prohlásí, že prach nikdy nelže. Když slézá dolů, ozve se z její kapsy úplně jasné „cink“. Laura zvedne obočí a panda se tváří, že to byl jen zvuk odvahy. Věděla jsi, že panda umí šplhat na stromy, když potřebuje rozhled nebo bezpečí?",
+      "title": "Plakát o pádech",
+      "text": "V čtenářském koutku visí plakát o pádech a Laura si ho letmo přečte, protože detektivka čte všechno. Panda Pchňou šeptá: „Kdo? Co? Klíč!“ a tváří se, že je to kouzlo. Za plakátem je nalepený lístek: „Kde? U vchodu.“ Laura si všimne, že někdo schválně používá otázky, jako by si hrál s češtinou. Panda se zasměje: „Tak tohle je pádně chytrý pachatel.“ Věděla jsi, že čeština má sedm pádů?",
       "choices": [
         {
-          "text": "Jít na rozhlasovou zprávu",
-          "nextId": "scene_10_rozhlas_a"
+          "text": "Prozkoumat plakát s pády",
+          "nextId": "scene_10_knihovna"
         },
         {
-          "text": "Prověřit mokrou stopu",
-          "nextId": "scene_10_rozhlas_b"
-        },
-        {
-          "text": "Svolat detektivní sraz",
-          "nextId": "scene_10_rozhlas_c"
+          "text": "Jít hledat značku u plotu",
+          "nextId": "scene_10_hriste"
         }
       ]
     },
@@ -488,104 +294,50 @@
       "id": "scene_9_hriste",
       "level": 9,
       "type": "scene",
-      "title": "Dvě mince a tři koruny",
-      "text": "U stánku s pitím se děti baví mincovou hádankou a všichni mají vážné obličeje. Panda Pchňou si sedne vedle nich a tváří se, že vede výslech. Jedno dítě nakonec řekne řešení a všichni se hned rozesmějí. Laura si pomyslí, že dobrá detektivka má chvíli napětí a pak velké „aha“. Papoušek z dálky znovu připomene své „cink“ a Laura ví, že se případ hýbe. Věděla jsi, že hádanka se dvěma mincemi na 3 Kč vyjde jako 2 Kč a 1 Kč?",
+      "title": "Pětka v písku",
+      "text": "Na hřišti děti počítají skoky a na písku je nakreslená velká pětka. Panda Pchňou říká: „Pětka je naše číslo, to je jasné.“ Laura najde u pětky papírek s nápisem „18“ a šipkou k plotu. Panda navrhne, že to vynásobí pěti, protože to zní detektivně. Laura se zasměje: „To je ten trik s dělením dvěma a nulou, viď?“ Víš, že násobení pěti jde zrychlit tak, že číslo vydělíš dvěma a přidáš nulu?",
       "choices": [
         {
-          "text": "Jít pro zprávu ze školy",
-          "nextId": "scene_10_rozhlas_a"
+          "text": "Prohledat písek u pětky",
+          "nextId": "scene_10_hriste"
         },
         {
-          "text": "Jít po nástěnkové šipce",
-          "nextId": "scene_10_rozhlas_b"
-        },
-        {
-          "text": "Sejít se u komiksů",
-          "nextId": "scene_10_rozhlas_c"
+          "text": "Vrátit se k detektivkám",
+          "nextId": "scene_10_knihovna"
         }
       ]
     },
-    "scene_9_lego": {
-      "id": "scene_9_lego",
-      "level": 9,
-      "type": "scene",
-      "title": "Hledání pod stolem",
-      "text": "Laura si lehne na koberec a kouká pod stůl, jako by byla ponorka v moři dílků. Panda Pchňou ji napodobí, ale její plášť se zasekne o židli a udělá „ššš“. Pod stolem najdou malý papírek se slovem „SEARCH“, asi jako tajný vzkaz. Laura si ho přečte nahlas a panda hned přikývne, že to zní profesionálně. Pak Laura zahlédne kovový lesk… jenže je to lesk na pandině knoflíku. Víš, že anglicky je hledat „search“?",
-      "choices": [
-        {
-          "text": "Poslechnout školní rozhlas",
-          "nextId": "scene_10_rozhlas_a"
-        },
-        {
-          "text": "Zajít k nástěnce",
-          "nextId": "scene_10_rozhlas_b"
-        },
-        {
-          "text": "Sejít se u fontánky",
-          "nextId": "scene_10_rozhlas_c"
-        }
-      ]
-    },
-    "scene_10_rozhlas_a": {
-      "id": "scene_10_rozhlas_a",
+    "scene_10_knihovna": {
+      "id": "scene_10_knihovna",
       "level": 10,
       "type": "scene",
-      "title": "Rozhlas: zpráva dne",
-      "text": "Ze školního rozhlasu se ozve zpráva, že klíč byl prý viděn u tajné poličky. Laura se usměje, protože to zní jako detektivní pozvánka. Panda Pchňou si narovná plášť tak vážně, jako by jí právě dali medaili. Pak šeptne, že kdyby byla v přírodě, schovala by se v dutém stromě. Laura ji šťouchne do ramene a připomene, že teď se schovávají jen stopy, ne detektivové. Věděla jsi, že panda v zimě většinou nespí zimním spánkem, spíš si hledá úkryt?",
+      "title": "Svačinová pauza",
+      "text": "Panda si u regálu udělá mini svačinovou pauzu a tváří se, že je to součást vyšetřování. Laura si povzdechne: „Inspektore, my hledáme klíč, ne bambusové menu.“ Panda klidně odpoví: „Pravá panda tráví většinu dne jídlem, to je profesionální.“ Laura mezitím najde v knize vložený lístek: „Ztráty a nálezy – venku.“ Panda rychle zavře knihu, jako by se bála, že z ní vypadne pravda. Věděla jsi, že pandy jsou spíš samotářky a velkou část dne jedí a odpočívají?",
       "choices": [
         {
-          "text": "Prověřit komiksovou stopu",
+          "text": "Prohlédnout skříňku kartiček",
           "nextId": "scene_11_knihovna"
         },
         {
-          "text": "Ověřit svědky venku",
+          "text": "Prověřit tužkovou čáru",
           "nextId": "scene_11_hriste"
-        },
-        {
-          "text": "Prozkoumat lego nápis",
-          "nextId": "scene_11_lego"
         }
       ]
     },
-    "scene_10_rozhlas_b": {
-      "id": "scene_10_rozhlas_b",
+    "scene_10_hriste": {
+      "id": "scene_10_hriste",
       "level": 10,
       "type": "scene",
-      "title": "Cedulka „Otevři“",
-      "text": "Na dveřích knihovny visí cedulka „Otevři a hledej“, a Laura má chuť ji poslouchat. Panda Pchňou slavnostně položí tlapku na kliku: „Teď začíná velká fáze případu.“ Dveře jemně vrznou a panda udělá dramatickou pauzu, jako ve filmu. Laura se zasměje: „Ty jsi fakt herečka.“ Panda pokrčí rameny: „Detektiv je i trochu divadlo.“ Víš, že anglicky je otevřít „open“?",
+      "title": "Tužková čára",
+      "text": "U skluzavky někdo kreslí tužkou do sešitu, i když je venku, a Laura se hned ptá proč. Dítě ukáže šipku nakreslenou tužkou: vede k dveřím knihovny. Panda Pchňou si vezme tužku do tlapky a vypadá, jako by podepisovala tajný spis. Laura si všimne, že tužková čára je stejná jako v knihovně u plakátu. Panda šeptne: „To znamená, že pisatel je stejný!“ Víš, že anglicky je tužka „pencil“?",
       "choices": [
         {
-          "text": "Jít po stopě mezi knihy",
-          "nextId": "scene_11_knihovna"
-        },
-        {
-          "text": "Zkontrolovat hřiště znovu",
+          "text": "Sledovat tužkovou šipku",
           "nextId": "scene_11_hriste"
         },
         {
-          "text": "Najít dílek s kroužkem",
-          "nextId": "scene_11_lego"
-        }
-      ]
-    },
-    "scene_10_rozhlas_c": {
-      "id": "scene_10_rozhlas_c",
-      "level": 10,
-      "type": "scene",
-      "title": "Číslo na papírku",
-      "text": "U nástěnky visí papírek s číslem 1089 a pod ním tři malé šipky. Panda Pchňou se tváří nadšeně a říká, že čísla někdy umí být jako tajný kód. Laura se zasměje a zastrčí papírek do kapsy, aby se neztratil. Pak si všimne, že šipky míří přesně směrem k tajné poličce s komiksy. Panda udělá vážné „hmm“ a opatrně si zkontroluje vlastní kapsu. Věděla jsi, že trik 1089 často vyjde stejně: otočíš číslo, odečteš a zase přičteš?",
-      "choices": [
-        {
-          "text": "Vrátit se k policím",
+          "text": "Vrátit se ke stolu",
           "nextId": "scene_11_knihovna"
-        },
-        {
-          "text": "Prověřit lavičku u stromu",
-          "nextId": "scene_11_hriste"
-        },
-        {
-          "text": "Poskládat čísla z lega",
-          "nextId": "scene_11_lego"
         }
       ]
     },
@@ -593,20 +345,16 @@
       "id": "scene_11_knihovna",
       "level": 11,
       "type": "scene",
-      "title": "Polička a tajné slovo",
-      "text": "Laura najde na okraji poličky drobný nápis, jako by ho někdo schoval pro chytré oči. Panda Pchňou přečte: „S-H-E-L-F“ a tváří se, že právě rozluštila šifru století. Laura se zasměje: „To je jen anglicky polička.“ Panda se nedá: „Detektiv musí umět i ‚jen‘ věci.“ Pak Laura ucítí lehkou vůni bambusu… a všimne si, že panda zase žvýká. Víš, že anglicky je polička „shelf“?",
+      "title": "Stůl s tajemstvím",
+      "text": "Laura přijde ke stolu, kde se vyplňují čtenářské kartičky, a pod deskou je něco přilepené. Panda Pchňou jí podá pravítko: „Měření je detektivní magie.“ Laura zkontroluje obdélník stolu a pod okrajem najde kousek zelené pásky. Na pásce je otisk malého kolečka, jako od kroužku na klíče. Panda se tváří, že ten zvuk „cink“ nikdy neslyšela, a přitom ho slyšeli oba. Věděla jsi, že obsah obdélníku spočítáš jako délka krát šířka?",
       "choices": [
         {
-          "text": "Prohlédnout tajný háček",
+          "text": "Prohledat stůl zespodu",
           "nextId": "scene_12_knihovna"
         },
         {
-          "text": "Zkontrolovat stopu u stromu",
+          "text": "Jít prozkoumat pískoviště",
           "nextId": "scene_12_hriste"
-        },
-        {
-          "text": "Najít kroužek v dílcích",
-          "nextId": "scene_12_lego"
         }
       ]
     },
@@ -614,41 +362,16 @@
       "id": "scene_11_hriste",
       "level": 11,
       "type": "scene",
-      "title": "Slova se převlékají",
-      "text": "Na hřišti je tabule s nápisem „Bez klíče není komiks“, ale někdo tam dopsal různé tvary slov. Laura si čte: „komiks, komiksu, komiksům…“ a panda se tváří, že to je zaklínadlo. Panda Pchňou řekne: „To je jako když se detektiv převléká do různých převleků.“ Laura se směje: „Takže slova mají převleky taky.“ Za tabulí je malý provázek s uzlíkem, jako by tu něco viselo. Věděla jsi, že čeština má 7 pádů (a tím se mění tvary slov)?",
+      "title": "Panda miminko",
+      "text": "V písku leží maličká hračka pandy a děti tvrdí, že je to pandí miminko. Panda Pchňou se na chvíli usměje: „Miminka jsou fakt mrňavá…“ Laura zvedne hračku a zjistí, že má uvnitř místo na kroužek, ale kroužek chybí. Dítě řekne: „Ten kroužek cinkal, když s tím někdo běžel.“ Panda rychle změní téma: „Ehm, pojďme dál, ať pachatel neutíká.“ Věděla jsi, že novorozené pandí mládě váží jen kolem 100 gramů?",
       "choices": [
         {
-          "text": "Vrátit se k záložkám",
-          "nextId": "scene_12_knihovna"
-        },
-        {
-          "text": "Prozkoumat uzlík na plotě",
+          "text": "Zvednout hračku pandy",
           "nextId": "scene_12_hriste"
         },
         {
-          "text": "Hledat hladký kroužek",
-          "nextId": "scene_12_lego"
-        }
-      ]
-    },
-    "scene_11_lego": {
-      "id": "scene_11_lego",
-      "level": 11,
-      "type": "scene",
-      "title": "Hodiny a cinknutí",
-      "text": "U lego koutku visí nástěnné hodiny a ručičky jdou úplně přesně, až to zní důležitě. Panda Pchňou se podívá nahoru: „Kdybych měla klíč, schovala bych ho… ehm… někam bezpečně.“ Laura si všimne, že panda při každém kroku jemně cinká, jako když se hýbe kroužek. Panda se tváří, že to je jen zvuk odvahy. Laura se usměje: „Dobře, zvuku odvahy, jdeme dál.“ Věděla jsi, že 24 je 6×4 a zároveň počet hodin v jednom dni?",
-      "choices": [
-        {
-          "text": "Jít k tajné poličce",
+          "text": "Vrátit se k věšáku",
           "nextId": "scene_12_knihovna"
-        },
-        {
-          "text": "Jít za dětmi na trávu",
-          "nextId": "scene_12_hriste"
-        },
-        {
-          "text": "Proklepnout krabičku dílků",
-          "nextId": "scene_12_lego"
         }
       ]
     },
@@ -656,20 +379,16 @@
       "id": "scene_12_knihovna",
       "level": 12,
       "type": "scene",
-      "title": "Obrázek miminka pandy",
-      "text": "V knize o zvířatech najde Laura fotografii pandího miminka, které je malinké a roztomilé. Panda Pchňou se dojatě nadechne: „To jsem já… skoro.“ Laura ukáže na popisek a čte potichu, aby nerušila knihy. Panda si přitom nenápadně uhladí plášť, jako by ho chtěla mít vzorný. Laura si všimne, že háček na klíč je pořád prázdný, a znovu jí naskočí detektivní výraz. Věděla jsi, že novorozená panda váží asi jako malé jablko (kolem 100 gramů)?",
+      "title": "Lístek COMIC",
+      "text": "U tajné poličky Laura najde lístek s velkým nápisem „COMIC“ a šipkou k věšáku. Panda Pchňou se zasměje: „Komiksy jsou můj oblíbený druh důkazů.“ Laura se podívá na věšák a spočítá háčky – jeden, dva, tři, čtyři. Na čtvrtém háčku visí zelená šňůrka bez klíče. Panda se tváří, že ji ta šňůrka vůbec nezajímá, což je podezřelé samo o sobě. Víš, že anglicky se komiks řekne „comic“?",
       "choices": [
         {
-          "text": "Zkontrolovat háček u dveří",
+          "text": "Zkontrolovat čtvrtý háček",
           "nextId": "scene_13_knihovna"
         },
         {
-          "text": "Zajít k tabuli na hřišti",
-          "nextId": "scene_13_hriste"
-        },
-        {
-          "text": "Postavit řadu z kostek",
-          "nextId": "scene_13_lego"
+          "text": "Sejít se u dveří",
+          "nextId": "scene_13_spojeni"
         }
       ]
     },
@@ -677,41 +396,16 @@
       "id": "scene_12_hriste",
       "level": 12,
       "type": "scene",
-      "title": "X na značce",
-      "text": "Na brance hřiště je namalované velké X a vedle něj malý kroužek, jako by to byla šifra. Laura se na to podívá a panda hned spustí: „X je tajná značka!“ Laura jí vysvětlí, že to může být i římská číslice, a panda se tváří ohromeně. „Takže to je detektivní matematika,“ prohlásí panda důležitě. Pod brankou je schovaná malá kartička s obrázkem poličky. Víš, že římská číslice X znamená 10?",
+      "title": "Jazykolam v křídě",
+      "text": "Na hřišti si děti dávají soutěž v jazykolamech a jedna holka napíše do písku větu bez samohlásek. Panda Pchňou to zkusí přečíst a skončí u smíchu ještě dřív, než dojde na konec. Laura se směje taky, ale všimne si, že vedle věty je šipka k knihovně. Pod šipkou je malý zelený uzlík, jako by někdo upustil nit. Panda si rychle upraví plášť a řekne: „To je určitě náhoda.“ Věděla jsi, že v češtině existuje věta bez samohlásek: „Strč prst skrz krk“?",
       "choices": [
         {
-          "text": "Vrátit se do knihovny",
-          "nextId": "scene_13_knihovna"
-        },
-        {
-          "text": "Prověřit branku do detailu",
+          "text": "Sledovat křídovou šipku",
           "nextId": "scene_13_hriste"
         },
         {
-          "text": "Zkontrolovat dílky v krabici",
-          "nextId": "scene_13_lego"
-        }
-      ]
-    },
-    "scene_12_lego": {
-      "id": "scene_12_lego",
-      "level": 12,
-      "type": "scene",
-      "title": "Čtyři dvojky",
-      "text": "Laura poskládá vedle sebe čtyři dvojité kostičky a vznikne z toho krásná řada. Panda Pchňou si ji prohlíží: „Tohle vypadá jako plán na útěk z… nudy!“ Laura se směje: „Ne, to je jen pořádek.“ Panda se zatváří vážně: „Pořádek je taky důkaz.“ Když panda vstane, něco u pláště zase jemně cinkne a Laura se už skoro usmívá podezřením. Věděla jsi, že 4×2 je stejné jako 2+2+2+2?",
-      "choices": [
-        {
-          "text": "Mrknout na regál s komiksy",
-          "nextId": "scene_13_knihovna"
-        },
-        {
-          "text": "Zajít za papouškem",
-          "nextId": "scene_13_hriste"
-        },
-        {
-          "text": "Najít kousek se třpytem",
-          "nextId": "scene_13_lego"
+          "text": "Porovnat stopy s pandou",
+          "nextId": "scene_13_spojeni"
         }
       ]
     },
@@ -719,20 +413,16 @@
       "id": "scene_13_knihovna",
       "level": 13,
       "type": "scene",
-      "title": "Plakát o pandách",
-      "text": "Na stěně knihovny visí plakát s pandou a velkým zeleným lesem. Laura si ho prohlédne a panda Pchňou si k němu stoupne, jako by pózovala. „Já jsem správná ambasadorka bambusu,“ řekne panda a udělá malou úklonu. Laura se usměje: „A já jsem správná detektivka klíčů.“ Pak najde u plakátu připíchnutý další lístek s kresbou kroužku a šipkou k tajné poličce. Věděla jsi, že největší hrozbou pro pandy bývá ztráta jejich bambusových lesů?",
+      "title": "Stopa ve výšce",
+      "text": "U vchodu do knihovny je vysoký věšák a Laura se nemůže dostat na horní háčky. Panda Pchňou se vyšplhá na nízkou poličku a hrdě oznámí: „Výšková kontrola!“ Laura zkontroluje čtvrtý háček a najde tam provázek s uzlíkem, ale bez klíče. Panda se tváří, že se jí uzlíky netýkají, a přitom je má ráda až moc. Laura řekne: „Tak jdeme ven, ať máme i svědky.“ Věděla jsi, že pandy umí šplhat na stromy, když chtějí být v bezpečí?",
       "choices": [
         {
-          "text": "Prohlédnout tajnou poličku",
+          "text": "Prohledat horní háčky",
           "nextId": "scene_14_knihovna"
         },
         {
-          "text": "Ověřit plotovou šňůrku",
+          "text": "Jít za římským kódem",
           "nextId": "scene_14_hriste"
-        },
-        {
-          "text": "Složit číslo z kostek",
-          "nextId": "scene_14_lego"
         }
       ]
     },
@@ -740,41 +430,33 @@
       "id": "scene_13_hriste",
       "level": 13,
       "type": "scene",
-      "title": "Spolu, ale chytře",
-      "text": "Na hřišti děti hrají hru, kde se musí držet spolu, jinak se tým rozpadne. Laura se na pandu usměje a řekne, že i detektivové jsou nejlepší ve dvojici. Panda Pchňou se nafoukne: „Tým Laura a Panda, to je špička.“ V trávě se zableskne malý kovový kroužek a Laura ho opatrně zvedne. Panda se tváří, že kroužek nikdy neviděla, ale zároveň se na něj dívá až moc. Víš, že anglicky je společně „together“?",
+      "title": "Římský kód",
+      "text": "Na hřišti děti kreslí panáka a místo čísel používají I, V a X, jako tajný kód. Panda Pchňou to bere vážně: „Římská šifra! To mám ráda.“ Laura najde u „X“ papírek: „Háček IV“ – tedy čtvrtý. To přesně sedí na věšák v knihovně a Laura má pocit, že se kruh uzavírá. Panda se pokusí vypadat klidně, ale plášť jí nepatrně zacinká. Víš, že svůj věk můžeš napsat římskými číslicemi I, V a X?",
       "choices": [
         {
-          "text": "Jít po stopě do knihovny",
-          "nextId": "scene_14_knihovna"
-        },
-        {
-          "text": "Zvednout kroužek z trávy",
+          "text": "Najít značku u X",
           "nextId": "scene_14_hriste"
         },
         {
-          "text": "Porovnat dílky v koutku",
-          "nextId": "scene_14_lego"
+          "text": "Ověřit háček IV",
+          "nextId": "scene_14_knihovna"
         }
       ]
     },
-    "scene_13_lego": {
-      "id": "scene_13_lego",
+    "scene_13_spojeni": {
+      "id": "scene_13_spojeni",
       "level": 13,
       "type": "scene",
-      "title": "Pětka na papírku",
-      "text": "V krabici s legem najde Laura papírek s velkou pětkou a šipkou k poličce. Panda Pchňou si ho přiloží na čelo jako čelenku: „Jsem Pětka, tajný agent!“ Laura se směje: „Ty jsi spíš agent bambus.“ Panda se nedá a začne mluvit o tom, jak pětka umí být rychlá, když se s ní chytře zachází. Laura si papírek schová, protože teď už mají šipek a čísel celou sbírku. Věděla jsi, že násobení pěti jde rychle tak, že číslo rozpůlíš a přidáš nulu (18×5=90)?",
+      "title": "Plán OPEN",
+      "text": "Laura a panda se potkají u dveří knihovny a obě už mluví skoro šeptem, jako ve filmu. Laura ukáže uzlíky, háček číslo čtyři a prázdný kroužek z písku. Panda řekne: „Zbývá jediné: otevřít záhadu.“ Laura se zasměje: „A pak otevřít poličku.“ Panda pokyne: „Vyber si, jestli jdeme po stopě mezi knihy, nebo po stopě venku.“ Víš, že anglicky je otevřít „open“?",
       "choices": [
         {
-          "text": "Zkontrolovat regál u okna",
+          "text": "Vyrazit po tiché stopě",
           "nextId": "scene_14_knihovna"
         },
         {
-          "text": "Jít pro svědectví venku",
+          "text": "Jít po značce u plotu",
           "nextId": "scene_14_hriste"
-        },
-        {
-          "text": "Postavit pětku z dílků",
-          "nextId": "scene_14_lego"
         }
       ]
     },
@@ -782,20 +464,16 @@
       "id": "scene_14_knihovna",
       "level": 14,
       "type": "scene",
-      "title": "Svačina pro pandu",
-      "text": "Panda Pchňou si do kapsy schová něco malého a Laura ji chytí při činu. Laura se zeptá, co to bylo, a panda se tváří jako nevinný plyšák. Panda přizná, že to byla „proteinová detektivní svačinka“, a udělá u toho důležitý výraz. Laura se rozesměje a řekne, že inspektor s kapsou je dneska hodně podezřelý. Pak Laura zahlédne u pandina pláště kovový odlesk, který rozhodně není sušenka. Věděla jsi, že panda si někdy dá i vajíčko nebo hmyz, aby získala bílkoviny?",
+      "title": "Poslouchej ten cink",
+      "text": "V tiché chodbě panda zastaví Lauru a zvedne tlapku, jako by poslouchala tajné rádio. Laura taky ztichne a opravdu zaslechne jemné „cink“. Panda se nakloní k věšáku, čichne a řekne: „Tady se točí kov.“ Laura si všimne, že „cink“ vždycky přijde, když se panda pohne. Panda se znehybní jako socha a špitne: „Já jsem naprosto tichá.“ Věděla jsi, že pandy se hodně spoléhají na čich a sluch, aby poznaly ostatní pandy?",
       "choices": [
         {
-          "text": "Svolat finální poradu",
-          "nextId": "scene_15_pred_polickou_a"
+          "text": "Poslechnout knihovní ticho",
+          "nextId": "scene_15_knihovna"
         },
         {
-          "text": "Ke komiksové poličce",
-          "nextId": "scene_15_pred_polickou_b"
-        },
-        {
-          "text": "Mrknout k fontánce",
-          "nextId": "scene_15_pred_polickou_c"
+          "text": "Ověřit značku u desítky",
+          "nextId": "scene_15_hriste"
         }
       ]
     },
@@ -803,129 +481,212 @@
       "id": "scene_14_hriste",
       "level": 14,
       "type": "scene",
-      "title": "Nápis „byla“",
-      "text": "Na tabuli u hřiště někdo napsal větu „Klíč tu byl“ a pod tím velké slovo „BYLA“. Laura se zasměje, protože klíč přece není holka, ale stopa to může být chytrá. Panda Pchňou vážně řekne, že někdo chtěl, aby si toho Laura určitě všimla. Laura si všimne, že je to napsané správně, takže autor si dal pozor. Když se otočí, zaslechne u pandy malé cinknutí a už jí to připadá podezřelé. Věděla jsi, že v češtině se „byla“ píše s y, i když to zní jako i?",
+      "title": "Desítkový plot",
+      "text": "U plotu děti počítají od jedničky do desítky a každý ukáže na své číslo. Panda Pchňou si to uspořádá do dvojic a tváří se, že to je detektivní strategie. Laura najde u čísla 10 malou značku v křídě: kruh jako kroužek na klíče. Pod značkou je papírek: „Hledej u ticha.“ Laura se rozhlédne a ví, že ticho bude v knihovně. Věděla jsi, že 1+2+…+10 je 55, když čísla spáruješ do dvojic 11?",
       "choices": [
         {
-          "text": "Zavolat pandu blíž",
-          "nextId": "scene_15_pred_polickou_a"
+          "text": "Prohledat desáté prkno",
+          "nextId": "scene_15_hriste"
         },
         {
-          "text": "Jít na velký sraz",
-          "nextId": "scene_15_pred_polickou_b"
-        },
-        {
-          "text": "Ověřit poslední šipky",
-          "nextId": "scene_15_pred_polickou_c"
+          "text": "Vrátit se do ticha",
+          "nextId": "scene_15_knihovna"
         }
       ]
     },
-    "scene_14_lego": {
-      "id": "scene_14_lego",
-      "level": 14,
-      "type": "scene",
-      "title": "Smích, co prozrazuje",
-      "text": "Laura vezme kroužek, který našla v trávě, a přiloží ho k pandině plášti. Panda Pchňou se začne smát a její uši poskakují, jako by měly vlastní trampolínu. Laura se zeptá, co je tak legrační, ale už tuší, že je to skoro konec případu. Panda se snaží tvářit vážně, jenže jí to nejde a pořád se culí. Laura si řekne, že smích někdy prozradí víc než tisíc slov. Víš, že anglicky je smát se „laugh“?",
-      "choices": [
-        {
-          "text": "Zamířit ke zámku",
-          "nextId": "scene_15_pred_polickou_a"
-        },
-        {
-          "text": "Svolat detektivní poradu",
-          "nextId": "scene_15_pred_polickou_b"
-        },
-        {
-          "text": "Zkontrolovat nástěnku",
-          "nextId": "scene_15_pred_polickou_c"
-        }
-      ]
-    },
-    "scene_15_pred_polickou_a": {
-      "id": "scene_15_pred_polickou_a",
+    "scene_15_knihovna": {
+      "id": "scene_15_knihovna",
       "level": 15,
       "type": "scene",
-      "title": "Finální porada detektivů",
-      "text": "Laura stojí před tajnou poličkou a ukáže na všechny stopy, které posbírala. Panda Pchňou přikyvuje tak vážně, že vypadá jako soudce v plyšové soudní síni. „Kroužek, šipky, cinknutí…“ vyjmenuje Laura a panda se začne trochu ošívat. Laura si všimne, že panda občas čichá ke svému plášti, jako by ho kontrolovala. „Možná je klíč blíž, než si myslíme,“ řekne Laura jemně. Věděla jsi, že pandí ocásek je krátký a může pomáhat při značení pachů?",
+      "title": "Nápis KEY",
+      "text": "V regálu s detektivkami je lístek s velkým nápisem KEY a malou pandou v plášti. Panda Pchňou se zatváří, že to rozhodně není o ní. Laura vezme lístek a zkontroluje čtvrtý háček ještě jednou. Zelená šňůrka tam pořád visí, ale klíč nikde. Panda řekne: „Možná je klíč… schovaný blíž, než si myslíš.“ Věděla jsi, že anglicky se klíč řekne „key“?",
       "choices": [
+        {
+          "text": "Zkontrolovat kapsu pláště",
+          "nextId": "scene_16_knihovna"
+        },
+        {
+          "text": "Zeptat se dětí na šipky",
+          "nextId": "scene_16_hriste"
+        }
+      ]
+    },
+    "scene_15_hriste": {
+      "id": "scene_15_hriste",
+      "level": 15,
+      "type": "scene",
+      "title": "Hledat vs najít",
+      "text": "Na hřišti Laura říká: „Hledáme klíč,“ a panda odpoví: „Najdeme klíč!“ Laura se zasměje: „To zní, jako bys už věděla, kde je.“ Panda rychle mávne tlapkou: „Já jen mluvím detektivně.“ Na zemi je napsáno „hledat → najít“ a šipka míří do knihovny. Laura si povzdechne: „Tak jdeme, ať už to najdeme.“ Věděla jsi, že čeština rozlišuje dokonavost a nedokonavost, třeba „dělat“ a „udělat“?",
+      "choices": [
+        {
+          "text": "Sledovat šipku hledat",
+          "nextId": "scene_16_hriste"
+        },
+        {
+          "text": "Vrátit se k duté polici",
+          "nextId": "scene_16_knihovna"
+        }
+      ]
+    },
+    "scene_16_knihovna": {
+      "id": "scene_16_knihovna",
+      "level": 16,
+      "type": "scene",
+      "title": "Pandí jeskyně",
+      "text": "Laura nakoukne za vysokou polici, kde je dutý prostor, a panda hned prohlásí: „Pandí jeskyně!“ Panda se tam schoulí a šeptá, že tady by se vyšetřovalo úplně skvěle. Laura sáhne dovnitř a vytáhne papírový sáček s bambusovým obrázkem. V sáčku je jen samolepka klíče a prázdný kroužek – zase bez klíče. Panda řekne: „To je skoro jako… skoro jako…“ a radši to nedořekne. Věděla jsi, že pandy v zimě nespí zimním spánkem, ale hledají úkryt v dutinách a jeskyních?",
+      "choices": [
+        {
+          "text": "Prohledat pandí jeskyni",
+          "nextId": "scene_17_knihovna"
+        },
+        {
+          "text": "Zkontrolovat lavičku s mincemi",
+          "nextId": "scene_17_hriste"
+        }
+      ]
+    },
+    "scene_16_hriste": {
+      "id": "scene_16_hriste",
+      "level": 16,
+      "type": "scene",
+      "title": "Dvě mince, jedna věta",
+      "text": "U lavičky leží dvě mince a Laura je zvedne, aby se neztratily. Panda Pchňou hned řekne: „Důkazní peníze!“ Laura vidí, že je to dvoukoruna a koruna, dohromady tři. Panda se usměje: „To mi připomíná jednu chytrou matematickou větu.“ Laura si mince schová a pokračuje, protože klíč je důležitější než kapesné. Víš, že dvě mince 2 Kč a 1 Kč dělají 3 Kč a přitom může být pravda, že jedna z nich „není koruna“?",
+      "choices": [
+        {
+          "text": "Zeptat se u stánku",
+          "nextId": "scene_17_hriste"
+        },
+        {
+          "text": "Vrátit se za cedulku",
+          "nextId": "scene_17_knihovna"
+        }
+      ]
+    },
+    "scene_17_knihovna": {
+      "id": "scene_17_knihovna",
+      "level": 17,
+      "type": "scene",
+      "title": "Tichý režim",
+      "text": "V čtenářském koutku visí cedulka „Ticho, prosím“ a panda ji hned bere jako tajný rozkaz. Panda začne šeptat tak potichu, že jí skoro není rozumět, a Laura se směje. V tichu ale znovu zaslechnou to známé „cink“. Laura se podívá přímo na pandin plášť a panda si ho instinktivně přidrží. „Inspektore, ty mi něco tajíš,“ řekne Laura roztomile přísně. Víš, že anglicky je tichý „quiet“?",
+      "choices": [
+        {
+          "text": "Spustit tichý režim",
+          "nextId": "scene_18_knihovna"
+        },
+        {
+          "text": "Jít pro výpověď kamarádky",
+          "nextId": "scene_18_hriste"
+        }
+      ]
+    },
+    "scene_17_hriste": {
+      "id": "scene_17_hriste",
+      "level": 17,
+      "type": "scene",
+      "title": "Plyšová kapsa",
+      "text": "Na hřišti si děti hrají s plyšovou pandou a říkají jí „mládě“. Panda Pchňou změkne: „Pandiní mámy jsou na mláďata velké expertky.“ Laura si všimne, že plyšák má kapsičku a v ní kousek zelené šňůrky. Šňůrka vypadá úplně stejně jako ta na háčku v knihovně. Panda rychle dodá: „To je jen hra, nic detektivního!“ Věděla jsi, že pandí máma se o mládě stará dlouho a mládě odchází až po čase, když už jí bambus?",
+      "choices": [
+        {
+          "text": "Prohledat plyšovou kapsu",
+          "nextId": "scene_18_hriste"
+        },
+        {
+          "text": "Vrátit se k devítce",
+          "nextId": "scene_18_knihovna"
+        }
+      ]
+    },
+    "scene_18_knihovna": {
+      "id": "scene_18_knihovna",
+      "level": 18,
+      "type": "scene",
+      "title": "Devítková polička",
+      "text": "Laura dojde k polici označené devítkou a vzpomene si na lego kostičku s číslem 9. Panda Pchňou se tváří, že devítka je její oblíbené detektivní číslo. Laura si potichu připomene násobky devíti a usměje se nad tím trikem. Pod policí nahmatá malý kovový kroužek, ale klíč na něm pořád není. Panda udělá nevinné „hmm“ a plášť jí zase tiše cinkne. Věděla jsi, že u násobků devíti jednociferným číslem často vyjde součet cifer výsledku 9?",
+      "choices": [
+        {
+          "text": "Najít plakát o Číně",
+          "nextId": "scene_19_knihovna"
+        },
+        {
+          "text": "Sejít se na svačinu",
+          "nextId": "scene_19_spojeni"
+        }
+      ]
+    },
+    "scene_18_hriste": {
+      "id": "scene_18_hriste",
+      "level": 18,
+      "type": "scene",
+      "title": "Kamarádská pomoc",
+      "text": "Laura potká kamarádku, která jí šeptne: „Viděla jsem pandu u věšáku, fakt!“ Panda Pchňou se tváří profesionálně: „Svědkyně, přijímám výpověď.“ Kamarádka vytáhne zelenou stužku a říká, že se zachytila na pandině plášti, když se smála. Laura poděkuje a stužku si schová jako nejdůležitější důkaz dne. Panda polkne a řekne: „To bude určitě cizí stužka, já žádné nenosím.“ Víš, že anglicky je kamarád nebo kamarádka „friend“?",
+      "choices": [
+        {
+          "text": "Zeptej se dětí o slovu",
+          "nextId": "scene_19_hriste"
+        },
+        {
+          "text": "Dát si poradu u stolku",
+          "nextId": "scene_19_spojeni"
+        }
+      ]
+    },
+    "scene_19_knihovna": {
+      "id": "scene_19_knihovna",
+      "level": 19,
+      "type": "scene",
+      "title": "Panda na plakátu",
+      "text": "V knihovně visí plakát o Číně a velká panda na něm vypadá jako celebrita. Panda Pchňou se postaví pod plakát a dělá, že pózuje na fotku. Laura se usměje: „Ty bys měla vlastní fan klub.“ Při tom si všimne kovového lesku u pandina pláště přesně tam, kde by visel klíč. Panda rychle přikryje lesk tlapkou a řekne: „To je jen… odznáček.“ Věděla jsi, že panda velká je národním symbolem Číny a je přísně chráněná?",
+      "choices": [
+        {
+          "text": "Požádat o důkazní kapsu",
+          "nextId": "scene_20_end"
+        },
         {
           "text": "Podívat se na plášť",
-          "nextId": "scene_16_end"
-        },
-        {
-          "text": "Nechat pandu promluvit",
-          "nextId": "scene_16_end_hriste"
-        },
-        {
-          "text": "Otevřít poličku spolu",
-          "nextId": "scene_16_end_lego"
+          "nextId": "scene_20_end"
         }
       ]
     },
-    "scene_15_pred_polickou_b": {
-      "id": "scene_15_pred_polickou_b",
-      "level": 15,
+    "scene_19_hriste": {
+      "id": "scene_19_hriste",
+      "level": 19,
       "type": "scene",
-      "title": "Panda chce řeč",
-      "text": "Panda Pchňou si odkašle a stoupne si na špičky, aby vypadala vyšší. Oznámí, že jako detektiv musí napsat závěrečnou zprávu, a tváří se u toho hrdě. Laura se zasměje a řekne, že zpráva je fajn, ale pravda je ještě lepší. Panda nervózně přešlápne a z kapsy se ozve to nejzřetelnější „cink“ dne. Laura na ni mrkne a požádá ji, ať to řekne nahlas. Věděla jsi, že sloveso „psát“ a „napsat“ je rozdíl nedokonavé a dokonavé?",
+      "title": "Nejdelší slovo",
+      "text": "Na hřišti se děti chlubí nejdelším slovem, co umí, a píšou ho do křídy přes půl chodníku. Laura čte nápis a panda se snaží číst taky, ale po třetí slabice vyprskne smíchy. Když se panda směje, u pláště to jasně cinkne, jako když se pohne klíč. Laura se na pandu podívá a panda se hned narovná: „To cinklo… od větru!“ Laura už tuší, že klíč nebude v písku, ale mnohem blíž. Věděla jsi, že za jedno z nejdelších českých slov se často považuje „nejneobhospodařovávatelnějšími“?",
       "choices": [
         {
-          "text": "Požádat o přiznání",
-          "nextId": "scene_16_end"
+          "text": "Říct pandě podezření",
+          "nextId": "scene_20_end"
         },
         {
-          "text": "Zkontrolovat kapsu",
-          "nextId": "scene_16_end_hriste"
-        },
-        {
-          "text": "Dát pandě objetí",
-          "nextId": "scene_16_end_lego"
+          "text": "Nastavit malou lest",
+          "nextId": "scene_20_end"
         }
       ]
     },
-    "scene_15_pred_polickou_c": {
-      "id": "scene_15_pred_polickou_c",
-      "level": 15,
+    "scene_19_spojeni": {
+      "id": "scene_19_spojeni",
+      "level": 19,
       "type": "scene",
-      "title": "Čísla, šipky, klíč",
-      "text": "Laura si vzpomene na všechny ty papírky s čísly a šipkami a začne se smát. Řekne, že to vypadá, jako kdyby jim někdo připravil detektivní hru. Panda Pchňou se tváří nevinně, ale její oči říkají, že možná ano. Laura ukáže na pandin plášť a dodá, že poslední důkaz je možná přímo na ní. Panda ztichne, pak se usměje a přikývne úplně maličko. Víš, že když násobíš 10, stačí k číslu připsat nulu (12×10=120)?",
+      "title": "Svačina na čtvrtiny",
+      "text": "Laura a panda se sejdou u piknikového stolku, kde někdo nechal krabičku se svačinou. Panda ji otevře a rozdělí sušenku na poloviny, jako by dělila důkazy. Laura si vezme čtvrtku a všimne si, že panda při dělení zase cinkne. Panda rychle řekne: „To je… detektivní metronom.“ Laura se nadechne: „Inspektore, myslím, že máme poslední stopu.“ Víš, že zlomek 1/2 je polovina a 1/4 je čtvrtina, třeba u pizzy?",
       "choices": [
         {
-          "text": "Zvednout detektivní odznak",
-          "nextId": "scene_16_end"
+          "text": "Zeptat se na klíč",
+          "nextId": "scene_20_end"
         },
         {
-          "text": "Poslechnout poslední cink",
-          "nextId": "scene_16_end_hriste"
-        },
-        {
-          "text": "Ukázat kroužek všem",
-          "nextId": "scene_16_end_lego"
+          "text": "Nechat klíč cinknout",
+          "nextId": "scene_20_end"
         }
       ]
     },
-    "scene_16_end": {
-      "id": "scene_16_end",
-      "level": 16,
+    "scene_20_end": {
+      "id": "scene_20_end",
+      "level": 20,
       "type": "end",
-      "title": "Komiksy zachráněny!",
-      "text": "Laura opatrně odhrne pandin plášť a uvidí klíč připnutý na malém kroužku. Panda Pchňou zrudne až po uši a vyhrkne: „Já… jsem ho měla celou dobu!“ Hned dodá: „Nebyla jsem zlá, jen jsem dělala detektivní zkoušku pozornosti… a trochu jsem zapomněla.“ Laura se zasměje a řekne: „Tak to byla nejroztomilejší past na světě.“ Panda slavnostně podá klíč a společně otevřou tajnou poličku plnou komiksů. Věděla jsi, že panda má na tlapce něco jako „šestý prst“, aby lépe držela bambus?",
-      "choices": []
-    },
-    "scene_16_end_hriste": {
-      "id": "scene_16_end_hriste",
-      "level": 16,
-      "type": "end",
-      "title": "Smích až k houpačkám",
-      "text": "Laura ukáže na pandin kroužek a řekne: „Inspektore, to cinknutí už znám!“ Panda Pchňou se přizná: „Klíč jsem měla já… chtěla jsem, abys byla hlavní detektivka.“ Pak si nasadí plášť jako superhrdina a dodá: „A taky jsem ho omylem připnula na sebe.“ Laura jí dá pět a obě se smějí, až se papoušek přidá svým „cink!“ Společně běží do knihovny a klíč zasunou do zámku, jako ve filmu. Víš, že anglicky je zavřít „close“?",
-      "choices": []
-    },
-    "scene_16_end_lego": {
-      "id": "scene_16_end_lego",
-      "level": 16,
-      "type": "end",
-      "title": "Lego oslava případu",
-      "text": "Laura přiloží lego kroužek k pandině kapse a klíč v ní okamžitě zacinká. Panda Pchňou se rozesměje: „Dobře, přistižená panda!“ „Chtěla jsem, aby ses cítila jako opravdová detektivka,“ vysvětlí a podá klíč s úctou. Laura řekne: „A ty jsi byla perfektní podezřelá, ale hodná.“ Pak spolu postaví z lega malou sochu klíče a jdou odemknout komiksovou poličku. Věděla jsi, že slovo „panda“ má v množném čísle tvar „pandy“?",
+      "title": "Odhalení u pláště",
+      "text": "Laura se usměje a řekne: „Inspektore Pchňou, ukaž mi, co máš v plášti.“ Panda ztuhne, pak udělá hrdinskou pózu a otevře plášť jako kouzelník. Na vnitřním kroužku se opravdu houpe knihovní klíč a udělá to nejhlasitější „cink“ dne. Laura se rozesměje: „Tak ty jsi ho měla celou dobu!“ Panda přizná: „Byla to zkouška pozornosti, chtěla jsem z tebe udělat super detektivku.“ Věděla jsi, že pandám ubývá bambusový les, a proto jsou hodně chráněné?",
       "choices": []
     }
   }
